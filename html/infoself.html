@@ -590,7 +590,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive PurchaseHistory_log">
+                    <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
                             <tr>
@@ -1301,9 +1301,15 @@
             $(ele).removeClass("active");
         });
         $(that).addClass("active");
-        $(that).parents().find("."+_element).each(function(index, ele){
-            $(ele).hide();
-        });
+        if(_element === "table-responsive" && type === "data-tab-chil"){
+            $(that).parents().find(".PurchaseHistory").find("."+_element).each(function(index, ele){
+                $(ele).hide();
+            })
+        }else{
+            $(that).parents().find("."+_element).each(function(index, ele){
+                $(ele).hide();
+            });
+        }
         $("."+toggle_class).show();
     }
 </script>

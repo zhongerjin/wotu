@@ -208,7 +208,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
-.LoginLog{
+.LoginLog, .Loan, .Backfill{
     display: none;
 }
 .table-responsive thead tr {
