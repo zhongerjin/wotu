@@ -1,0 +1,77 @@
+.supporting .slider {
+    background-image: url("../image/sup-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 596px;
+}
+
+.table-responsive .tablespanimg {
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/v.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*//ffae00*/
+}
+
+.table-responsive .tablespantext {
+    color: #ffae00;
+    margin-left: -5px;
+}
+
+.table-responsive.upgrade{
+    display: none;
+}
+.table-responsive.upgrade th{
+    white-space: nowrap;
+}
+@media screen and (min-width: 320px) {
+    .nav {
+        position: static;
+    }
+    .nav>div:last-child {
+        position: static;
+        right: 0;
+        top: 0;
+    }
+    .navcol_s #navbar-example .container {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    /*.banner .title {*/
+    /*width: auto;*/
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    /*}*/
+    .main .slider {
+        padding-top: 0;
+        height: 165px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navcol_s #navbar-example .container {
+        width: 720px;
+    }
+    .main .slider {
+        height: 317px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /*.top .nav {*/
+    .navcol_s #navbar-example .container {
+        width: 990px;
+    }
+    .nav {
+        position: relative;
+    }
+    .nav>div:last-child {
+        position: absolute;
+        right: -83px;
+        top: -3px;
+    }
+}

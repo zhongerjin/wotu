@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.1.12.4.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/square.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- slider -->
+        <div class="slider" id="slider">
+            <div id="mydiv" style="">
+            </div>
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="corpmain">
+                <span>倡元沃土公司，打造全新商业生态链</span>
+            </div>
+            <div class="charts" id="charts"></div>
+            <script>
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('charts'));
+
+                // 指定图表的配置项和数据
+                var option = {
+                    type: 'line',
+                    smooth: true,
+                    tooltip: {
+                        trigger: 'axis',
+                        formatter: '{c0}',
+                        axisPointer: {
+                            type: 'none'
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#ffffff'
+                        }
+                    },
+                    xAxis: {
+                        type: 'category',
+                        boundaryGap: false,
+                        axisLabel: {
+                            textStyle: {
+                                color: "#ffffff"
+                            }
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#ffffff',
+                            }
+                        },
+                        data: ["05-01", "05-02", "05-03", "05-04", "05-05", "05-06"]
+                    },
+                    yAxis: {
+                        type: 'value',
+                        axisTick: { // 轴标记
+                            show: false,
+                            lineStyle: {
+                                color: '#ffffff'
+                            }
+                        },
+                        splitLine: {
+                            show: true,
+                            lineStyle: {
+                                color: 'rgba(255,255,255, 0.5)'
+                            }
+                        },
+                        axisLine: { // 轴线
+                            show: true,
+                            lineStyle: {
+                                color: '#ffffff',
+                                width: "0"
+                            }
+                        },
+                        axisLabel: {
+                            formatter: "{value}",
+                            margin: 5,
+                            textStyle: {
+                                color: "#ffffff"
+                            }
+                        },
+                        boundaryGap: [0, '70%'],
+                        data: [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3]
+                    },
+                    series: [{
+                            type: 'line',
+                            max: "0.3",
+                            showSymbol: false,
+                            symbol: 'circle',
+                            smooth: true,
+                            areaStyle: {
+                                normal: {
+                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                        offset: 0,
+                                        color: 'rgb(16,221,217)'
+                                    }, {
+                                        offset: 1,
+                                        color: 'rgb(29,188,170)'
+                                    }], false)
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    lineStyle: {
+                                        width: 0
+                                    }
+                                }
+                            },
+                            data: [0, 0.08, 0.13, 0.08, 0.06, 0]
+                        },
+                        {
+                            type: 'line',
+                            showSymbol: false,
+                            symbol: 'circle',
+                            smooth: true,
+                            areaStyle: {
+                                normal: {
+                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                        offset: 0,
+                                        color: 'rgb(8,237,219)'
+                                    }, {
+                                        offset: 1,
+                                        color: 'rgb(29,188,170)'
+                                    }], false)
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    lineStyle: {
+                                        width: 0
+                                    }
+                                }
+                            },
+                            data: [0, 0.05, 0.11, 0.16, 0.06, 0]
+                        }
+                    ]
+                };
+
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            </script>
+            <a href="html/login.html">
+                <div class="regbtn">立即加入</div>
+            </a>
+        </div>
+        <!-- top -->
+        <div class="top">
+            <!-- nav -->
+            <div class="navcol navcol_s">
+                <nav id="navbar-example" class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <span class="loginBtn" style="float:right">登录</span>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand nav-title">倡元沃土</a>
+                        </div>
+                        <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#">首页</a>
+                                </li>
+                                <li>
+                                    <a href="#">注册配套</a>
+                                </li>
+                                <li>
+                                    <a href="#">连锁配套</a>
+                                </li>
+                                <li>
+                                    <a href="#">组织结构</a>
+                                </li>
+                                <li>
+                                    <a href="#">资产管理</a>
+                                </li>
+                                <li>
+                                    <a href="#">积分管理</a>
+                                </li>
+                                <li>
+                                    <a href="#">新闻公告</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="navcol navcol_b">
+                <div class="nav container">
+                    <a href="#">
+                        <div class="col-lg-1 col-md-1  col-sm-1 icon1 act navlist">首页</div>
+                    </a>
+                    <div class="container col-sm-10 col-md-10 col-lg-10">
+                        <a href="html/supporting.html">
+                            <div class="col-lg-2 col-md-2 col-sm-2 icon2 navlist">注册配套</div>
+                        </a>
+                        <a href="#">
+                            <div class="col-lg-2 col-md-2 col-sm-2 icon3 navlist">连锁配套</div>
+                        </a>
+                        <a href="#">
+                            <div class="col-lg-2 col-md-2 col-sm-2 icon4 navlist">组织结构</div>
+                        </a>
+                        <a href="html/wallet.html">
+                            <div class="col-lg-2 col-md-2 col-sm-2 icon5 navlist">资产管理</div>
+                        </a>
+                        <a href="#">
+                            <div class="col-lg-2 col-md-2 col-sm-2 icon6 navlist">积分管理</div>
+                        </a>
+                        <a href="html/new.html">
+                            <div class="col-lg-2 col-md-2 col-sm-2 icon7 navlist">新闻公告
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-1  col-sm-1 col-lg-1">
+                        <a href="html/login.html">
+                            <span class="loginBtn">登录</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner -->
+            <div class="banner">
+                <div class="bg">
+                    <div class="title container">
+                        <div class="col-md-12">
+                            <div class="titlemove">公告：倡元沃土岁末钜惠公告：倡元沃土岁末钜惠公告：倡元沃土岁末钜惠公告：倡元沃土岁末钜惠公告：倡元沃土岁末钜惠</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bannerCilent container">
+                    <div class="text">深圳市倡元沃土科技发展有限公司是一家集合互联网+金​融+实体产业，打造全新内循环生态链的公司。
+                    </div>
+                    <div class="text1">旗下投资的板块有生态旅游，生态农业，文化传媒以及传统文化.金融投资等领域。</div>
+                    <div class="bannerAnim">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 hover1">
+                            <img src="image/banner1.png" alt="">
+                            <span>生态旅游</span>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 hover1">
+                            <img src="image/banner2.png" alt="">
+                            <span>文化传媒</span>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 hover1">
+                            <img src="image/banner3.png" alt="">
+                            <span>生态农业</span>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 hover1">
+                            <img src="image/banner4.png" alt="">
+                            <span>金融投资</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <!-- content1 -->
+            <div class="platadva">
+                <div class="title">平台优势</div>
+                <div class="border"></div>
+                <div class="container plateadv-con">
+                    <div class="col-lg-6 col-md-6 col-sm-6 hover">
+                        <div>
+                            <img src="image/h1.png" alt="">
+                        </div>
+                        <div>
+                            <h3>安全保障</h3>
+                            <p>我们采用赛门铁克全球统一身份认证增强EV专业级证书，运用 国际上最为领先的传输加密手段以保障用户数据资产及交易安 全，支持所有浏览器和移动设备（高兼容性）。数据安全享175 万美金赔付保障。
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 hover">
+                        <div>
+                            <img src="image/h2.png" alt="">
+                        </div>
+                        <div>
+                            <h3>数据加密</h3>
+                            <p>我们采用赛门铁克全球统一身份认证增强EV专业级证书，运用 国际上最为领先的传输加密手段以保障用户数据资产及交易安 全，支持所有浏览器和移动设备（高兼容性）。数据安全享175 万美金赔付保障。
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 hover">
+                        <div>
+                            <img src="image/h3.png" alt="">
+                        </div>
+                        <div>
+                            <h3>信用证明</h3>
+                            <p>我们采用赛门铁克全球统一身份认证增强EV专业级证书，运用 国际上最为领先的传输加密手段以保障用户数据资产及交易安 全，支持所有浏览器和移动设备（高兼容性）。数据安全享175 万美金赔付保障。
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 hover">
+                        <div>
+                            <img src="image/h4.png" alt="">
+                        </div>
+                        <div>
+                            <h3>用户隐私</h3>
+                            <p>我们采用赛门铁克全球统一身份认证增强EV专业级证书，运用 国际上最为领先的传输加密手段以保障用户数据资产及交易安 全，支持所有浏览器和移动设备（高兼容性）。数据安全享175 万美金赔付保障。
+                            </p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="headline-bg">
+                    <canvas id="waves" class="waves"></canvas>
+                </div>
+                <ul class="platform_advantage_bg">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!-- content2 -->
+            <div class="operaconc">
+                <div class="container">
+                    <div class="title">我们的运作理念</div>
+                    <div class="border"></div>
+                    <div class="text">
+                        我们采用DPoS股份授权证明机制达到快速共识，网络确认速度达3秒以内。建立了账号体系与身份识别，纳入应用配合交易构成“数字城市”生态圈，形成闭环高
+                    </div>
+                    <div class="text"> 速流通体系，虚拟的事，就让虚拟来解决！放大虚拟世界经济流速，间接助力真实世界经济发展，对GDP的持续攀升作出贡献。</div>
+                </div>
+                <div id="ear" class="ear">
+                    <img src="image/ear.png" alt="">
+                    <img src="image/1.png" class="ear_img ear_icon1 ear_icon">
+                    <img src="image/1.png" class="ear_img ear_icon2 ear_icon">
+                    <img src="image/1.png" class="ear_img ear_icon3 ear_icon">
+                    <img src="image/1.png" class="ear_img ear_icon4 ear_icon">
+                    <img src="image/1.png" class="ear_img ear_icon5 ear_icon">
+                    <img src="image/1.png" class="ear_img ear_icon6 ear_icon" id="icon6">
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var w = $(".a").width() / 1920 * 100;
+                if (w < 100) {
+                    $('.ear_icon').width(3 + '%')
+                }
+                if (w < 50) {
+                    $('.ear_icon').width(2.5 + '%')
+                }
+                if (w < 25) {
+                    $('.ear_icon').width(2 + '%')
+                }
+                $('.hover').hover(function () {
+                    $(this).find('img').attr('src', 'image/hover' + ($(this).index() + 1) + '.png');
+                }, function () {
+                    $(this).find('img').attr('src', 'image/h' + ($(this).index() + 1) + '.png');
+                })
+                $(".hover1").hover(function () {
+                    $(this).find('img').attr('src', 'image/b' + ($(this).index() + 1) + '.png');
+                }, function () {
+                    $(this).find('img').attr('src', 'image/banner' + ($(this).index() + 1) + '.png');
+                })
+            });
+            var icon = $('#icon6');
+            var ear_img = $(".ear_img");
+            var len = ear_img.length;
+
+            icon.on('webkitAnimationEnd', icon, function () {
+                for (var j = 0; j < len; j++) {
+                    if (ear_img.eq(j).hasClass("restart" + (j + 1))) {
+                        return (function () {
+                            setTimeout(function () {
+                                for (var i = 0; i < len; i++) {
+                                    ear_img.eq(i).removeClass("restart" + (i + 1))
+                                    ear_img.eq(i).addClass("ear_icon" + (i + 1))
+                                }
+
+                            }, 0)
+                        }())
+                    } else {
+                        return (function () {}(
+                            setTimeout(function () {
+                                for (var i = 0; i < len; i++) {
+                                    ear_img.eq(i).addClass("restart" + (i + 1))
+                                    ear_img.eq(i).removeClass("ear_icon" + (i + 1))
+                                }
+                            }, 0)
+                        ))
+
+                    }
+
+                }
+            })
+        </script>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container footer-con">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon1">
+                    <img src="image/facebook.png" alt="">
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 icon2">
+                    <img src="image/ins.png" alt="">
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 icon3">
+                    <img src="image/tiwtter.png" alt="">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 textby">
+                    © Powered by 2017-2017 企业管理系统
+                </div>
+            </div>
+
+        </div>
+</body>
+<script>
+    window.onload = function () {
+        //配置
+        var config = {
+            vx: 4, //小球x轴速度,正为右，负为左
+            vy: 4, //小球y轴速度
+            height: 2, //小球高宽，其实为正方形，所以不宜太大
+            width: 2,
+            count: 200, //点个数
+            color: "121, 162, 185", //点颜色
+            stroke: "130,255,255", //线条颜色
+            dist: 6000, //点吸附距离
+            e_dist: 20000, //鼠标吸附加速距离
+            max_conn: 4 //点到点最大连接数
+        }
+        //调用
+        CanvasParticle(config);
+
+        $(".navlist").hover(function () {
+            $(this).addClass("actmove")
+        }, function () {
+            $(this).removeClass("actmove")
+        })
+    }
+</script>
+<script src="js/canvas-particle.js"></script>
+
+<script src="js/vendors.js"></script>
+<!-- <script src="js/index.js"></script> -->
+
+<!-- <script>
+    $(window).on('resize', function () {
+        myChart.resize()
+    })
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() + $(window).height() > $('.bannerAnim').offset().top) {
+            !$('.bannerAnim').hasClass('on1') && $('.bannerAnim').addClass('on1')
+        }
+        if ($(this).scrollTop())
+            if ($(this).scrollTop() >= $(".slider").outerHeight()) {
+                if ($(".navcol").hasClass("nav-fixed")) return
+
+                $(".navcol").addClass("nav-fixed")
+                $(this).scrollTop() += $(".bg").height();
+            } else {
+                if (!$(".navcol").hasClass("nav-fixed")) return
+                $(".navcol").removeClass("nav-fixed")
+            }
+    })
+</script> -->
+
+</html>

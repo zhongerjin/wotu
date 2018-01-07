@@ -1,0 +1,387 @@
+body {
+    background: #f4f7f9
+}
+
+.infoslider {
+    height: 600px;
+    overflow: hidden;
+}
+
+.infoslider img {
+    width: 100%;
+    height: 100%
+}
+.country .country1{
+   color:#797979;
+}
+.infoself .content {
+    background: #ffffff;
+    padding: 25px 25px 0;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.infoself .content .info_nav {
+    border-bottom: 1px solid #dcdcdc
+}
+
+.infoself .content .info_nav li:hover {
+    border-bottom: 2px solid #36ceb9;
+    color: #36ceb9
+}
+
+.infoself .content .info_nav li {
+    cursor: pointer;
+    float: left;
+    padding-bottom: 14px;
+    margin-right: 35px;
+}
+
+.infoself .content .info_nav li.active {
+    border-bottom: 2px solid #36ceb9;
+    color: #36ceb9
+}
+
+.infoself .content .info_content {
+    padding: 25px;
+    margin-bottom: 0
+}
+
+.infoself .content .info_content>li {}
+
+.infoself .content .info_content>li .title {
+    font-size: 20px;
+    color: #36ceb9;
+}
+
+.infoself .content .info_content .userinfo .title {
+    float: right;
+}
+
+.infoself .content .info_content .userinfo .title {
+    float: left;
+    padding-left: 36px;
+    background: url('../image/info_user.png') no-repeat;
+}
+
+.infoself .content .info_content .contactinfo .title {
+    padding-left: 36px;
+    background: url('../image/info_audio.png') no-repeat 1px 3px;
+}
+
+.infoself .content .info_content .accountuser .title {
+    padding-left: 36px;
+    background: url('../image/info_iduser.png') no-repeat 1px 5px;
+}
+
+.infoself .content .info_content>li>ul>li.childuser>div:last-child div {
+    color: #797979;
+}
+
+.infoself .content .info_content>li .infolist {
+    padding: 34px 0 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.infoself .content .info_content>li .infolist1 {
+    padding: 34px 0 20px 0;
+    border-bottom: 1px dashed #f3f3f3;
+}
+
+.infoself .content .info_content>li .infolist1 .text {
+    margin-bottom: 20px;
+}
+
+.infoself .content .info_content>li .infolist1:last-child {
+    border-bottom: none;
+}
+
+.infoself .content .info_content>li>ul>li {
+    margin-bottom: 25px;
+    font-size: 15px;
+    float: left;
+    padding-right: 0;
+    padding-left: 0;
+    /* width: 33%; */
+}
+
+.infoself .content #navbar-example>div.container {
+    width: auto;
+}
+
+.leave {
+    background: url('../image/info_leave.png') no-repeat;
+    background-size: 21px;
+    display: inline-block;
+    width: 23px;
+    height: 15px;
+}
+
+.childuser>div:first-child {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.childuser>div:last-child {
+    width: 50%;
+}
+
+.childuser>div>div {
+    display: inline-block;
+    padding: 0 30px 19px 0;
+    margin-right: 50px;
+    background: url('../image/info_leave.png') no-repeat top right;
+    background-size: 21px;
+    color: #797979;
+}
+
+.infoself .content .info_content>li>ul>li.other {
+    width: 100%
+}
+
+.infoself .content .info_content>li>ul>li.other1 {
+    width: 67%
+}
+
+.infoself .content .info_content>li>ul>li.other2 {
+    width: 50%
+}
+
+.infoself .content .info_content>li>ul>li>span:last-child {
+    color: #797979;
+    margin-left: 24px;
+}
+.tabletop{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.PurchaseHistory .tabletop{
+    justify-content: space-between;
+}
+.PurchaseHistory{
+    margin-bottom: 10px;
+    display: none;
+}
+.PurchaseHistory .PurchaseHistory_activation{
+    display: none;
+}
+.tab-group .btn{
+    border: 1px solid #0de0c0;
+    color: #0de0c0;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 4px 15px;
+}
+.tab-group .btn.active{
+    background-color: #0de0c0;
+    color: #fff;
+    box-shadow: none;
+}
+.button-group .btn{
+    padding: 0;
+    border-radius: 0;
+}
+.button-group{
+    height: 32px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #11dcc1;
+}
+.button-group .refresh{
+    background-color: #11dcc1;
+    border: none;
+}
+.button-group .more{
+    display: flex;
+    align-items: center;
+    color: #11dcc1;
+    height: 100%;
+    width: 60px;
+    justify-content: space-evenly;
+}
+.button-group .export{
+    width: 60px;
+    border-left: 1px solid #11dcc1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.LoginLog{
+    display: none;
+}
+.table-responsive thead tr {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom, #0edec0, #22c8c8);
+}
+.table-responsive thead tr th, .table-responsive tbody tr th {
+    text-align: center;
+    vertical-align: middle;
+}
+.table-responsive tbody tr td{
+    vertical-align: middle;
+    text-align: center;
+}
+.table-responsive .tablespanimg {
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/v.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.table-responsive .tablespantext {
+    color: #ffae00;
+    margin-left: -5px;
+}
+.tabledata {
+    text-align: right;
+}
+.table-responsive .morebtn {
+    background-color: #15d7c3;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+.Backfill .table-responsive th{
+    white-space: nowrap;
+}
+@media screen and (min-width: 320px) {
+    .info_content .container {
+        width: auto;
+    }
+    .infoself .content .info_content>li>ul>li {
+        width: 100%
+    }
+    .infoself .content .info_content>li>ul>li>span:last-child {
+        margin-left: 6px;
+    }
+    .infoself .content .info_content>li>ul>li.other {
+        width: 100%
+    }
+    .infoself .content .info_content>li>ul>li.other1 {
+        width: 67%
+    }
+    .infoself .content .info_content>li>ul>li.other2 {
+        width: 50%
+    }
+    .infoself .content .info_content>li>ul>li.address span:first-child {
+        float: left;
+    }
+    .infoself .content .info_content>li>ul>li.address span:last-child {
+        margin-left: 75px;
+        display: block;
+    }
+    .infoslider {
+        height: 315px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .info_content .container {
+        width: auto;
+    }
+    .infoself .content .info_content>li>ul>li>span:last-child {
+        margin-left: 6px;
+    }
+    .infoself .content .info_content>li>ul>li {
+        width: 50%
+    }
+    .infoself .content .info_content>li>ul>li.bankuser {
+        width: 100%
+    }
+    .infoself .content .info_content>li>ul>li.address {
+        width: 100%
+    }
+    .infoself .content .info_content>li>ul>li.address span:first-child {
+        float: none;
+    }
+    .infoself .content .info_content>li>ul>li.address span:last-child {
+        margin-left: 6px;
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .info_content .container {
+        width: auto;
+    }
+    .infoself .content .info_content>li>ul>li>span:last-child {
+        margin-left: 24px;
+    }
+    .infoself .content .info_content>li>ul>li {
+        width: 33.33%;
+    }
+    .infoself .content .info_content>li>ul>li.other {
+        width: none
+    }
+    .infoself .content .info_content>li>ul>li.other1 {
+        width: none
+    }
+    .infoself .content .info_content>li>ul>li.other2 {
+        width: none
+    }
+    .infoself .content .info_content>li>ul>li.bankname,
+    .infoself .content .info_content>li>ul>li.username {
+        width: 50%
+    }
+    .infoself .content .info_content>li>ul>li.bankuser,
+    .infoself .content .info_content>li>ul>li.sexy,
+    .infoself .content .info_content>li>ul>li.realname,
+    .infoself .content .info_content>li>ul>li.country {
+        width: 50%
+    }
+    .infoself .content .info_content>li>ul>li.email {
+        width: 100%;
+    }
+    .infoself .content .info_content>li>ul>li.address {
+        width: 100%
+    }
+    .infoself .content .info_content>li>ul>li.address span:last-child {
+        margin-left: 24px;
+        display: inline;
+    }
+    .infoslider {
+        height: 410px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info_content .container {
+        width: auto;
+    }
+    .infoself .content .info_content>li>ul>li.bankname,
+    .infoself .content .info_content>li>ul>li.username,
+    .infoself .content .info_content>li>ul>li.bankuser {
+        width: 50%
+    }
+    .infoself .content .info_content>li>ul>li.sexy,
+    .infoself .content .info_content>li>ul>li.realname {
+        width: 33%
+    }
+    .infoself .content .info_content>li>ul>li.email {
+        width: 33%;
+    }
+    .infoself .content .info_content>li>ul>li.address {
+        width: 66.67%
+    }
+    .infoslider {
+        height: 505px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .info_content .container {
+        width: auto;
+    }
+    .infoself .content .info_content>li>ul>li.bankname,
+    .infoself .content .info_content>li>ul>li.username,
+    .infoself .content .info_content>li>ul>li.bankuser {
+        width: 33.33%
+    }
+    .infoslider {
+        height: 600px;
+    }
+}
