@@ -1029,7 +1029,184 @@ li {
 .ear img {
     max-width: 100%;
 }
-
+/*zzl 增加*/
+.modal-dialog input,.modal-dialog select {
+    box-shadow:none;
+    border: 1px solid #eaeaea;
+}
+.modal-body{
+    padding:30px;
+}
+.dialogpassword{
+    margin-top:10px;
+    font-size: 39px;
+    box-shadow: none;
+}
+.dialogqiehuan,.dialogqiehuan2,.dialogqiehuan3{
+    margin-top: 20px;
+    text-align: center;
+    width: 100px;
+    height: 39px;
+    font-size: 15px;
+    background:#36ceb9;
+    color:white;
+    border:none;
+    outline:none;
+}
+.default_back{
+    background:silver;
+}
+.success_back{
+    background:#5cb85c;
+}
+.dialogqiehuan:hover{
+    background:#40b5a5 !important;
+}
+.dialogqiehuan:focus{
+    background:#40b5a5 !important;
+}
+.dialogqiehuan:active{
+    background:#40b5a5 !important;
+}
+.dialogqiehuan2:hover{
+    background:#a2a2a2 !important;
+}
+.dialogqiehuan2:focus{
+    background:#a2a2a2 !important;
+}
+.dialogqiehuan2:active{
+    background:#a2a2a2 !important;
+}
+.dialogqiehuan3:hover{
+    background:#449d44 !important;
+}
+.dialogqiehuan3:focus{
+    background:#449d44 !important;
+}
+.dialogqiehuan3:active{
+    background:#449d44 !important;
+}
+.btn_cent{
+    text-align:center;
+}
+.modal-title{
+    text-align:left;
+    color:#36ceb9;
+}
+.login_pass > input{
+    margin-top:10px;
+}
+.nav_table{
+    border-bottom:1px solid #ccc;
+    display:flex;
+}
+.nav_table div{
+    width:50%;
+    height: 40px;
+    line-height: 40px;
+    color:#424242;
+    cursor:pointer;
+}
+.pass_body{
+    padding-top:0;
+}
+.pass_ative{
+    color:#36ceb9 !important;
+    border-bottom:2px solid #36ceb9;
+}
+.close_diy{
+    width: 23px;
+    height: 23px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 23px;
+}
+.close_diy:hover{
+    background-color:#36ceb9;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 23px;
+    opacity: 1;
+    color: white;
+    font-weight: 100;
+    text-shadow: none;
+}
+.title_nav{
+    color:#36ceb9;
+    font-size:15px;
+}
+.left_right_div{
+    display:flex;
+}
+.left_right_div .left_title{
+    width:90px;
+    display: flex;
+    align-items: center;
+}
+.left_right_div input,.left_right_div select{
+    width:300px;
+}
+.mt_20{
+    margin-top:20px;
+}
+.prompt{
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+}
+.radio_diy{
+    border:2px #36ceb9 solid;
+    border-radius:60px;
+    width:17px;
+    height:17px;
+    cursor:pointer;
+}
+.radio_div{
+    display:flex;
+}
+.az_div{
+    display:flex;
+    position: relative;
+    top: 2px;
+}
+.radio_div .content{
+    margin-left:10px;
+    background:transparent;
+    position:relative;
+    top:-2px;
+}
+.twier_radio{
+    margin-left:50px;
+}
+.radio_active{
+    background:#36ceb9;
+}
+.xinxi_bc > div{
+    margin-bottom:20px;
+}
+.padd_20{
+    padding-top:20px;
+}
+.warning{
+    color:red;
+}
+.fwtk a{
+    color:#36ceb9;
+    text-decoration: underline;
+}
+.ml_20{
+    margin-left:20px;
+}
+.yl_password{
+    font-size:36px;
+    border:0 !important;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px auto;
+}
+/*end*/
 @keyframes myanimation {
     0% {
         opacity: 1;

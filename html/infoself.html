@@ -119,11 +119,11 @@
         <div class="content container">
             <ul class="info_nav navcol navcol_b" data-tab-group>
                 <li class="active nav_li" data-tab=information>会员资料</li>
-                <li>切换账户</li>
+                <li data-toggle="modal" data-target="#myModal">切换账户</li>
                 <li class="nav_li" data-tab=PurchaseHistory>购买记录</li>
                 <li class="nav_li" data-tab=Loan>贷款单</li>
                 <li class="nav_li" data-tab=Backfill>回填单</li>
-                <li >更新密码</li>
+                <li data-toggle="modal" data-target="#myModal2">更新密码</li>
                 <li class="nav_li" data-tab=LoginLog>登录日志</li>
                 <div class="clear"></div>
             </ul>
@@ -1111,7 +1111,75 @@
             </div>
 
         </div>
+        </button>
+        <!-- 模态框（Modal）1 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog btn_cent" style="width:300px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            切换账户
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <select class="form-control dialogselect">
+                            <option>请选择要切换的账户</option>
+                        </select>
+                        <input type="password" class="form-control dialogpassword" value="123456">
+                        <button type="button" class="btn btn-primary dialogqiehuan">切&nbsp;换</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <!-- 模态框（Modal）2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent" style="width:300px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        修改密码
+                    </h4>
+                </div>
+                <div class="modal-body pass_body">
+                    <div class="nav_table" data-navtable>
+                        <div class="pass_ative">登录密码</div>
+                        <div>交易密码</div>
+                    </div>
+                    <div class="login_pass" style="display:block">
+                        <input type="text" class="form-control" placeholder="请输入旧登录密码">
+                        <input type="text" class="form-control" placeholder="请输入新登录密码">
+                        <input type="text" class="form-control" placeholder="请输入新登录密码">
+                    </div>
+                    <div class="transaction_pass" style="display:none">
+                        <input type="text" class="form-control" placeholder="请输入旧登录密码">
+                        <input type="text" class="form-control" placeholder="请输入新登录密码">
+                        <input type="text" class="form-control" placeholder="请输入新登录密码">
+                    </div>
+                    <button type="button" class="btn btn-primary dialogqiehuan">确&nbsp;定</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+    </div>
 </body>
+<script>
+    $("[data-navtable] div").on('click', function () {
+        $("[data-navtable] div").removeClass('pass_ative');
+        $(this).addClass("pass_ative");
+    });
+
+</script>
 <script>
     window.onload = function () {
         $(".navlist").hover(function () {
