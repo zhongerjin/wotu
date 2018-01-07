@@ -429,7 +429,7 @@
                             <div class="left_right_div mt_20">
                                 <div class="az_div">
                                     <div class="radio_div">
-                                        <div class="radio_diy"></div>
+                                        <div class="radio_diy" id="yd"></div>
                                         <div class="content">我已阅读并同意&nbsp;
                                             <a href="#">服务条款</a>
                                         </div>
@@ -539,7 +539,7 @@
                         <div class="fwtk">
                             <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
                             <div class="left_right_div mt_20">
-                                <div class="az_div">
+                                <div class="az_div yd">
                                     <div class="radio_div">
                                         <div class="content">我已阅读并同意&nbsp;
                                             <a href="#">服务条款</a>
@@ -561,6 +561,10 @@
 </body>
 <script>
     $(".radio_diy").on('click', function () {
+        if ($(this).attr("id") == "yd") {
+            $(this).toggleClass("radio_active");
+            return;
+        }
         $(this).parent().parent().find(".radio_diy").removeClass("radio_active");
         $(this).addClass("radio_active");
     })
