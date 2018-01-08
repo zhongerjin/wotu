@@ -1144,7 +1144,8 @@ li {
     align-items: center;
 }
 .left_right_div input,.left_right_div select{
-    width:300px;
+    /*width:300px;*/
+    width: 81%;
 }
 .mt_20{
     margin-top:20px;

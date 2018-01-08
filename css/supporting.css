@@ -59,6 +59,9 @@
         height: 317px;
         padding: 0;
     }
+    .modal-dialog.btn_cent{
+        width: 620px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
