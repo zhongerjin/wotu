@@ -207,6 +207,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+}
+.export.btn .ul{
+    left: 0;
+}
+.export.btn ul li {
+    text-align: center;
 }
 .LoginLog, .Loan, .Backfill{
     display: none;
@@ -247,6 +254,10 @@ body {
 }
 .Backfill .table-responsive th{
     white-space: nowrap;
+}
+.modal#myModal .modal-dialog, .modal#myModal2 .modal-dialog{
+    position: relative;
+    top: calc(50% / 2);
 }
 @media screen and (min-width: 320px) {
     .info_content .container {
