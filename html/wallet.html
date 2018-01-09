@@ -110,7 +110,9 @@
                                 <span></span>
                             </div>
                             <div class="down_list displ_none">
-                                <div><a style="color:black" href="infoself.html">个人中心</a></div>
+                                <div>
+                                    <a style="color:black" href="infoself.html">个人中心</a>
+                                </div>
                                 <div>注销</div>
                             </div>
                         </div>
@@ -138,7 +140,7 @@
                         <h3>资产管理</h3>
                         <p>余额:2524.99USD</p>
                         <div class="btnwarp">
-                            <div class="btn">充值</div>
+                            <div class="btn" data-toggle="modal" data-target="#myModal">充值</div>
                             <div class="btn">提现</div>
                             <div class="btn">提现记录</div>
                         </div>
@@ -854,6 +856,57 @@
         </div>
 
     </div>
+    <!-- 模态框（Modal）4 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent" style="overflow: auto;max-width:500px;position:relative;top:calc(40% / 2)">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        在线充值
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">充值金额</div>
+                            <input type="test" class="form-control" placeholder="请输入充值金额">
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">支付币种</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择充值币种">请选择充值币种</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">当前汇率</div>
+                            <input type="test" class="form-control" placeholder="">
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">支付金额</div>
+                            <input type="test" class="form-control" placeholder="">
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">充值地址</div>
+                            <input type="test" class="form-control" placeholder="">
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">上传充值凭证</div>
+                            <div class="cz_pz" onclick="file_click()">
+                                <div class="add">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back">确&nbsp;定</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
 </body>
 <script>
     window.onload = function () {
@@ -899,6 +952,15 @@
             });
         }
         $("."+toggle_class).show();
+    }
+    function file_click(){
+        if($("[data-file]").length){
+            $("[data-file]").click();
+        }
+        else{
+            var file = $("<input type='file' data-file style='display:none'>").appendTo(document.body);
+            $(file).click();
+        }
     }
 </script>
 
