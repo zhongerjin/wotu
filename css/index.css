@@ -1029,7 +1029,7 @@ li {
 .ear img {
     max-width: 100%;
 }
-/*zzl 增加*/
+/*zzl å¢žåŠ */
 .modal-dialog input,.modal-dialog select {
     box-shadow:none;
     border: 1px solid #eaeaea;
@@ -1146,6 +1146,7 @@ li {
 .left_right_div input,.left_right_div select{
     /*width:300px;*/
     width: 81%;
+    flex: 2;
 }
 .mt_20{
     margin-top:20px;
