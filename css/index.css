@@ -940,6 +940,12 @@ li {
     }
 }
 
+@media screen and (max-width: 768px){
+    .prompt{
+        flex: 1;
+    }
+}
+
 .top .nav .icon1:hover {
     background-image: url('../image/icon1-1.png');
 }
