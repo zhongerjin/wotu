@@ -111,7 +111,9 @@
                                 <span class=""></span>
                             </div>
                             <div class="down_list displ_none">
-                                <div><a style="color:black" href="infoself.html">个人中心</a></div>
+                                <div>
+                                    <a style="color:black" href="infoself.html">个人中心</a>
+                                </div>
                                 <div>注销</div>
                             </div>
                         </div>
@@ -318,7 +320,7 @@
                                     <td>35</td>
                                     <td>35</td>
                                     <td>
-                                        <a href="login.html">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal3">
                                             <div class="logbtn btn">升级钱包</div>
                                         </a>
                                     </td>
@@ -336,7 +338,7 @@
                                     <td>35</td>
                                     <td>35</td>
                                     <td>
-                                        <a href="login.html">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal3">
                                             <div class="logbtn btn">升级钱包</div>
                                         </a>
                                     </td>
@@ -354,8 +356,8 @@
                                     <td>35</td>
                                     <td>35</td>
                                     <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal3">
+                                            <div class="logbtn btn">升级钱包</div>
                                         </a>
                                     </td>
 
@@ -372,7 +374,7 @@
                                     <td>35</td>
                                     <td>35</td>
                                     <td>
-                                        <a href="login.html">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal3">
                                             <div class="logbtn btn">升级钱包</div>
                                         </a>
                                     </td>
@@ -390,7 +392,7 @@
                                     <td>35</td>
                                     <td>35</td>
                                     <td>
-                                        <a href="login.html">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal3">
                                             <div class="logbtn btn">升级钱包</div>
                                         </a>
                                     </td>
@@ -408,7 +410,7 @@
                                     <td>35</td>
                                     <td>35</td>
                                     <td>
-                                        <a href="login.html">
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal3">
                                             <div class="logbtn btn">升级钱包</div>
                                         </a>
                                     </td>
@@ -444,12 +446,12 @@
         </div>
         <!-- 模态框（Modal）1 -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog btn_cent" style="height: 800px;overflow: auto;">
+            <div class="modal-dialog btn_cent" style="height: 800px;max-width:600px;overflow: auto;">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
+                            &times;
+                        </button>
                         <h4 class="modal-title" id="myModalLabel">
                             注册新配套
                         </h4>
@@ -584,12 +586,12 @@
         <!-- /.modal -->
         <!-- 模态框（Modal）2 -->
         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog btn_cent" style="height: 800px;overflow: auto;">
+            <div class="modal-dialog btn_cent" style="height: 800px;max-width:600px;overflow: auto;">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
+                            &times;
+                        </button>
                         <h4 class="modal-title" id="myModalLabel">
                             注册新配套预览
                         </h4>
@@ -693,6 +695,151 @@
             <!-- /.modal-content -->
         </div>
         <!-- /.modal -->
+        <!-- 模态框（Modal）3 -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog btn_cent " style="height: 800px;max-width:600px;overflow: auto;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            升级配套
+                        </h4>
+                    </div>
+                    <div class="modal-body xinxi_bc padd_20">
+                        <div class="zhxx">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;基本信息&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">子账号</div>
+                                <select name="" class="form-control" id="">
+                                    <option value="请选择要激活的会员">请选择要激活的会员</option>
+                                </select>
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">升级配套</div>
+                                <select name="" class="form-control" id="">
+                                    <option value="V1-100.00 USD">V1-100.00 USD</option>
+                                </select>
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">升级金额</div>
+                                <input type="password" class="form-control" placeholder="请输入登录密码">
+                            </div>
+                        </div>
+                        <div class="zffs">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">支付类型</div>
+                                <select name="" class="form-control" id="">
+                                    <option value="正常">正常</option>
+                                </select>
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">支付钱包</div>
+                                <select name="" class="form-control" id="">
+                                    <option value="请选择支付钱包">请选择支付钱包</option>
+                                </select>
+                                <div class="prompt warning">连锁钱包余额：38.43</div>
+                            </div>
+                        </div>
+                        <div class="jymm">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">交易密码</div>
+                                <input type="password" class="form-control" placeholder="请输入交易密码">
+                            </div>
+                        </div>
+                        <div class="fwtk">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="az_div">
+                                    <div class="radio_div">
+                                        <div class="radio_diy" id="yd"></div>
+                                        <div class="content">我已阅读并同意&nbsp;
+                                            <a href="#">服务条款</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_div">
+                            <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep2()">预&nbsp;览</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+        <!-- 模态框（Modal）4 -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog btn_cent" style="height: 800px;overflow: auto;max-width:600px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            升级配套预览
+                        </h4>
+                    </div>
+                    <div class="modal-body xinxi_bc padd_20">
+                        <div class="zhxx">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;基本信息&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">子账号</div>
+                                <div>118257.02</div>
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">升级配套</div>
+                                <div>V1-100.00 USD</div>
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">升级金额</div>
+                                <div>100.00 USD</div>
+                            </div>
+                        </div>
+                        <div class="zffs">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">支付类型</div>
+                                <div>正常</div>
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">支付钱包</div>
+                                <div>连锁钱包</div>
+                            </div>
+                        </div>
+                        <div class="jymm">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">交易密码</div>
+                                <input type="password" class="form-control yl_password" value="123456">
+                            </div>
+                        </div>
+                        <div class="fwtk">
+                            <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                            <div class="left_right_div mt_20">
+                                <div class="az_div yd">
+                                    <div class="radio_div">
+                                        <div class="content">我已阅读并同意&nbsp;
+                                            <a href="#">服务条款</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_div">
+                            <button type="button" class="btn btn-primary dialogqiehuan3 success_back">修&nbsp;改</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
 </body>
 <script>
     $(".radio_diy").on('click', function () {
@@ -713,26 +860,30 @@
             $(this).removeClass("actmove")
         })
     }
-    $(".tabletop1 .title").on("click", function(e){
+    $(".tabletop1 .title").on("click", function (e) {
         tab_toggle(this);
     });
-    $(".nav_tab").on("click", function(e){
+    $(".nav_tab").on("click", function (e) {
         tab_toggle(this);
     })
-    var tab_toggle = function(that){
+    var tab_toggle = function (that) {
         var toggle_class = $(that).attr("data-tab");
-        $("[data-tab-group]").children().each(function(index, ele){
+        $("[data-tab-group]").children().each(function (index, ele) {
             $(ele).removeClass("act");
         });
         $(that).addClass("act");
-        $(that).parents().find(".table-responsive").each(function(index, ele){
+        $(that).parents().find(".table-responsive").each(function (index, ele) {
             $(ele).hide();
         });
-        $("."+toggle_class).show();
+        $("." + toggle_class).show();
     }
-    var open_Prep = function(){
+    var open_Prep = function () {
         $("#myModal").modal('hide');
         $("#myModal2").modal('show');
+    }
+    var open_Prep2 = function(){
+        $("#myModal3").modal('hide');
+        $("#myModal4").modal('show');
     }
 </script>
 
