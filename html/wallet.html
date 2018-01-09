@@ -216,137 +216,598 @@
 
 
                 <div class="tabletop clear">
-                    <div class="tabletop1 clear">
-                        <div class="col-lg-1 col-md-1 col-xs-1 title act">钱包</div>
-                        <div class="col-lg-1 col-md-1 col-xs-1 title">充值</div>
+                    <div class="tabletop1 clear" data-tab-group>
+                        <div class="col-lg-1 col-md-1 col-xs-1 title nav_li active" data-tab=Wallet>钱包</div>
+                        <div class="col-lg-1 col-md-1 col-xs-1 title nav_li" data-tab=recharge>充值</div>
                         <div class="col-lg-1 col-md-1 col-xs-1 title">提现</div>
                         <div class="col-lg-1 col-md-1 col-xs-1 title">转账</div>
                         <div class="col-lg-1 col-md-1 col-xs-1 title">奖金</div>
                     </div>
-                    <div class="container tabletop2">
-                        <div class="col-lg-1 col-md-1 btn act">现金钱包</div>
-                        <div class="col-lg-1 col-md-1 btn">注册记录</div>
-                        <div class="col-lg-1 col-md-1 btn">消费钱包</div>
-                        <div class="col-lg-1 col-md-1 btn">连锁钱包</div>
-                    </div>
-                    <div style="height: 10px;background-color: #23c6c8;display: block;min-width: 100%;"></div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>金额</th>
-                                    <th>结算前</th>
-                                    <th>结算后</th>
-                                    <th>类型</th>
-                                    <th>交易来源</th>
-                                    <th>备注</th>
-                                    <th>时间</th>
-                                    <th>操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>60</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>收入</td>
-                                    <td>管理奖</td>
-                                    <td>管理奖结算获得</td>
-                                    <td>2017-09-09 09:09:09</td>
-                                    <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
-                                        </a>
-                                    </td>
+                    <div data-info-content>
+                        <div class="Wallet index_content">
+                            <div class="tabletop2">
+                                <div class="tab-group" data-tab-chil>
+                                    <div class="btn active" data-tab=CashWallet>现金钱包</div>
+                                    <div class="btn" data-tab=RegisterLog>注册记录</div>
+                                    <div class="btn" data-tab=ConsumptionWallet>消费钱包</div>
+                                    <div class="btn" data-tab=ChainWallet>连锁钱包</div>
+                                </div>
+                                <div class="button-group">
+                                    <div class="refresh btn">
+                                        <img src="../image/refresh.png" alt="">
+                                    </div>
+                                    <div class="more btn">
+                                        <img src="../image/arrow.png" alt="">
+                                        全部
+                                    </div>
+                                    <div class="export btn">
+                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="../image/export.png" alt="">
+                                            <img src="../image/export_down.png" alt="">
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li>导出当前页数据</li>
+                                            <li><a href="javascript:void(0)">HTML</a></li>
+                                            <li><a href="javascript:void(0)">CSV</a></li>
+                                            <li><a href="javascript:void(0)">文本</a></li>
+                                            <li><a href="javascript:void(0)">Excel</a></li>
+                                            <li><a href="javascript:void(0)">PDF</a></li>
+                                            <li><a href="javascript:void(0)">JSON</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div style="height: 10px;background-color: #23c6c8;display: block;min-width: 100%;"></div>-->
+                            <div class="CashWallet table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>金额</th>
+                                            <th>结算前</th>
+                                            <th>结算后</th>
+                                            <th>类型</th>
+                                            <th>交易来源</th>
+                                            <th>备注</th>
+                                            <th>时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>60</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖</td>
+                                            <td>管理奖结算获得</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="login.html">
+                                                    <div class="logbtn btn">登录</div>
+                                                </a>
+                                            </td>
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>60</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>收入</td>
-                                    <td>管理奖</td>
-                                    <td>管理奖结算获得</td>
-                                    <td>2017-09-09 09:09:09</td>
-                                    <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
-                                        </a>
-                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>60</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖</td>
+                                            <td>管理奖结算获得</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="login.html">
+                                                    <div class="logbtn btn">登录</div>
+                                                </a>
+                                            </td>
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>60</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>收入</td>
-                                    <td>管理奖</td>
-                                    <td>管理奖结算获得</td>
-                                    <td>2017-09-09 09:09:09</td>
-                                    <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
-                                        </a>
-                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>60</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖</td>
+                                            <td>管理奖结算获得</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="login.html">
+                                                    <div class="logbtn btn">登录</div>
+                                                </a>
+                                            </td>
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>60</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>收入</td>
-                                    <td>管理奖</td>
-                                    <td>管理奖结算获得</td>
-                                    <td>2017-09-09 09:09:09</td>
-                                    <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
-                                        </a>
-                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>60</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖</td>
+                                            <td>管理奖结算获得</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="login.html">
+                                                    <div class="logbtn btn">登录</div>
+                                                </a>
+                                            </td>
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>60</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>收入</td>
-                                    <td>管理奖</td>
-                                    <td>管理奖结算获得</td>
-                                    <td>2017-09-09 09:09:09</td>
-                                    <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
-                                        </a>
-                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>60</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖</td>
+                                            <td>管理奖结算获得</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="login.html">
+                                                    <div class="logbtn btn">登录</div>
+                                                </a>
+                                            </td>
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>60</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>收入</td>
-                                    <td>管理奖</td>
-                                    <td>管理奖结算获得</td>
-                                    <td>2017-09-09 09:09:09</td>
-                                    <td>
-                                        <a href="login.html">
-                                            <div class="logbtn btn">登录</div>
-                                        </a>
-                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>60</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖</td>
+                                            <td>管理奖结算获得</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="login.html">
+                                                    <div class="logbtn btn">登录</div>
+                                                </a>
+                                            </td>
 
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="tabledata">
-                            <span>1-6条</span>
-                            <span>共6条数据</span>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="RegisterLog table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>金额</th>
+                                            <th>小计</th>
+                                            <th>类型</th>
+                                            <th>备注</th>
+                                            <th>时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="negative">
+                                            <th scope="row">1</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>支出</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="negative">
+                                            <th scope="row">2</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>支出</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>-60.001</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="ConsumptionWallet table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>金额</th>
+                                            <th>小计</th>
+                                            <th>类型</th>
+                                            <th>备注</th>
+                                            <th>时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="negative">
+                                            <th scope="row">1</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>支出</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="negative">
+                                            <th scope="row">2</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>支出</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>-60.002</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="ChainWallet table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>金额</th>
+                                            <th>小计</th>
+                                            <th>类型</th>
+                                            <th>备注</th>
+                                            <th>时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="negative">
+                                            <th scope="row">1</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>支出</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="negative">
+                                            <th scope="row">2</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>支出</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>-60.004</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>-60.00</td>
+                                            <td>100</td>
+                                            <td>收入</td>
+                                            <td>管理奖结算获得0.27USD</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recharge index_content">
+                            <div class="tabletop2">
+                                <div class="button-group">
+                                    <div class="refresh btn">
+                                        <img src="../image/refresh.png" alt="">
+                                    </div>
+                                    <div class="more btn">
+                                        <img src="../image/arrow.png" alt="">
+                                        全部
+                                    </div>
+                                    <div class="export btn">
+                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="../image/export.png" alt="">
+                                            <img src="../image/export_down.png" alt="">
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li>导出当前页数据</li>
+                                            <li><a href="javascript:void(0)">HTML</a></li>
+                                            <li><a href="javascript:void(0)">CSV</a></li>
+                                            <li><a href="javascript:void(0)">文本</a></li>
+                                            <li><a href="javascript:void(0)">Excel</a></li>
+                                            <li><a href="javascript:void(0)">PDF</a></li>
+                                            <li><a href="javascript:void(0)">JSON</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>充值金额</th>
+                                            <th>充值状态</th>
+                                            <th>当前汇率</th>
+                                            <th>支付币种</th>
+                                            <th>支付金额</th>
+                                            <th>时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>60.00</td>
+                                            <td>成功</td>
+                                            <td>1.01</td>
+                                            <td>USD</td>
+                                            <td>60.00</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>60.00</td>
+                                            <td>成功</td>
+                                            <td>1.01</td>
+                                            <td>USD</td>
+                                            <td>60.00</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>60.00</td>
+                                            <td>成功</td>
+                                            <td>1.01</td>
+                                            <td>USD</td>
+                                            <td>60.00</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>60.00</td>
+                                            <td>成功</td>
+                                            <td>1.01</td>
+                                            <td>USD</td>
+                                            <td>60.00</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>60.00</td>
+                                            <td>成功</td>
+                                            <td>1.01</td>
+                                            <td>USD</td>
+                                            <td>60.00</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>60.00</td>
+                                            <td>成功</td>
+                                            <td>1.01</td>
+                                            <td>USD</td>
+                                            <td>60.00</td>
+                                            <td>2017-09-09 09:09:09</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,17 +862,43 @@
         }, function () {
             $(this).removeClass("actmove")
         });
-        var e = $(".tabletop1 .title"), len = e.length;
-        for (var i = 0; i < len; i++) {
-            (function (i) {
-                $(e[i]).bind('click', function (event) {
-                    var event = event.target;
-                    $(e).removeClass("act");
-                    $(event).addClass("act");
-                });
-            })(i);
-        }
+        // var e = $(".tabletop1 .title"), len = e.length;
+        // for (var i = 0; i < len; i++) {
+        //     (function (i) {
+        //         $(e[i]).bind('click', function (event) {
+        //             var event = event.target;
+        //             $(e).removeClass("act");
+        //             $(event).addClass("act");
+        //         });
+        //     })(i);
+        // }
 
+    }
+
+    $(".nav_li").on("click", function(e){
+        tab_toggle(this, undefined, "index_content");
+    })
+
+    $("[data-tab-chil]").children().on("click", function(e){
+        tab_toggle(this, "data-tab-chil");
+    });
+
+    var tab_toggle = function(that, type = "data-tab-group" , _element = "table-responsive"){
+        var toggle_class = $(that).attr("data-tab");
+        $(`[${type}]`).children().each(function(index, ele){
+            $(ele).removeClass("active");
+        });
+        $(that).addClass("active");
+        if(_element === "table-responsive" && type === "data-tab-chil"){
+            $(that).parents().find(".Wallet").find("."+_element).each(function(index, ele){
+                $(ele).hide();
+            })
+        }else{
+            $(that).parents().find("."+_element).each(function(index, ele){
+                $(ele).hide();
+            });
+        }
+        $("."+toggle_class).show();
     }
 </script>
 

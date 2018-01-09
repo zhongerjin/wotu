@@ -168,8 +168,7 @@ a {
     border-bottom: 1px solid #dcdcdc;
 }
 
-.content .contenttable .tabletop .tabletop1,
-.content .contenttable .tabletop .tabletop2 {
+.content .contenttable .tabletop .tabletop1{
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -177,9 +176,7 @@ a {
 .content .contenttable:before,
 .content .contenttable:after,
 .content .contenttable .tabletop .tabletop1:before,
-.content .contenttable .tabletop .tabletop1:after,
-.content .contenttable .tabletop .tabletop2:before,
-.content .contenttable .tabletop .tabletop2:after {
+.content .contenttable .tabletop .tabletop1:after{
     display: table;
     content: " ";
 }
@@ -195,24 +192,24 @@ a {
     color: #0de0c0 !important;
 }
 
-.content .contenttable .tabletop .tabletop1 .title.act {
+.content .contenttable .tabletop .tabletop1 .title.active {
     border-bottom: 2px solid #0de0c0;
     color: #0de0c0 !important;
 }
 
-.content .contenttable .tabletop .tabletop2 .btn {
+.content .contenttable .tabletop .tabletop2 .tab-group .btn {
     border: 1px solid #32cdb7;
     border-radius: 25px;
     color: #32cdb7;
     margin: 0 15px;
 }
 
-.content .contenttable .tabletop .tabletop2 .btn:hover {
+.content .contenttable .tabletop .tabletop2 .tab-group .btn:hover {
     background: #32cdb7;
     color: #fff;
 }
 
-.content .contenttable .tabletop .tabletop2 .btn.act {
+.content .contenttable .tabletop .tabletop2 .tab-group .btn.active {
     background: #32cdb7;
     color: #fff;
 }
@@ -284,7 +281,83 @@ a {
 .footer .big {
     font-size: 36px;
 }
-
+.tabletop2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.recharge .tabletop2{
+    justify-content: flex-end;
+}
+.tab-group .btn{
+    border: 1px solid #0de0c0;
+    color: #0de0c0;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 4px 15px;
+}
+.tab-group .btn.active{
+    background-color: #0de0c0;
+    color: #fff;
+    box-shadow: none;
+}
+.button-group .btn{
+    padding: 0;
+    border-radius: 0;
+}
+.button-group{
+    height: 32px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #11dcc1;
+}
+.button-group .refresh{
+    background-color: #11dcc1;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.button-group .more{
+    display: flex;
+    align-items: center;
+    color: #11dcc1;
+    height: 100%;
+    width: 60px;
+    justify-content: space-evenly;
+}
+.button-group .export{
+    width: 60px;
+    border-left: 1px solid #11dcc1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.export.btn ul{
+    right: 0;
+    left: -170%;
+}
+.export.btn ul li {
+    text-align: center;
+}
+.table-responsive thead tr {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom, #0edec0, #22c8c8);
+}
+.table-responsive thead tr th{
+    color: #fff;
+}
+.table-bordered tr.negative{
+    color: #e80000;
+}
+.wallet .RegisterLog, 
+.wallet .ConsumptionWallet,
+.wallet .ChainWallet,
+.recharge{
+    display: none;
+}
 @media screen and (min-width: 320px) {
     /*.top .nav, .bannerCilent, .plateadv-con, .footer-con, .banner .title, .operaconc .container, .navcol_s #navbar-example .container {*/
     /*width: 285px;*/
@@ -343,9 +416,9 @@ a {
         display: none;
     }
 
-    .content .contenttable .tabletop .tabletop2 .btn {
+    .content .contenttable .tabletop .tabletop2 .tab-group .btn {
         margin: 10px 5px;
-        display: block;
+        display: inline-block;
     }
 
     .content .contenttable .tabletop .tabledata {
@@ -428,9 +501,9 @@ a {
         display: block;
     }
 
-    .content .contenttable .tabletop .tabletop2 .btn {
+    .content .contenttable .tabletop .tabletop2 .tab-group .btn {
         display: inline-block;
-        margin: 0 15px;
+        margin: 0 15px 0 0;
     }
 
     .content .contenttable .tabletop .tabledata {
@@ -485,9 +558,9 @@ a {
         display: block;
     }
 
-    .content .contenttable .tabletop .tabletop2 .btn {
+    /*.content .contenttable .tabletop .tabletop2 .btn {
         margin: 0 15px;
-    }
+    }*/
 
     .content .contenttable .tabletop .tabledata {
         padding-top: 0;
@@ -575,9 +648,9 @@ a {
         display: block;
     }
 
-    .content .contenttable .tabletop .tabletop2 .btn {
+    /*.content .contenttable .tabletop .tabletop2 .btn {
         margin: 0 15px;
-    }
+    }*/
 
     .content .contenttable .tabletop .tabledata {
         padding-top: 0;

@@ -158,7 +158,7 @@
                 </div>
                 <div class="tabletop clear">
                     <div class="tabletop1 clear" data-tab-group>
-                        <div class="col-lg-2 col-md-2 col-xs-2 title act" data-tab=register>注册新配套</div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 title active" data-tab=register>注册新配套</div>
                         <div class="col-lg-2 col-md-2 col-xs-2 title" data-tab=upgrade>升级配套</div>
                     </div>
                     <div class="table-responsive register">
@@ -722,9 +722,9 @@
     var tab_toggle = function(that){
         var toggle_class = $(that).attr("data-tab");
         $("[data-tab-group]").children().each(function(index, ele){
-            $(ele).removeClass("act");
+            $(ele).removeClass("active");
         });
-        $(that).addClass("act");
+        $(that).addClass("active");
         $(that).parents().find(".table-responsive").each(function(index, ele){
             $(ele).hide();
         });

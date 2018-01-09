@@ -209,8 +209,9 @@ body {
     justify-content: space-evenly;
     position: relative;
 }
-.export.btn .ul{
-    left: 0;
+.export.btn ul{
+    right: 0;
+    left: -170%;
 }
 .export.btn ul li {
     text-align: center;
