@@ -26,6 +26,14 @@
 .table-responsive.upgrade th{
     white-space: nowrap;
 }
+.modal-dialog.btn_cent{
+    height: 800px;
+    max-width:600px;
+    overflow: auto;
+}
+.pad_bot{
+    padding-bottom: 70px;
+}
 @media screen and (min-width: 320px) {
     .nav {
         position: static;

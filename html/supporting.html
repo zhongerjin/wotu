@@ -505,10 +505,9 @@
                         </div>
                         <div class="grzl">
                             <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
-                            <div class="left_right_div mt_20">
+                            <div class="left_right_div mt_20 country">
                                 <div class="left_title">所在国家</div>
-                                <select name="" class="form-control" id="">
-                                </select>
+                                <select id="country" class="form-control dept_select"></select>
                             </div>
                             <div class="left_right_div mt_20">
                                 <div class="left_title">真实姓名</div>
@@ -575,7 +574,7 @@
                             </div>
                         </div>
                         <div class="btn_div">
-                            <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep()">预&nbsp;览</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep('myModal', 'myModal2')">预&nbsp;览</button>
                             <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                         </div>
                     </div>
@@ -586,7 +585,7 @@
         <!-- /.modal -->
         <!-- 模态框（Modal）2 -->
         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog btn_cent" style="height: 800px;max-width:600px;overflow: auto;">
+            <div class="modal-dialog btn_cent">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -686,7 +685,7 @@
                             </div>
                         </div>
                         <div class="btn_div">
-                            <button type="button" class="btn btn-primary dialogqiehuan3 success_back">修&nbsp;改</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('myModal2', 'myModal')">修&nbsp;改</button>
                             <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
                         </div>
                     </div>
@@ -764,7 +763,7 @@
                             </div>
                         </div>
                         <div class="btn_div">
-                            <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep2()">预&nbsp;览</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep2('myModal3','myModal4')">预&nbsp;览</button>
                             <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                         </div>
                     </div>
@@ -832,7 +831,7 @@
                             </div>
                         </div>
                         <div class="btn_div">
-                            <button type="button" class="btn btn-primary dialogqiehuan3 success_back">修&nbsp;改</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep2('myModal4', 'myModal3')">修&nbsp;改</button>
                             <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
                         </div>
                     </div>
@@ -841,6 +840,8 @@
             <!-- /.modal-content -->
         </div>
 </body>
+<script type="text/javascript" src="../js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="../js/area_chs.js"></script>
 <script>
     $(".radio_diy").on('click', function () {
         if ($(this).attr("id") == "yd") {
@@ -860,6 +861,25 @@
             $(this).removeClass("actmove")
         })
     }
+    var areaObj = [];
+    function initLocation(e) {
+        var a = 0;
+        for (var m in e) {
+            areaObj[a] = e[m];
+            var b = 0;
+            for (var n in e[m]) {
+                areaObj[a][b++] = e[m][n];
+            }
+            a++;
+        }
+    }
+    var country = '';
+    for (var a = 0; a <= _areaList.length - 1; a++) {
+        var objContry = _areaList[a];
+        country += '<option value="' + objContry + '" a="' + (a + 1) + '">' + objContry + '</option>';
+    }
+    $("#country").html(country);
+    
     $(".tabletop1 .title").on("click", function (e) {
         tab_toggle(this);
     });
@@ -877,13 +897,15 @@
         });
         $("." + toggle_class).show();
     }
-    var open_Prep = function () {
-        $("#myModal").modal('hide');
-        $("#myModal2").modal('show');
+    var open_Prep = function (modal_hide, modal_show) {
+        $("#"+modal_hide).modal('hide');
+        $("#"+modal_show).modal('show');
+        $("#"+modal_hide).find(".btn_cent").removeClass("pad_bot");
+        $("#"+modal_show).find(".btn_cent").addClass("pad_bot");
     }
-    var open_Prep2 = function(){
-        $("#myModal3").modal('hide');
-        $("#myModal4").modal('show');
+    var open_Prep2 = function(modal_hide, modal_show){
+        $("#"+modal_hide).modal('hide');
+        $("#"+modal_show).modal('show');
     }
 </script>
 
