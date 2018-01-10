@@ -50,13 +50,13 @@
                                     <a href="../index.html">首页</a>
                                 </li>
                                 <li>
-                                    <a href="#">注册配套</a>
+                                    <a href="supporting.html">注册配套</a>
                                 </li>
                                 <li>
                                     <a href="#">连锁配套</a>
                                 </li>
                                 <li>
-                                    <a href="#">组织结构</a>
+                                    <a href="zzjg.html">组织结构</a>
                                 </li>
                                 <li>
                                     <a href="wallet.html">资产管理</a>
@@ -78,13 +78,13 @@
                         <div class="col-lg-1 col-md-1  col-sm-1 icon1 navlist">首页</div>
                     </a>
                     <div class="container col-sm-10 col-md-10 col-lg-10">
-                        <a href="#">
+                        <a href="supporting.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon2 act navlist">注册配套</div>
                         </a>
                         <a href="#">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon3 navlist">连锁配套</div>
                         </a>
-                        <a href="#">
+                        <a href="zzjg.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon4 navlist">组织结构</div>
                         </a>
                         <a href="wallet.html">
@@ -879,7 +879,7 @@
         country += '<option value="' + objContry + '" a="' + (a + 1) + '">' + objContry + '</option>';
     }
     $("#country").html(country);
-    
+
     $(".tabletop1 .title").on("click", function (e) {
         tab_toggle(this);
     });
@@ -888,24 +888,24 @@
     })
     var tab_toggle = function (that) {
         var toggle_class = $(that).attr("data-tab");
-        $("[data-tab-group]").children().each(function(index, ele){
+        $("[data-tab-group]").children().each(function (index, ele) {
             $(ele).removeClass("active");
         });
         $(that).addClass("active");
-        $(that).parents().find(".table-responsive").each(function(index, ele){
+        $(that).parents().find(".table-responsive").each(function (index, ele) {
             $(ele).hide();
         });
         $("." + toggle_class).show();
     }
     var open_Prep = function (modal_hide, modal_show) {
-        $("#"+modal_hide).modal('hide');
-        $("#"+modal_show).modal('show');
-        $("#"+modal_hide).find(".btn_cent").removeClass("pad_bot");
-        $("#"+modal_show).find(".btn_cent").addClass("pad_bot");
+        $("#" + modal_hide).modal('hide');
+        $("#" + modal_show).modal('show');
+        $("#" + modal_hide).find(".btn_cent").removeClass("pad_bot");
+        $("#" + modal_show).find(".btn_cent").addClass("pad_bot");
     }
-    var open_Prep2 = function(modal_hide, modal_show){
-        $("#"+modal_hide).modal('hide');
-        $("#"+modal_show).modal('show');
+    var open_Prep2 = function (modal_hide, modal_show) {
+        $("#" + modal_hide).modal('hide');
+        $("#" + modal_show).modal('show');
     }
 </script>
 

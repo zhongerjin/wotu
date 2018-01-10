@@ -1268,6 +1268,9 @@ li {
     font-weight:  100;
     font-family: "宋体";
 }
+.pad_0{
+    padding: 0;
+}
 /*end*/
 @keyframes myanimation {
     0% {
