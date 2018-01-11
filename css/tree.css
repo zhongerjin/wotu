@@ -47,6 +47,7 @@
     padding: 6px 14px !important;
     text-decoration:none;
     display:  inline-block;
+    color: #36ceb9;
 }
 .tree li.parent_li>span {
     cursor:pointer
@@ -78,6 +79,7 @@
 }
 .bg_color span{
     padding-left:5px;
+    color:white;
 }
 .icon_yuan > .jian_icon{
     position: relative;
