@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: none;
     /* -webkit-user-select: none;
@@ -1115,6 +1114,10 @@ li {
 }
 .pass_body{
     padding-top:0;
+}
+.bg_color{
+    background:#36ceb9;
+    color:white;
 }
 .pass_ative{
     color:#36ceb9 !important;

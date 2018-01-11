@@ -1,0 +1,93 @@
+.tree {
+    min-height:20px;
+    padding:19px !important;
+    margin-bottom:20px;
+    background-color: white;
+    /* border:1px solid #999; */
+    /* -webkit-border-radius:4px; */
+    -moz-border-radius:4px;
+    /* border-radius:4px; */
+    /* -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05); */
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    /* box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05); */
+    box-shadow:  none;
+    border: none;
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px !important;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left: 2px solid #36ceb9;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width: 3px;
+}
+.tree li::after {
+    border-top: 2px solid #36ceb9;
+    height:20px;
+    top:25px;
+    width:25px;
+}
+.tree li > span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border: 1px solid #36ceb9;
+    border-radius:5px;
+    display:inline-block;
+    padding: 6px 14px !important;
+    text-decoration:none;
+    display:  inline-block;
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover, .tree li.parent_li>span:hover+ul li span {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+.pad-left0{
+    padding-left:0;
+}
+.icon_yuan{
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    display:  inline-block;
+    position:  relative;
+    top: 3px;
+    color:#36ceb9;
+    text-align:center;
+}
+.bg_color span{
+    padding-left:5px;
+}
+.icon_yuan > .jian_icon{
+    position: relative;
+    top:-3px;
+}
+.icon_yuan > .down_icon{
+    position: relative;
+    top:-2.5px;
+    left:-1px;
+}
+.down_icon{
+    transform:rotate(90deg);
+}
