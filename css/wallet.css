@@ -287,7 +287,7 @@ a {
     align-items: center;
     margin-bottom: 20px;
 }
-.recharge .tabletop2{
+.tabletop2.no_button{
     justify-content: flex-end;
 }
 .tab-group .btn{
@@ -317,6 +317,8 @@ a {
     border: none;
     display: flex;
     align-items: center;
+    position: relative;
+    right: 1px;
 }
 .button-group .more{
     display: flex;
@@ -355,8 +357,61 @@ a {
 .wallet .RegisterLog, 
 .wallet .ConsumptionWallet,
 .wallet .ChainWallet,
-.recharge{
+.recharge,
+.transfer,
+.withdraw{
     display: none;
+}
+.bonus,
+.bonus .Recommend,
+.bonus .Performance,
+.bonus .BackFeeding,
+.bonus .Management,
+.bonus .Dividends{
+    display: none;
+}
+.bonus .status .settle{
+    color: #2486b9;
+}
+.withdraw .status .success{
+    color: #64dcd0;
+    background-color: #fff;
+}
+.withdraw .status .fail{
+    color: #ffb464;
+}
+.search{
+    margin-bottom: 20px;
+}
+.search input{
+    width: 185px;
+    display: inline-block;
+}
+.search .search_button{
+    padding: 6px 0px 6px 11px;
+    background-color: #0de0c0;
+    color: #fff;
+    letter-spacing: 13px;
+}
+.choose_time{
+    display: inline-block;
+}
+.choose_time .time{
+    background-image: url("../image/date.png");
+    background-repeat:no-repeat;
+    background-position: 12px center;
+    padding-left: 50px;
+    display: inline-block;
+}
+.choose_time span{
+    display: inline-block;
+}
+.choose_time span hr{
+    padding: 0 7px;
+    border-top: 2px solid #dcdcdc;
+    margin: 0;
+    position: relative;
+    top: -3px;
 }
 @media screen and (min-width: 320px) {
     /*.top .nav, .bannerCilent, .plateadv-con, .footer-con, .banner .title, .operaconc .container, .navcol_s #navbar-example .container {*/
@@ -520,6 +575,12 @@ a {
         margin: 10px auto;
         width: 50%;
     }
+    .choose_time {
+        padding-left: 24px;
+    }
+    .search .search_button {
+        margin-left: 27px;
+    }
 }
 
 @media screen and (min-width: 996px) {
@@ -580,7 +641,9 @@ a {
         margin: 0 10px 0 0;
         width: auto;
     }
-
+    .search .search_button {
+        width: 124px;
+}
 }
 
 @media screen and (min-width: 1200px) {

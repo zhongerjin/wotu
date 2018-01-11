@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/wallet.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
 
     <script src="../js/jquery.1.12.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/down_list.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
 </head>
 
 <body>
@@ -142,7 +144,7 @@
                         <div class="btnwarp">
                             <div class="btn" data-toggle="modal" data-target="#myModal">充值</div>
                             <div class="btn">提现</div>
-                            <div class="btn" data-toggle="modal" data-target="#myModal2">提现记录</div>
+                            <div class="btn">提现记录</div>
                         </div>
                         <div class="linehr"></div>
                     </div>
@@ -205,13 +207,13 @@
                                         <a href="javascript:void(0)" class="nav_li" data-tab=recharge>充值</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)">提现</a>
+                                        <a href="javascript:void(0)" class="nav_li" data-tab=withdraw>提现</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)">转账</a>
+                                        <a href="javascript:void(0)" class="nav_li" data-tab=transfer>转账</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)">奖金</a>
+                                        <a href="javascript:void(0)" class="nav_li" data-tab=bonus>奖金</a>
                                     </li>
                                 </ul>
                             </div>
@@ -224,9 +226,9 @@
                     <div class="tabletop1 clear" data-tab-group>
                         <div class="col-lg-1 col-md-1 col-xs-1 title nav_li active" data-tab=Wallet>钱包</div>
                         <div class="col-lg-1 col-md-1 col-xs-1 title nav_li" data-tab=recharge>充值</div>
-                        <div class="col-lg-1 col-md-1 col-xs-1 title">提现</div>
-                        <div class="col-lg-1 col-md-1 col-xs-1 title">转账</div>
-                        <div class="col-lg-1 col-md-1 col-xs-1 title">奖金</div>
+                        <div class="col-lg-1 col-md-1 col-xs-1 title nav_li" data-tab=withdraw>提现</div>
+                        <div class="col-lg-1 col-md-1 col-xs-1 title nav_li" data-tab=transfer>转账</div>
+                        <div class="col-lg-1 col-md-1 col-xs-1 title nav_li" data-tab=bonus>奖金</div>
                     </div>
                     <div data-info-content>
                         <div class="Wallet index_content">
@@ -692,7 +694,7 @@
                             </div>
                         </div>
                         <div class="recharge index_content">
-                            <div class="tabletop2">
+                            <div class="tabletop2 no_button">
                                 <div class="button-group">
                                     <div class="refresh btn">
                                         <img src="../image/refresh.png" alt="">
@@ -824,6 +826,1082 @@
                                             <td>2017-09-09 09:09:09</td>
                                             <td>
                                                 <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bonus index_content">
+                            <div class="tabletop2">
+                                <div class="tab-group" data-tab-chil>
+                                    <div class="btn active" data-tab=Statistics>奖金统计</div>
+                                    <div class="btn" data-tab=Recommend>推荐奖</div>
+                                    <div class="btn" data-tab=Performance>业绩奖</div>
+                                    <div class="btn" data-tab=BackFeeding>反哺奖</div>
+                                    <div class="btn" data-tab=Management>管理奖</div>
+                                    <div class="btn" data-tab=Dividends>分红奖</div>
+                                </div>
+                                <div class="button-group">
+                                    <div class="refresh btn">
+                                        <img src="../image/refresh.png" alt="">
+                                    </div>
+                                    <div class="more btn">
+                                        <img src="../image/arrow.png" alt=""> 全部
+                                    </div>
+                                    <div class="export btn">
+                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="../image/export.png" alt="">
+                                            <img src="../image/export_down.png" alt="">
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li>导出当前页数据</li>
+                                            <li>
+                                                <a href="javascript:void(0)">HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">CSV</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">文本</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Excel</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">PDF</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">JSON</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <input type="text" placeholder="请输入奖金来源" class="form-control">
+                                <div class="choose_time">
+                                    <input type="text" class="form-control time" placeholder="请选择开始日期">
+                                    <span><hr></span>
+                                    <input type="text" class="form-control time" placeholder="请选择结束日期">
+                                </div>
+                                <button class="btn search_button">搜索</button>
+                            </div>
+                            <div class="Statistics table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>推荐奖</th>
+                                            <th>业绩奖</th>
+                                            <th>反哺奖</th>
+                                            <th>管理奖</th>
+                                            <th>分红奖</th>
+                                            <th>总奖金</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                            <td>1282626.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="Recommend table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>奖金来源</th>
+                                            <th>奖金金额</th>
+                                            <th>结算状态</th>
+                                            <th>奖金备注</th>
+                                            <th>分配时间</th>
+                                            <th>结算时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>118257.07</td>
+                                            <td>9.00</td>
+                                            <td>已结算</td>
+                                            <td>系统分配推荐奖9.0USD</td>
+                                            <td>01/02/2018 22:21:46</td>
+                                            <td>01/02/2018 22:21:50</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>118257.07</td>
+                                            <td>121.50</td>
+                                            <td>已结算</td>
+                                            <td>系统分配推荐奖9.0USD</td>
+                                            <td>01/02/2018 22:21:46</td>
+                                            <td>01/02/2018 22:21:50</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>118257.07</td>
+                                            <td>255.00</td>
+                                            <td>已结算</td>
+                                            <td>系统分配推荐奖9.0USD</td>
+                                            <td>01/02/2018 22:21:46</td>
+                                            <td>01/02/2018 22:21:50</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>118257.07</td>
+                                            <td>90.00</td>
+                                            <td>已结算</td>
+                                            <td>系统分配推荐奖9.0USD</td>
+                                            <td>01/02/2018 22:21:46</td>
+                                            <td>01/02/2018 22:21:50</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>118257.07</td>
+                                            <td>9.00</td>
+                                            <td>已结算</td>
+                                            <td>系统分配推荐奖9.0USD</td>
+                                            <td>01/02/2018 22:21:46</td>
+                                            <td>01/02/2018 22:21:50</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>118257.07</td>
+                                            <td>9.00</td>
+                                            <td>已结算</td>
+                                            <td>系统分配推荐奖9.0USD</td>
+                                            <td>01/02/2018 22:21:46</td>
+                                            <td>01/02/2018 22:21:50</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="Performance table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>奖励会员</th>
+                                            <th>奖金来源</th>
+                                            <th>奖金金额</th>
+                                            <th>结算状态</th>
+                                            <th>奖金备注</th>
+                                            <th>分配时间</th>
+                                            <th>结算时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>118257.01</td>
+                                            <td>118257.02</td>
+                                            <td>9.00</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>2</th>
+                                            <td>118257.01</td>
+                                            <td>118257.02</td>
+                                            <td>9.00</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>3</th>
+                                            <td>118257.01</td>
+                                            <td>118257.02</td>
+                                            <td>9.00</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>4</th>
+                                            <td>118257.01</td>
+                                            <td>118257.02</td>
+                                            <td>9.00</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>5</th>
+                                            <td>118257.01</td>
+                                            <td>118257.02</td>
+                                            <td>9.00</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>6</th>
+                                            <td>118257.01</td>
+                                            <td>118257.02</td>
+                                            <td>9.00</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="BackFeeding table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>奖励会员</th>
+                                            <th>奖金来源</th>
+                                            <th>奖金金额</th>
+                                            <th>结算状态</th>
+                                            <th>奖金备注</th>
+                                            <th>分配时间</th>
+                                            <th>结算时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>118257.01</td>
+                                            <td>yu886</td>
+                                            <td>0.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>2</th>
+                                            <td>118257.01</td>
+                                            <td>yu886</td>
+                                            <td>0.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>3</th>
+                                            <td>118257.01</td>
+                                            <td>yu886</td>
+                                            <td>0.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>4</th>
+                                            <td>118257.01</td>
+                                            <td>yu886</td>
+                                            <td>0.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>5</th>
+                                            <td>118257.01</td>
+                                            <td>yu886</td>
+                                            <td>0.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>6</th>
+                                            <td>118257.01</td>
+                                            <td>yu886</td>
+                                            <td>0.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="Management table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>奖励会员</th>
+                                            <th>奖金来源</th>
+                                            <th>奖金金额</th>
+                                            <th>结算状态</th>
+                                            <th>奖金代数</th>
+                                            <th>奖金备注</th>
+                                            <th>分配时间</th>
+                                            <th>结算时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td>0.45</td>
+                                            <td class="settle">已结算</td>
+                                            <td>第02代</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>2</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td>0.45</td>
+                                            <td class="settle">已结算</td>
+                                            <td>第02代</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>3</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td>0.45</td>
+                                            <td class="settle">已结算</td>
+                                            <td>第02代</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>4</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td>0.45</td>
+                                            <td class="settle">已结算</td>
+                                            <td>第02代</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>5</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td>0.45</td>
+                                            <td class="settle">已结算</td>
+                                            <td>第02代</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>6</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td>0.45</td>
+                                            <td class="settle">已结算</td>
+                                            <td>第02代</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                            <div class="Dividends table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>奖励会员</th>
+                                            <th>奖金金额</th>
+                                            <th>结算状态</th>
+                                            <th>奖金备注</th>
+                                            <th>分配时间</th>
+                                            <th>结算时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>2</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>3</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>4</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>5</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>6</th>
+                                            <td>118257.01</td>
+                                            <td>118257.01</td>
+                                            <td class="settle">已结算</td>
+                                            <td>系统分配业绩奖USD</td>
+                                            <td>01/04/2018 10:42:51</td>
+                                            <td>01/04/2018 10:43:00</td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transfer index_content">
+                            <div class="tabletop2 no_button">
+                                <div class="button-group">
+                                    <div class="refresh btn">
+                                        <img src="../image/refresh.png" alt="">
+                                    </div>
+                                    <div class="more btn">
+                                        <img src="../image/arrow.png" alt=""> 全部
+                                    </div>
+                                    <div class="export btn">
+                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="../image/export.png" alt="">
+                                            <img src="../image/export_down.png" alt="">
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li>导出当前页数据</li>
+                                            <li>
+                                                <a href="javascript:void(0)">HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">CSV</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">文本</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Excel</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">PDF</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">JSON</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>出款会员</th>
+                                            <th>出款钱包</th>
+                                            <th>入款会员</th>
+                                            <th>入款钱包</th>
+                                            <th>金额</th>
+                                            <th>类型</th>
+                                            <th>状态</th>
+                                            <th>备注</th>
+                                            <th>时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>111111.09</td>
+                                            <td>一键收款</td>
+                                            <td>转账成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>111111.09</td>
+                                            <td>一键收款</td>
+                                            <td>转账成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>111111.09</td>
+                                            <td>一键收款</td>
+                                            <td>转账成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>111111.09</td>
+                                            <td>一键收款</td>
+                                            <td>转账成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>111111.09</td>
+                                            <td>一键收款</td>
+                                            <td>转账成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>WW1888</td>
+                                            <td>连锁钱包</td>
+                                            <td>111111.09</td>
+                                            <td>一键收款</td>
+                                            <td>转账成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tabledata">
+                                    <span>1-6条</span>
+                                    <span>共6条数据</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="withdraw index_content">
+                            <div class="tabletop2 no_button">
+                                <div class="button-group">
+                                    <div class="refresh btn">
+                                        <img src="../image/refresh.png" alt="">
+                                    </div>
+                                    <div class="more btn">
+                                        <img src="../image/arrow.png" alt=""> 全部
+                                    </div>
+                                    <div class="export btn">
+                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="../image/export.png" alt="">
+                                            <img src="../image/export_down.png" alt="">
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li>导出当前页数据</li>
+                                            <li>
+                                                <a href="javascript:void(0)">HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">CSV</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">文本</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Excel</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">PDF</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">JSON</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>会员ID</th>
+                                            <th>收款账户</th>
+                                            <th>提现金额</th>
+                                            <th>到账金额</th>
+                                            <th>手续费</th>
+                                            <th>当前汇率</th>
+                                            <th>提现币种</th>
+                                            <th>折算金额</th>
+                                            <th>审核状态</th>
+                                            <th>提现备注</th>
+                                            <th>提现时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>11888</td>
+                                            <td>银行卡</td>
+                                            <td>800.00</td>
+                                            <td>800.00</td>
+                                            <td>111111.09</td>
+                                            <td>111111.09</td>
+                                            <td>人民币</td>
+                                            <td>111111.09</td>
+                                            <td class="success">审核成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>11888</td>
+                                            <td>银行卡</td>
+                                            <td>800.00</td>
+                                            <td>800.00</td>
+                                            <td>111111.09</td>
+                                            <td>111111.09</td>
+                                            <td>人民币</td>
+                                            <td>111111.09</td>
+                                            <td class="success">审核成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>11888</td>
+                                            <td>银行卡</td>
+                                            <td>800.00</td>
+                                            <td>800.00</td>
+                                            <td>111111.09</td>
+                                            <td>111111.09</td>
+                                            <td>人民币</td>
+                                            <td>111111.09</td>
+                                            <td class="success">审核成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>11888</td>
+                                            <td>银行卡</td>
+                                            <td>800.00</td>
+                                            <td>800.00</td>
+                                            <td>111111.09</td>
+                                            <td>111111.09</td>
+                                            <td>人民币</td>
+                                            <td>111111.09</td>
+                                            <td class="success">审核成功</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>11888</td>
+                                            <td>银行卡</td>
+                                            <td>800.00</td>
+                                            <td>800.00</td>
+                                            <td>111111.09</td>
+                                            <td>111111.09</td>
+                                            <td>人民币</td>
+                                            <td>111111.09</td>
+                                            <td class="fail">撤销提现</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2">
+                                                    <div class="logbtn btn">查看</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="status">
+                                            <th>1</th>
+                                            <td>11888</td>
+                                            <td>银行卡</td>
+                                            <td>800.00</td>
+                                            <td>800.00</td>
+                                            <td>111111.09</td>
+                                            <td>111111.09</td>
+                                            <td>人民币</td>
+                                            <td>111111.09</td>
+                                            <td class="fail">撤销提现</td>
+                                            <td></td>
+                                            <td>
+                                                <span>01-09</span>
+                                                <br />
+                                                <span>09:09:09</span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal2">
                                                     <div class="logbtn btn">查看</div>
                                                 </a>
                                             </td>
@@ -1034,7 +2112,7 @@
         // }
 
     }
-
+    $(".time").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
     $(".nav_li").on("click", function (e) {
         tab_toggle(this, undefined, "index_content");
     })
@@ -1045,19 +2123,25 @@
 
     var tab_toggle = function (that, type = "data-tab-group", _element = "table-responsive") {
         var toggle_class = $(that).attr("data-tab");
-        $(`[${type}]`).children().each(function (index, ele) {
-            $(ele).removeClass("active");
-        });
-        $(that).addClass("active");
+        var close_div = $(".tabletop1").find(".nav_li.active").attr("data-tab");
+        //切换二级导航的时候
         if (_element === "table-responsive" && type === "data-tab-chil") {
-            $(that).parents().find(".Wallet").find("." + _element).each(function (index, ele) {
+            $("."+close_div).find(`[${type}]`).children().each(function (index, ele) {
+                $(ele).removeClass("active");
+            });
+            $("."+close_div).find("." + _element).each(function (index, ele) {
                 $(ele).hide();
             })
         } else {
+            //切换一级导航
+            $(`[${type}]`).children().each(function (index, ele) {
+                $(ele).removeClass("active");
+            });
             $(that).parents().find("." + _element).each(function (index, ele) {
                 $(ele).hide();
             });
         }
+        $(that).addClass("active");
         $("." + toggle_class).show();
     }
     function file_click() {
