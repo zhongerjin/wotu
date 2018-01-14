@@ -52,7 +52,7 @@
                                     <a href="supporting.html">注册配套</a>
                                 </li>
                                 <li>
-                                    <a href="#">连锁配套</a>
+                                    <a href="chain.html">连锁配套</a>
                                 </li>
                                 <li>
                                     <a href="zzjg.html">组织结构</a>
@@ -61,7 +61,7 @@
                                     <a href="wallet.html">资产管理</a>
                                 </li>
                                 <li>
-                                    <a href="#">积分管理</a>
+                                    <a href="integral.html">积分管理</a>
                                 </li>
                                 <li>
                                     <a href="new.html">新闻公告</a>
@@ -80,7 +80,7 @@
                         <a href="supporting.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon2 navlist">注册配套</div>
                         </a>
-                        <a href="#">
+                        <a href="chain.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon3 navlist">连锁配套</div>
                         </a>
                         <a href="zzjg.html">
@@ -89,7 +89,7 @@
                         <a href="wallet.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon5 navlist">资产管理</div>
                         </a>
-                        <a href="#">
+                        <a href="integral.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon6 navlist">积分管理</div>
                         </a>
                         <a href="new.html">
@@ -98,7 +98,7 @@
                         </a>
                     </div>
                     <div class="col-md-1  col-sm-1 col-lg-1">
-                        <a href="html/login.html">
+                        <a href="login.html">
                             <span class="loginBtn">登录</span>
                         </a>
                     </div>
@@ -1383,23 +1383,27 @@
         tab_toggle(this, "data-tab-chil");
     })
 
-    var tab_toggle = function (that, type = "data-tab-group", _element = "table-responsive") {
+    var tab_toggle = function tab_toggle(that) {
+        var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "data-tab-group";
+
+        var _element = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "table-responsive";
+
         var toggle_class = $(that).attr("data-tab");
-        $(`[${type}]`).children().each(function (index, ele) {
+        $("[" + type + "]").children().each(function (index, ele) {
             $(ele).removeClass("active");
         });
         $(that).addClass("active");
         if (_element === "table-responsive" && type === "data-tab-chil") {
             $(that).parents().find(".PurchaseHistory").find("." + _element).each(function (index, ele) {
                 $(ele).hide();
-            })
+            });
         } else {
             $(that).parents().find("." + _element).each(function (index, ele) {
                 $(ele).hide();
             });
         }
         $("." + toggle_class).show();
-    }
+    };
 </script>
 
 </html>

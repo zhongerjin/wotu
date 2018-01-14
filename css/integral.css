@@ -1,0 +1,127 @@
+.tabletop1 .title{
+    float: left;
+    white-space: pre;
+}
+.table-responsive .title_nav{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.List{
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.sell, .sellLog, .dealLog,
+.seedIntegral, .seedCount,
+.seedFund, .seedFund .seedLog,
+.floatIntegral, .floatIntegral .floatLog{
+    display: none;
+}
+.List.tradingTrends{
+    position: relative;
+}
+.buy_integral{
+    padding: 0 40px;
+}
+.mt_20 {
+    margin-top: 20px;
+}
+.left_right_div_buy {
+    display: flex;
+}
+.integral_count{
+    font-size: 24px;
+    color: #1ab394;
+}
+.left_right_div_buy .left_title {
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+.left_right_div_buy input, .left_right_div_buy select{
+    width: 43%;
+}
+.prompt{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #6f6f6f;
+}
+.buy_button{
+    margin: 40px 0;
+}
+.buy_button .confirm{
+    width: 115px;
+    background-color: #0de0c0;
+    color: #fff;
+}
+.watingForSale .status{
+    color: #19d1c4;
+}
+.forSaleLog .status{
+    color: #19d1c4;
+}
+.seedIntegral .outlay td{
+    color: #ee7b88;
+}
+.table-responsive .tablespanimg {
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/v.png);
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.table-responsive .tablespantext {
+    color: #ffae00;
+    margin-left: -5px;
+}
+.Statistics .done{
+    color: #5799c2;
+}
+.seedAllocation .undone{
+    color: #f9c18e;
+}
+.seedAllocation .done{
+    color: #5799c2;
+}
+.seedAllocation .table-bordered th,
+.floatAllocation .table-bordered{
+    white-space: nowrap;
+}
+.seedLog .outlay td{
+    color: #ee7e89;
+}
+.floatAllocation .undone{
+    color: #f9c18e;
+}
+.floatAllocation .done{
+    color: #5799c2;
+}
+.floatLog .outlay td{
+    color: #ee7b89;
+}
+#polyline{
+    width: 1150px;
+    height: 250px;
+}
+#pillar{
+    width:1150px;
+    height:150px;
+}
+.polyline_button{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 7%;
+    z-index: 1000;
+}
+.button_group{
+    border: 1px solid #e8e8e8;
+}
+.button_group .btn{
+    border-radius: 0;
+    background-color: #f4f4f4;
+    color: #525252;
+    margin: 0-2px;
+    border: 1px solid #ededed;
+}

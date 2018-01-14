@@ -10,6 +10,9 @@
     <title>组织结构</title>
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.orgchart.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/font-awesome1.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/supporting.css">
     <link rel="stylesheet" href="../css/wallet.css">
@@ -54,7 +57,7 @@
                                     <a href="supporting.html">注册配套</a>
                                 </li>
                                 <li>
-                                    <a href="#">连锁配套</a>
+                                    <a href="chain.html">连锁配套</a>
                                 </li>
                                 <li>
                                     <a href="zzjg.html">组织结构</a>
@@ -63,7 +66,7 @@
                                     <a href="wallet.html">资产管理</a>
                                 </li>
                                 <li>
-                                    <a href="#">积分管理</a>
+                                    <a href="integral.html">积分管理</a>
                                 </li>
                                 <li>
                                     <a href="new.html">新闻公告</a>
@@ -82,7 +85,7 @@
                         <a href="supporting.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon2  navlist">注册配套</div>
                         </a>
-                        <a href="#">
+                        <a href="chain.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon3 navlist">连锁配套</div>
                         </a>
                         <a href="zzjg.html">
@@ -91,7 +94,7 @@
                         <a href="wallet.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon5 navlist">资产管理</div>
                         </a>
-                        <a href="#">
+                        <a href="integral.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon6 navlist">积分管理</div>
                         </a>
                         <a href="new.html">
@@ -100,23 +103,25 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-1" style="cursor:pointer" onclick="down_list()">
-                        <div class="userinfo">
-                            <div class="txwarp col-md-2">
-                                <img src="../image/wallte-tx.png" alt="">
-                            </div>
-                            <div class="username col-lg-4 col-md-4">
-                                18600370863
-                            </div>
-                            <div class="more col-lg-2">
-                                <span class=""></span>
-                            </div>
-                            <div class="down_list displ_none">
-                                <div>
-                                    <a style="color:black" href="infoself.html">个人中心</a>
+                    <div class="col-lg-3 col-md-1" style="cursor:pointer">
+                        <div class="dropdown_list">
+                            <div class="userinfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="txwarp col-md-2">
+                                    <img src="../image/wallte-tx.png" alt="">
                                 </div>
-                                <div>注销</div>
+                                <div class="username col-lg-4 col-md-4">
+                                    18600370863
+                                </div>
+                                <div class="more col-lg-2">
+                                    <span class=""></span>
+                                </div>
                             </div>
+                              <ul class="dropdown-menu">
+                                <li><a href="infoself.html">个人中心</a></li>
+                                <li><a href="system_message.html">系统消息</a></li>
+                                <li><a href="sites_email.html">站内消息</a></li>
+                                <li><a href="javascript:void(0)">安全退出</a></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -147,12 +152,12 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a href="javascript:void(0);" class="navbar-brand nav-title nav_tab" data-tab=register>直推组织图</a>
+                                <a href="javascript:void(0);" class="navbar-brand nav-title nav_tab" data-tab=tissue>直推组织图</a>
                             </div>
                             <div class="navbar-collapse bs-js-navbar-scrollspy1 collapse in" aria-expanded="true">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li>
-                                        <a href="javascript:void(0);" class="nav_tab" data-tab=upgrade>安置图</a>
+                                        <a href="javascript:void(0);" class="nav_tab" data-tab=place>安置图</a>
                                     </li>
                                 </ul>
                             </div>
@@ -161,16 +166,16 @@
                 </div>
                 <div class="tabletop clear">
                     <div class="tree_search clear">
-                        <input type="text" class="form-control search_input">
+                        <input type="text" class="form-control search_input" placeholder="请输入用户名和ID进行查询">
                         <span class="sreach_button"></span>
                     </div>
                     <div class="tabletop1 clear" data-tab-group>
-                        <div class="col-lg-2 col-md-2 col-xs-2 title active" data-tab=register>直推组织图</div>
-                        <div class="col-lg-2 col-md-2 col-xs-2 title" data-tab=upgrade>安置图</div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 title active" data-tab=tissue>直推组织图</div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 title" data-tab=place>安置图</div>
                     </div>
-                    <div class="table-responsive register">
+                    <div class="table-responsive tissue">
                         <div class="tree well">
-                            <ul class="pad-left0">
+                            <!--<ul class="pad-left0">
                                 <li>
                                     <span class="bg_color">
                                         <div class="icon_yuan"><div class="down_icon">></div></div><span>118256.01</span> 
@@ -235,15 +240,13 @@
                                         </li>
                                     </ul>
                                 </li>
+                            </ul>-->
+                            <ul id="rootUL">
+
                             </ul>
                         </div>
                     </div>
-                    <div class="table-responsive upgrade">
-                        456
-                        <div class="tabledata">
-                            <span>1-6条</span>
-                            <span>共6条数据</span>
-                        </div>
+                    <div class="table-responsive place">
                     </div>
                 </div>
             </div>
@@ -290,6 +293,8 @@
 </body>
 <script type="text/javascript" src="../js/chosen.jquery.min.js"></script>
 <script type="text/javascript" src="../js/area_chs.js"></script>
+<script src="../js/jquery.orgchart.js"></script>
+<script src="../js/tree.js"></script>
 <script>
     $(".radio_diy").on('click', function () {
         if ($(this).attr("id") == "yd") {
@@ -300,6 +305,20 @@
         $(this).addClass("radio_active");
     })
 
+    $(function () {
+            $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', '关闭');
+            $('.tree li.parent_li > span').on('click', function (e) {
+                var children = $(this).parent('li.parent_li').find(' > ul > li');
+                if (children.is(":visible")) {
+                    children.hide('fast');
+                    $(this).attr('title', '展开').find(' > i').addClass('icon-chevron-sign-down').removeClass('icon-minus-sign');
+                } else {
+                    children.show('fast');
+                    $(this).attr('title', '关闭').find(' > i').addClass('icon-minus-sign').removeClass('icon-chevron-sign-down');
+                }
+                e.stopPropagation();
+            });
+        });
 </script>
 <script>
     window.onload = function () {
@@ -349,6 +368,136 @@
     var open_Prep = function () {
         $("#myModal").modal('show');
     }
+
+    var node_template = function(data){
+        if(!data.has_levelUp){
+            return `<div class="demo clear register">
+                    <div class="text">
+                        <div class="status">${data.name}</div>
+                    </div>
+                </div>`;
+        }
+        return `<div class="demo clear ${data.level}">
+                    <img src="../image/${data.level}.png" alt="">
+                    <div class="text">
+                        <div class="price">${data.price}</div>
+                        <div class="status">${data.name}</div>
+                    </div>
+                </div>`;
+    }
+
+    var demo = {
+        "name": "升级",
+        "price": 118257.01,
+        "level":"level_6",
+        "has_levelUp": true,
+        "children": [
+            {
+                "name":"升级",
+                "price":118257.01,
+                "level": "level_1",
+                "has_levelUp": true,
+                "children": [
+                    {
+                        "name":"升级",
+                        "price":118257.09,
+                        "level": "level_1",
+                        "has_levelUp": true,
+                        "children": [
+                            {
+                                "name":"升级",
+                                "price":118257.09,
+                                "level": "level_1",
+                                "has_levelUp": true,
+                            },
+                            {
+                                "name":"注册",
+                                "price":null,
+                                "level":null,
+                                "has_levelUp": false
+                            }
+                        ]
+                    },
+                    {
+                        "name":"升级",
+                        "price":118257.09,
+                        "level": "level_1",
+                        "has_levelUp": true,
+                        "children": [
+                            {
+                                "name":"注册",
+                                "price":null,
+                                "level":null,
+                                "has_levelUp": false
+                            },
+                            {
+                                "name":"注册",
+                                "price":null,
+                                "level":null,
+                                "has_levelUp": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name":"升级",
+                "price":118257.09,
+                "level": "level_4",
+                "has_levelUp": true,
+                children: [
+                    {
+                        "name":"升级",
+                        "price":118257.09,
+                        "level": "level_4",
+                        "has_levelUp": true,
+                        "children": [
+                            {
+                                "name":"升级",
+                                "price":118257.09,
+                                "level": "level_1",
+                                "has_levelUp": true,
+                            },
+                            {
+                                "name":"注册",
+                                "price":null,
+                                "level":null,
+                                "has_levelUp": false
+                            }
+                        ]
+                    },
+                    {
+                        "name":"升级",
+                        "price":118257.09,
+                        "level": "level_4",
+                        "has_levelUp": true,
+                        "children": [
+                            {
+                                "name":"升级",
+                                "price":118257.09,
+                                "level": "level_1",
+                                "has_levelUp": true,
+                            },
+                            {
+                                "name":"注册",
+                                "price":null,
+                                "level":null,
+                                "has_levelUp": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    var ocWest = $('.place').orgchart({
+      'data' : demo,
+    //   'nodeTitle':"price",
+    //   'nodeContent': 'name',
+      'createNode': function($node, data) {
+        $node.children('.title').html(node_template(data));
+      }
+    });
 </script>
 
 </html>

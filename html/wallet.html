@@ -54,7 +54,7 @@
                                     <a href="supporting.html">注册配套</a>
                                 </li>
                                 <li>
-                                    <a href="#">连锁配套</a>
+                                    <a href="chain.html">连锁配套</a>
                                 </li>
                                 <li>
                                     <a href="zzjg.html">组织结构</a>
@@ -63,7 +63,7 @@
                                     <a href="wallet.html">资产管理</a>
                                 </li>
                                 <li>
-                                    <a href="#">积分管理</a>
+                                    <a href="integral.html">积分管理</a>
                                 </li>
                                 <li>
                                     <a href="new.html">新闻公告</a>
@@ -82,7 +82,7 @@
                         <a href="supporting.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon2 navlist">注册配套</div>
                         </a>
-                        <a href="#">
+                        <a href="chain.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon3 navlist">连锁配套</div>
                         </a>
                         <a href="zzjg.html">
@@ -91,7 +91,7 @@
                         <a href="wallet.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon5 act navlist">资产管理</div>
                         </a>
-                        <a href="#">
+                        <a href="integral.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon6 navlist">积分管理</div>
                         </a>
                         <a href="new.html">
@@ -100,23 +100,25 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-1" style="cursor:pointer" onclick="down_list()">
-                        <div class="userinfo">
-                            <div class="txwarp col-md-2">
-                                <img src="../image/wallte-tx.png" alt="">
-                            </div>
-                            <div class="username col-lg-4 col-md-4">
-                                18600370863
-                            </div>
-                            <div class="more col-lg-2">
-                                <span></span>
-                            </div>
-                            <div class="down_list displ_none">
-                                <div>
-                                    <a style="color:black" href="infoself.html">个人中心</a>
+                    <div class="col-lg-3 col-md-1" style="cursor:pointer">
+                        <div class="dropdown_list">
+                            <div class="userinfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="txwarp col-md-2">
+                                    <img src="../image/wallte-tx.png" alt="">
                                 </div>
-                                <div>注销</div>
+                                <div class="username col-lg-4 col-md-4">
+                                    18600370863
+                                </div>
+                                <div class="more col-lg-2">
+                                    <span class=""></span>
+                                </div>
                             </div>
+                              <ul class="dropdown-menu">
+                                <li><a href="infoself.html">个人中心</a></li>
+                                <li><a href="system_message.html">系统消息</a></li>
+                                <li><a href="sites_email.html">站内消息</a></li>
+                                <li><a href="javascript:void(0)">安全退出</a></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -2121,20 +2123,24 @@
         tab_toggle(this, "data-tab-chil");
     });
 
-    var tab_toggle = function (that, type = "data-tab-group", _element = "table-responsive") {
+    var tab_toggle = function tab_toggle(that) {
+        var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "data-tab-group";
+
+        var _element = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "table-responsive";
+
         var toggle_class = $(that).attr("data-tab");
-        var close_div = $(".tabletop1").find(".nav_li.active").attr("data-tab");
+        var close_div = $(".nav_li.active").attr("data-tab");
         //切换二级导航的时候
         if (_element === "table-responsive" && type === "data-tab-chil") {
-            $("."+close_div).find(`[${type}]`).children().each(function (index, ele) {
+            $("." + close_div).find("[" + type + "]").children().each(function (index, ele) {
                 $(ele).removeClass("active");
             });
-            $("."+close_div).find("." + _element).each(function (index, ele) {
+            $("." + close_div).find("." + _element).each(function (index, ele) {
                 $(ele).hide();
-            })
+            });
         } else {
             //切换一级导航
-            $(`[${type}]`).children().each(function (index, ele) {
+            $("[" + type + "]").children().each(function (index, ele) {
                 $(ele).removeClass("active");
             });
             $(that).parents().find("." + _element).each(function (index, ele) {
@@ -2143,7 +2149,7 @@
         }
         $(that).addClass("active");
         $("." + toggle_class).show();
-    }
+    };
     function file_click() {
         if ($("[data-file]").length) {
             $("[data-file]").click();
