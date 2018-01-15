@@ -26,6 +26,9 @@
     margin-top: 20px;
 }
 .left_right_div_buy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 .integral_count{
@@ -34,15 +37,27 @@
 }
 .left_right_div_buy .left_title {
     width: 90px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .left_right_div_buy input, .left_right_div_buy select{
     width: 43%;
 }
 .prompt{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 10px;
     color: #6f6f6f;
 }
@@ -109,8 +124,14 @@
     height:150px;
 }
 .polyline_button{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: absolute;
     right: 7%;
     z-index: 1000;

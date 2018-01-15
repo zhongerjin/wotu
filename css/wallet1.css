@@ -50,7 +50,8 @@
     padding: 0;
     padding-left: 10px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -216,6 +217,9 @@
 
 .table-responsive thead th {
     color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #0fddc1), to(#21c8c7));
+    background-image: -webkit-linear-gradient(top, #0fddc1 60%, #21c8c7 100%);
+    background-image: -o-linear-gradient(top, #0fddc1 60%, #21c8c7 100%);
     background-image: linear-gradient(to bottom, #0fddc1 60%, #21c8c7 100%);
 }
 

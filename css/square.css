@@ -26,7 +26,8 @@
     -webkit-animation: square 28s infinite;
     animation: square 28s infinite;
     -webkit-transition-timing-function: linear;
-    transition-timing-function: linear
+    -o-transition-timing-function: linear;
+       transition-timing-function: linear
 }
 
 .platform_advantage_bg_z li {
@@ -39,7 +40,8 @@
     -webkit-animation: square_z 22s infinite;
     animation: square_z 22s infinite;
     -webkit-transition-timing-function: linear;
-    transition-timing-function: linear
+    -o-transition-timing-function: linear;
+       transition-timing-function: linear
 }
 
 .platform_advantage_bg li:nth-child(1),

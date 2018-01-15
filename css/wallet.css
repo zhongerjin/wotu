@@ -44,7 +44,8 @@ a {
     padding: 0;
     padding-left: 10px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -224,7 +225,16 @@ a {
 }
 .supporting .table-responsive thead tr th {
    color:#ffffff;
+   border: 1px solid #a4eae0;
 }
+.table-bordered{
+    overflow: hidden;
+    border-radius: 20px;
+    border-spacing: 0px;
+    border: none;
+    box-shadow: inset 0 0 0 1px #a4eae0;
+}
+
 .table-responsive thead th {
     color: #867b88;
     /*background-image: linear-gradient(to bottom, #0fddc1 60%, #21c8c7 100%);*/
@@ -235,7 +245,7 @@ a {
 .table-bordered > tfoot > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td {
-    /*border: 1px solid #a4eae0;*/
+    border: 1px solid #a4eae0;
 }
 
 /*.table-bordered > thead > tr > th{*/
@@ -282,13 +292,25 @@ a {
     font-size: 36px;
 }
 .tabletop2{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 20px;
 }
 .tabletop2.no_button{
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .tab-group .btn{
     border: 1px solid #0de0c0;
@@ -300,7 +322,8 @@ a {
 .tab-group .btn.active{
     background-color: #0de0c0;
     color: #fff;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .button-group .btn{
     padding: 0;
@@ -308,6 +331,9 @@ a {
 }
 .button-group{
     height: 32px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 4px;
     border: 1px solid #11dcc1;
@@ -315,30 +341,57 @@ a {
 .button-group .refresh{
     background-color: #11dcc1;
     border: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     right: 1px;
 }
 .button-group .more{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #11dcc1;
     height: 100%;
     width: 60px;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 .button-group .export{
     width: 60px;
     border-left: 1px solid #11dcc1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     position: relative;
 }
 .export.btn ul{
     right: 0;
     left: -170%;
+}
+.export.btn div{
+    -webkit-box-flex: 2;
 }
 .export.btn ul li {
     text-align: center;
@@ -346,12 +399,16 @@ a {
 .table-responsive thead tr {
     text-align: center;
     color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0edec0), to(#22c8c8));
+    background: -webkit-linear-gradient(top, #0edec0, #22c8c8);
+    background: -o-linear-gradient(top, #0edec0, #22c8c8);
     background: linear-gradient(to bottom, #0edec0, #22c8c8);
 }
 .table-responsive thead tr th{
     color: #fff;
+    border: 1px solid #a4eae0;
 }
-.table-bordered tr.negative{
+.table-bordered tr.negative td{
     color: #e80000;
 }
 .wallet .RegisterLog, 

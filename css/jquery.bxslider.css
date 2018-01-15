@@ -30,7 +30,6 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	background: #fff;
@@ -84,9 +83,8 @@
 	height: 10px;
 	margin: 0 5px;
 	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	-o-transition: width .5s;
 	transition: width .5s;
 	-webkit-transition: width .5s;
 	-moz-transition: width .5s;

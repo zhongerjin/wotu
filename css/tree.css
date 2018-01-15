@@ -8,9 +8,9 @@
     -moz-border-radius:4px;
     /* border-radius:4px; */
     /* -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05); */
-    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
     /* box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05); */
-    box-shadow:  none;
+    -webkit-box-shadow:  none;
+            box-shadow:  none;
     border: none;
 }
 .tree li {
@@ -91,7 +91,9 @@ span.bg_color{
     left:-1px;
 }
 .down_icon{
-    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+            transform:rotate(90deg);
 }
 .tabletop{
     position: relative;
@@ -103,9 +105,6 @@ span.bg_color{
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
-}
-.table-responsive .level{
-    margin-left: -5px;
 }
 .tree_search{
     position: absolute;

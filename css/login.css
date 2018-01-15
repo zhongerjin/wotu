@@ -21,7 +21,8 @@ a{
     text-decoration: none;
 }
 body .authent {
-    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+            box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
     display: none;
     background: #35394a;
     /* Old browsers */
@@ -29,6 +30,8 @@ body .authent {
     /* Chrome10+,Safari5.1+ */
     /* Opera 11.10+ */
     /* IE10+ */
+    background: -webkit-linear-gradient(220deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
+    background: -o-linear-gradient(220deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
     background: linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(53, 57, 74, 0)', endColorstr='rgb(0, 0, 0)', GradientType=1);
@@ -74,7 +77,8 @@ body .testtwo {
 }
 
 body .test {
-    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+            box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
     pointer-events: none;
     top: -100px !important;
     -webkit-transform: rotateX(70deg) scale(0.8) !important;
@@ -86,15 +90,22 @@ body .test {
 
 body .login {
     font-size: 14px;
-    box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.7);
+            box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.7);
     opacity: 1;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     top: 20px;
     -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, 0.85);
     -webkit-transition-property: -webkit-transform, opacity, box-shadow, top, left;
+    -webkit-transition-property: opacity, top, left, -webkit-transform, -webkit-box-shadow;
+    transition-property: opacity, top, left, -webkit-transform, -webkit-box-shadow;
+    -o-transition-property: transform, opacity, box-shadow, top, left;
     transition-property: transform, opacity, box-shadow, top, left;
+    transition-property: transform, opacity, box-shadow, top, left, -webkit-transform, -webkit-box-shadow;
     -webkit-transition-duration: .5s;
-    transition-duration: .5s;
+    -o-transition-duration: .5s;
+       transition-duration: .5s;
     -webkit-transform-origin: 161px 100%;
     -ms-transform-origin: 161px 100%;
     transform-origin: 161px 100%;
@@ -198,7 +209,8 @@ body .login_fields input[type='password'] {
     border-left: none;
     outline: none;
     font-family: 'Gudea', sans-serif;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 body .login_fields__user,
@@ -231,6 +243,7 @@ body .login_fields__caluse {
 }
 
 body .login_fields__caluse>span:first-child {
+    -o-transition: none;
     transition: none;
     -webkit-transition: none;
     cursor: pointer;
@@ -255,7 +268,8 @@ body .login_fields__caluse .caluse_odiv {
 }
 
 body .login_fields__caluse>span a {
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     letter-spacing: 2px;
     cursor: pointer;
 }
@@ -275,22 +289,29 @@ body .login_fields__submit input {
     border-radius: 50px;
     background: transparent;
     padding: 10px 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 130px;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
     -webkit-transition-property: background, color;
+    -o-transition-property: background, color;
     transition-property: background, color;
     -webkit-transition-duration: .2s;
-    transition-duration: .2s;
+    -o-transition-duration: .2s;
+       transition-duration: .2s;
     cursor: pointer;
 }
 
 body .login_fields__submit input.loginBtn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0de0c0), to(#23c6c8));
+    background: -webkit-linear-gradient(top, #0de0c0, #23c6c8);
+    background: -o-linear-gradient(top, #0de0c0, #23c6c8);
     background: linear-gradient(to bottom, #0de0c0, #23c6c8);
     color: #ffffff;
     border: none;
+    -o-transition: all .5s;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -300,12 +321,16 @@ body .login_fields__submit input.forgetPwdBtn {
     color: #36ceb9;
     float: right;
     border: 1px solid #36ceb9;
+    -o-transition: all .5s;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
 }
 
 body .login_fields__submit input.loginBtn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 224, 192, 0.8)), to(rgba(35, 198, 200, 0.8)));
+    background: -webkit-linear-gradient(top, rgba(13, 224, 192, 0.8), rgba(35, 198, 200, 0.8));
+    background: -o-linear-gradient(top, rgba(13, 224, 192, 0.8), rgba(35, 198, 200, 0.8));
     background: linear-gradient(to bottom, rgba(13, 224, 192, 0.8), rgba(35, 198, 200, 0.8));
 }
 
@@ -315,7 +340,8 @@ body .login_fields__submit input.forgetPwdBtn:hover {
 }
 
 body .login_fields__submit input:focus {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     outline: none;
 }
 

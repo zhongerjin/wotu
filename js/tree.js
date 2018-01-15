@@ -121,45 +121,37 @@
             var data2 = data[i];
             if (data[i].icon == "icon-chevron-sign-down") {
                 // $("#rootUL").append("<li data-name='" + data[i].name + "'><span><i class='" + data[i].icon + "'></i> " + data[i].price + "</span></li>");
-                $("#rootUL").append(`<li data-name=${data[i].name}>
-                <span class="bg_color">
-                <i class=${data[i].icon}></i>
-                ${data[i].price}
-                </span>
-                <span>
-                <span class="v_img"></span>
-                <span class="level">${data[i].level}</span>
-                </span>
-                <span>
-                    ${data[i].date}
-                </span>
-                </li>`);
+                $("#rootUL").append(
+                "<li data-name=" +
+                    data[i].name +
+                    '><span class="bg_color"><i class=' +
+                    data[i].icon +
+                    "></i>" +
+                    data[i].price +
+                    '</span><span><span class="v_img"></span><span class="level">' +
+                    data[i].level +
+                    "</span></span><span>" +
+                    data[i].date +
+                    "</span></li>"
+                );
             } else {
                 var children = $("li[data-name='" + data[i].parentCode + "']").children("ul");
                 if (children.length == 0) {
                     $("li[data-name='" + data[i].parentCode + "']").append("<ul></ul>")
                 }
-                // $("li[data-name='" + data[i].parentCode + "'] > ul").append(
-                //     "<li data-name='" + data[i].name + "'>" +
-                //     "<span>" +
-                //     "<i class='" + data[i].icon + "'></i> " +
-                //     data[i].price +
-                //     "</span>" +
-                //     "</li>")
                 $("li[data-name='" + data[i].parentCode + "'] > ul").append(
-                `<li data-name=${data[i].name}>
-                <span class="bg_color">
-                <i class=${data[i].icon}></i>
-                ${data[i].price}
-                </span>
-                <span>
-                <span class="v_img"></span>
-                <span class="level">${data[i].level}</span>
-                </span>
-                <span>
-                    ${data[i].date}
-                </span>
-                </li>`)
+                "<li data-name=" +
+                    data[i].name +
+                    '><span class="bg_color"><i class=' +
+                    data[i].icon +
+                    "></i>" +
+                    data[i].price +
+                    '</span><span><span class="v_img"></span><span class="level">' +
+                    data[i].level +
+                    "</span></span><span>" +
+                    data[i].date +
+                    "</span></li>"
+                );
             }
             for (var j = 0; j < data[i].child.length; j++) {
                 var child = data[i].child[j];
@@ -167,27 +159,19 @@
                 if (children.length == 0) {
                     $("li[data-name='" + child.parentCode + "']").append("<ul></ul>")
                 }
-                // $("li[data-name='" + child.parentCode + "'] > ul").append(
-                //     "<li data-name='" + child.name + "'>" +
-                //     "<span>" +
-                //     "<i class='" + child.icon + "'></i> " +
-                //     child.price +
-                //     "</span>" +
-                //     "</li>")
                 $("li[data-name='" + child.parentCode + "'] > ul").append(
-                `<li data-name=${child.name}>
-                <span class="bg_color">
-                <i class=${child.icon}></i>
-                ${child.price}
-                </span>
-                <span>
-                <span class="v_img"></span>
-                <span class="level">${child.level}</span>
-                </span>
-                <span>
-                    ${child.date}
-                </span>
-                </li>`)
+                "<li data-name=" +
+                    child.name +
+                    '><span class="bg_color"><i class=' +
+                    child.icon +
+                    "></i>" +
+                    child.price +
+                    '</span><span><span class="v_img"></span><span class="level">' +
+                    child.level +
+                    "</span></span><span>" +
+                    child.date +
+                    "</span></li>"
+                );
                 var child2 = data[i].child[j].child;
                 tree(child2)
             }
