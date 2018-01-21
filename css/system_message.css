@@ -1,3 +1,7 @@
 .system_message .unread{
     color: #f9c18e;
 }
+.table-responsive.vertical tr th{
+    background: #32cdb7;
+    color: #fff;
+}

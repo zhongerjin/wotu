@@ -115,7 +115,7 @@
                               <ul class="dropdown-menu">
                                 <li><a href="infoself.html">个人中心</a></li>
                                 <li><a href="system_message.html">系统消息</a></li>
-                                <li><a href="sites_email.html">站内消息</a></li>
+                                <li><a href="sites_email.html">站内邮件</a></li>
                                 <li><a href="javascript:void(0)">安全退出</a></li>
                             </ul>
                         </div>
@@ -162,8 +162,11 @@
                                                 <td class="unread">未读</td>
                                                 <td>2017-09-09 09:09:09</td>
                                                 <td>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn">删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -174,8 +177,11 @@
                                                 <td class="unread">未读</td>
                                                 <td>2017-09-09 09:09:09</td>
                                                 <td>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn">删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -186,8 +192,11 @@
                                                 <td class="unread">未读</td>
                                                 <td>2017-09-09 09:09:09</td>
                                                 <td>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn">删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -198,8 +207,11 @@
                                                 <td class="unread">未读</td>
                                                 <td>2017-09-09 09:09:09</td>
                                                 <td>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn">删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -210,8 +222,11 @@
                                                 <td class="unread">未读</td>
                                                 <td>2017-09-09 09:09:09</td>
                                                 <td>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn">删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -222,8 +237,11 @@
                                                 <td class="unread">未读</td>
                                                 <td>2017-09-09 09:09:09</td>
                                                 <td>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
+                                                    </a>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn">删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -258,6 +276,52 @@
             </div>
 
         </div>
+
+    <!-- 模态框（Modal）站内邮件查看详细 -->
+    <div class="modal fade modal_hidden" id="sites_email_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="max-width:700px;position: absolute;top: 50%;left: 50%;margin-left: -310px;margin-top: -320px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        积分售出
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="List sellList_dialog table-responsive vertical">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>售出数量</th>
+                                        <td>236</td>
+                                    </tr>
+                                    <tr>
+                                        <th>售出积分</th>
+                                        <td>0.26</td>
+                                    </tr>
+                                    <tr>
+                                        <th>积分总值</th>
+                                        <td>19.20</td>
+                                    </tr>
+                                    <tr>
+                                        <th>成交时间</th>
+                                        <td>02/21/2018 22:21:46</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan" data-dismiss="modal" aria-hidden="true">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
 </body>
 <script type="text/javascript" src="../js/chosen.jquery.min.js"></script>
 <script type="text/javascript" src="../js/area_chs.js"></script>

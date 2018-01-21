@@ -94,7 +94,7 @@
     color: #5799c2;
 }
 .seedAllocation .undone{
-    color: #f9c18e;
+    color: #ff9a38;
 }
 .seedAllocation .done{
     color: #5799c2;
@@ -107,7 +107,7 @@
     color: #ee7e89;
 }
 .floatAllocation .undone{
-    color: #f9c18e;
+    color: #ff9a38;
 }
 .floatAllocation .done{
     color: #5799c2;
@@ -145,4 +145,37 @@
     color: #525252;
     margin: 0-2px;
     border: 1px solid #ededed;
+}
+.trading{
+    color: #19d1c4;
+}
+.waitForTrade, .undone{
+    color: #ff9a38;
+}
+.traded, .allocation_success{
+    color: #609bc0;
+}
+.undllocation{
+    color: #ee7b89;
+}
+.tabledata{
+    margin: 10px 0 0 0;
+}
+.paginations{
+    margin: 0;
+    display: block;
+}
+.paginations>li>a, 
+.paginations>li>span{
+    color: #888888;
+}
+.paginations>li>a:focus, 
+.paginations>li>a:hover, 
+.paginations>li>span:focus,
+.paginations>li>span:hover{
+    color: #999999;
+}
+.table-responsive.vertical tr th{
+    background: #32cdb7;
+    color: #fff;
 }

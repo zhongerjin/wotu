@@ -30,7 +30,7 @@ var polyline_option = {
     yAxis: {
         type: 'value',
         axisLabel:{formatter:'{value} USD'},
-        data: [0, 0.1, 0.2, 02, 0.3, 0.4, 0.5],
+        data: [0, 0.1, 0.2, 0.2, 0.3, 0.4, 0.5],
     },
     series: [
         {
@@ -79,7 +79,7 @@ var polyline_option_day = {
     yAxis: {
         type: 'value',
         axisLabel:{formatter:'{value} USD'},
-        data: [0, 0.1, 0.2, 02, 0.3, 0.4, 0.5],
+        data: [0, 0.1, 0.2, 0.2, 0.3, 0.4, 0.5],
     },
     series: [
         {
@@ -128,7 +128,7 @@ var polyline_option_week = {
     yAxis: {
         type: 'value',
         axisLabel:{formatter:'{value} USD'},
-        data: [0, 0.1, 0.2, 02, 0.3, 0.4, 0.5],
+        data: [0, 0.1, 0.2, 0.2, 0.3, 0.4, 0.5],
     },
     series: [
         {
@@ -177,7 +177,7 @@ var polyline_option_month = {
     yAxis: {
         type: 'value',
         axisLabel:{formatter:'{value} USD'},
-        data: [0, 0.1, 0.2, 02, 0.3, 0.4, 0.5],
+        data: [0, 0.1, 0.2, 0.2, 0.3, 0.4, 0.5],
     },
     series: [
         {

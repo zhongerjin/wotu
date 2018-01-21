@@ -453,10 +453,10 @@ li {
 }
 
 .content .operaconc {
-    color: #6f6f6f;
+    color: #fff;
     padding: 65px 0 85px 0;
     text-align: center;
-    background: url('../image/GIF-1920-bg.jpg') no-repeat;
+    background: url('../image/background.png') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -1105,7 +1105,7 @@ li {
 
 .ear {
     position: relative;
-    background: url('../image/GIF-1920-bg.jpg') no-repeat center center;
+     background: url('../image/background.png') no-repeat center center;
 }
 
 .ear img {
@@ -1392,6 +1392,23 @@ li {
 }
 .pad_0{
     padding: 0;
+}
+.round{
+    position: absolute;
+    height: 94%;
+    top: 1%;
+    left: 47%;
+    -webkit-transition: 5s ease;
+    -o-transition: 5s ease;
+    transition: 5s ease;
+    -webkit-animation: 5s round infinite linear;
+            animation: 5s round infinite linear
+}
+.point{
+    position: absolute;
+    height: 100%;
+    top: 1%;
+    left: 0%; -webkit-animation: 2s point infinite alternate linear; animation: 2s point infinite alternate linear
 }
 /*end*/
 @-webkit-keyframes myanimation {
@@ -2650,5 +2667,41 @@ li {
         top: 39%;
         left: 68%;
         opacity: 0
+    }
+}
+@-webkit-keyframes round{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes round{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes point{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes point{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }

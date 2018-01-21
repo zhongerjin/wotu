@@ -116,7 +116,7 @@
                               <ul class="dropdown-menu">
                                 <li><a href="infoself.html">个人中心</a></li>
                                 <li><a href="system_message.html">系统消息</a></li>
-                                <li><a href="sites_email.html">站内消息</a></li>
+                                <li><a href="sites_email.html">站内邮件</a></li>
                                 <li><a href="javascript:void(0)">安全退出</a></li>
                             </ul>
                         </div>
@@ -201,7 +201,7 @@
                                 <a href="#" class="navbar-brand nav-title">钱包</a>
                             </div>
                             <div class="navbar-collapse bs-js-navbar-scrollspy1 collapse in" aria-expanded="true">
-                                <ul class="nav navbar-nav navbar-right">
+                                <ul class="nav navbar-nav navbar-right" data-tab-group>
                                     <li>
                                         <a href="javascript:void(0)" class="nav_li" data-tab=Wallet>钱包</a>
                                     </li>
@@ -2140,7 +2140,8 @@
             });
         } else {
             //切换一级导航
-            $("[" + type + "]").children().each(function (index, ele) {
+            // $("[" + type + "]").children(".nav_li").each(function (index, ele) {
+            $(".nav_li").each(function (index, ele) {
                 $(ele).removeClass("active");
             });
             $(that).parents().find("." + _element).each(function (index, ele) {
