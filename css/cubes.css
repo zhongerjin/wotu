@@ -1,0 +1,141 @@
+.wrapper:hover .card{
+	transform: rotateY(180deg);
+}
+.wrapper .card{
+	position: absolute;
+	/*width:200px;
+	height:50px;*/
+    width: 100%;
+    height: 100%;
+	transition:.5s;
+	-webkit-transform-style: preserve-3d;
+}
+.wrapper .face{
+	position: absolute;
+	width:100%;
+	height:100%;
+	backface-visibility:hidden;
+	color:#fff;
+	text-align: center;
+}
+.wrapper .font{
+	background: red;
+	transform: rotateY(180deg);
+}
+.wrapper .back{
+	background: blue;
+}
+.logo {
+  position: relative;
+  width: 100px;
+  margin: 100px auto;
+}
+.cube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  padding: 0;
+  /*重要！*/
+  transform-style: preserve-3d;
+  transform-origin: 50px 50px;
+  transform: rotateX(-33.5deg) rotateY(45deg);
+  -webkit-animation: slowspin 2s ease-in-out infinite 0.5s;
+  /*延迟秒数是针对整个动画开始前的，一次性的！！！*/
+}
+.cube li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 169, 232, 0.5);
+  list-style-type: none;
+  background: radial-gradient(transparent 30%, rgba(16, 47, 91, 0.2) 100%);
+}
+.cube li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 169, 232, 0.5);
+}
+.cube .front {
+  transform: translateZ(50px);
+}
+.cube .back {
+  transform: rotateX(-180deg) translateZ(50px);
+}
+.cube .right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+.cube .left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.cube .top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.cube .bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+.cube .floor {
+  box-shadow: -300px 0 50px rgba(0, 0, 0, 0.3);
+  width: 110px;
+  height: 110px;
+  left: 295px;
+  background: rgba(0, 0, 0, 0);
+  transform: rotateX(-90deg) translateZ(60px);
+}
+.cube .floor:after {
+  display: none;
+}
+.cube.inner {
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  transform-origin: 25px 25px;
+  -webkit-animation: fastspin 2s ease-in-out infinite 0.5s;
+  /*延迟秒数是针对整个动画开始前的，一次性的！！！*/
+}
+.cube.inner .front {
+  transform: translateZ(25px);
+}
+.cube.inner .back {
+  transform: rotateX(-180deg) translateZ(25px);
+}
+.cube.inner .right {
+  transform: rotateY(90deg) translateZ(25px);
+}
+.cube.inner .left {
+  transform: rotateY(-90deg) translateZ(25px);
+}
+.cube.inner .top {
+  transform: rotateX(90deg) translateZ(25px);
+}
+.cube.inner .top:after {
+  background-color: rgba(22, 78, 234, 0.5);
+}
+.cube.inner .bottom {
+  transform: rotateX(-90deg) translateZ(25px);
+}
+@-webkit-keyframes slowspin {
+  0% {
+    transform: rotateX(-33.5deg) rotateY(45deg);
+  }
+  20%,
+  100% {
+    /*为了使动画运行一段时间(20%)，然后“暂停一段时间(剩下的80%)”，所以设定20%~100%都为同一个状态*/
+    transform: rotateX(-33.5deg) rotateY(225deg);
+  }
+}
+@-webkit-keyframes fastspin {
+  0% {
+    transform: rotateX(-33.5deg) rotateY(45deg);
+  }
+  20%,
+  100% {
+    /*为了使动画运行一段时间(20%)，然后“暂停一段时间(剩下的80%)”，所以设定20%~100%都为同一个状态*/
+    transform: rotateX(-33.5deg) rotateY(-315deg);
+  }
+}

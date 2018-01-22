@@ -1105,7 +1105,8 @@ li {
 
 .ear {
     position: relative;
-     background: url('../image/background.png') no-repeat center center;
+    background: url('../image/background.png') no-repeat center center;
+    margin-top: 10px;
 }
 
 .ear img {
