@@ -222,6 +222,7 @@ a {
 .table-responsive tr > td {
     text-align: center;
     border: 1px solid #a4eae0;
+    white-space: nowrap;
 }
 .supporting .table-responsive thead tr {
     /*background: #32cdb7;*/

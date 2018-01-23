@@ -1,0 +1,98 @@
+.fonts{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+}
+.fonts .font{
+    position: absolute;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+.fonts .font:hover{
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+}
+.fonts .₫{
+    left: 3.6%;
+    top: 86%;
+    height: 10%;
+}
+.fonts .₪{
+    height: 9%;
+    right: 3%;
+    top: 68%;
+}
+.fonts .€-2{
+    left: 31.4%;
+    bottom: 7%;
+    height: 10%;
+}
+.fonts .₩-1{
+    top: 8%;
+    left: 12.333%;
+    height: 9%;
+}
+.fonts .£{
+    left: 62.9%;
+    bottom: 11%;
+    height: 9%;
+}
+.fonts .€{
+    top: 31.7%;
+    left: 41.7%;
+    height: 7%;
+}
+.fonts .₩{
+    top: 25%;
+    left: 46.9%;
+    height: 7%;
+}
+.fonts .￥{
+    top: 34.4%;
+    left: 36.6%;
+    height: 7%;
+}
+.fonts .€copy_3{
+    left: 41.3333%;
+    height: 7%;
+    top: .6%;
+}
+.fonts .€copy_2{
+    top: 64%;
+    left: 68.88%;
+    height: 7%;
+}
+.fonts .€-1{
+    left: 66.3%;
+    top: 69.7%;
+    height: 7%;
+}
+.fonts .dollar{
+    left: 31.6%;
+    top: 10.9%;
+    height: 7%;
+}
+.fonts .￥-1{
+    left: 70%;
+    bottom: 15%;
+    height: 8%;
+}
+.fonts .￥-2{
+    left: 72.6%;
+    top: 24.3%;
+    height: 8%;
+}
+.fonts .￥-3{
+    left: 84.2%;
+    top: 45.6%;
+    height: 7%;
+}
+.fonts .€copy{
+    left: 82.777%;
+    top: 21.6%;
+    height: 7%;
+}
