@@ -1112,6 +1112,355 @@ li {
 .ear img {
     max-width: 100%;
 }
+.ear .lines{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.ear .lines .line1{
+    width: 55%;
+    height: 1px;
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+    left: 3.9%;
+    top: 23%;
+}
+.ear .lines .line2{
+    width: 32%;
+    height: 1px;
+    -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+            transform: rotate(25deg);
+    left: 26.9%;
+    top: 21.4%;
+}
+.ear .lines .line3{
+    width: 27%;
+    height: 1px;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+    left: 32.9%;
+    top: 21.4%;
+}
+.ear .lines .line4{
+    width: 58%;
+    height: 1px;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 47.9%;
+}
+.ear .lines .line5{
+    width: 58%;
+    height: 1px;
+    -webkit-transform: rotate(-6deg);
+        -ms-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+    top: 58%;
+}
+.ear .lines .line6{
+    width: 56%;
+    height: 1px;
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    left: 3%;
+    top: 73%;
+}
+.ear .lines .line7{
+    width: 45%;
+    height: 1px;
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    left: 14.2%;
+    top: 75.4%;
+}
+.ear .lines .line8{
+    width: 31%;
+    height: 1px;
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    left: 30.1%;
+    top: 75%;
+}
+.ear .lines .line9{
+    width: 27%;
+    height: 1px;
+    -webkit-transform: rotate(-35deg);
+        -ms-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+    left: 34.7%;
+    top: 75%;
+}
+.ear .lines .line10{
+    width: 20%;
+    height: 1px;
+    -webkit-transform: rotate(-46deg);
+        -ms-transform: rotate(-46deg);
+            transform: rotate(-46deg);
+    left: 42%;
+    top: 75%;
+}
+.ear .lines .line11{
+    width: 16%;
+    height: 1px;
+    -webkit-transform: rotate(-100deg);
+        -ms-transform: rotate(-100deg);
+            transform: rotate(-100deg);
+    left: 53.9%;
+    top: 75%;
+}
+.ear .lines .line12{
+    width: 16%;
+    height: 1px;
+    -webkit-transform: rotate(-105deg);
+        -ms-transform: rotate(-105deg);
+            transform: rotate(-105deg);
+    left: 54.7%;
+    top: 75%;
+}
+.ear .lines .line13{
+    width: 40%;
+    height: 1px;
+    -webkit-transform: rotate(-160deg);
+        -ms-transform: rotate(-160deg);
+            transform: rotate(-160deg);
+    left: 61%;
+    top: 71.6%;
+    /* bottom: 0%; */
+}
+.ear .lines .line14{
+    width: 38.6%;
+    height: 1px;
+    -webkit-transform: rotate(-165deg);
+        -ms-transform: rotate(-165deg);
+            transform: rotate(-165deg);
+    left: 62%;
+    top: 65.3%;
+}
+.ear .lines .line15{
+    width: 39.3%;
+    height: 1px;
+    -webkit-transform: rotate(-170deg);
+        -ms-transform: rotate(-170deg);
+            transform: rotate(-170deg);
+    left: 61%;
+    top: 59.5%;
+}
+.ear .lines .line16{
+    width: 39%;
+    height: 1px;
+    -webkit-transform: rotate(-175deg);
+        -ms-transform: rotate(-175deg);
+            transform: rotate(-175deg);
+    left: 61%;
+    top: 53.6%;
+}
+.ear .lines .line17{
+    width: 39%;
+    height: 1px;
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    left: 61%;
+    top: 48%;
+}
+.ear .lines .line18{
+    width: 40%;
+    height: 1px;
+    -webkit-transform: rotate(-190deg);
+        -ms-transform: rotate(-190deg);
+            transform: rotate(-190deg);
+    left: 60%;
+    top: 36.9%;
+}
+.ear .lines .line19{
+    width: 17%;
+    height: 1px;
+    -webkit-transform: rotate(125deg);
+        -ms-transform: rotate(125deg);
+            transform: rotate(125deg);
+    left: 57.6%;
+    top: 22%;
+}
+.ear .lines .line20{
+    width: 17%;
+    height: 1px;
+    -webkit-transform: rotate(130deg);
+        -ms-transform: rotate(130deg);
+            transform: rotate(130deg);
+    left: 59.1%;
+    top: 20.7%;
+}
+.ear .lines .line21{
+    width: 12%;
+    height: 1px;
+    -webkit-transform: rotate(85deg);
+        -ms-transform: rotate(85deg);
+            transform: rotate(85deg);
+    left: 53.6%;
+    top: 18.9%;
+}
+.ear .lines .line22{
+    width: 12%;
+    height: 1px;
+    -webkit-transform: rotate(80deg);
+        -ms-transform: rotate(80deg);
+            transform: rotate(80deg);
+    left: 52.9%;
+    top: 18.9%;
+}
+.ear .lines .line23{
+    width: 15%;
+    height: 1px;
+    -webkit-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
+            transform: rotate(55deg);
+    left: 46.8%;
+    top: 19.9%;
+}
+.ear .lines .line24{
+    width: 14%;
+    height: 1px;
+    -webkit-transform: rotate(105deg);
+        -ms-transform: rotate(105deg);
+            transform: rotate(105deg);
+    left: 55.6%;
+    top: 21.8%;
+}
+.ear .lines .line25{
+    width: 14%;
+    height: 1px;
+    -webkit-transform: rotate(110deg);
+        -ms-transform: rotate(110deg);
+            transform: rotate(110deg);
+    left: 56.4%;
+    top: 21.2%;
+}
+.ear .lines .line26{
+    width: 14%;
+    height: 1px;
+    -webkit-transform: rotate(115deg);
+        -ms-transform: rotate(115deg);
+            transform: rotate(115deg);
+    left: 57.4%;
+    top: 20.5%;
+}
+.ear .lines .line27{
+    width: 33%;
+    height: 1px;
+    -webkit-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+    left: 58%;
+    top: 73.9%;
+}
+.ear .lines .line28{
+    width: 28%;
+    height: 1px;
+    -webkit-transform: rotate(-145deg);
+        -ms-transform: rotate(-145deg);
+            transform: rotate(-145deg);
+    left: 58.3%;
+    top: 74%;
+}
+.ear .lines .line29{
+    width: 25%;
+    height: 1px;
+    -webkit-transform: rotate(-140deg);
+        -ms-transform: rotate(-140deg);
+            transform: rotate(-140deg);
+    left: 57.9%;
+    top: 74.3%;
+}
+.ear .lines .line30{
+    width: 17%;
+    height: 1px;
+    -webkit-transform: rotate(-115deg);
+        -ms-transform: rotate(-115deg);
+            transform: rotate(-115deg);
+    left: 56%;
+    top: 75.1%;
+}
+.ear .lines .line31{
+    width: 14%;
+    height: 1px;
+    -webkit-transform: rotate(-89deg);
+        -ms-transform: rotate(-89deg);
+            transform: rotate(-89deg);
+    left: 53%;
+    top: 74.2%;
+}
+.ear .lines .line32{
+    width: 15%;
+    height: 1px;
+    -webkit-transform: rotate(-88deg);
+        -ms-transform: rotate(-88deg);
+            transform: rotate(-88deg);
+    left: 52.2%;
+    top: 72.8%;
+}
+.ear .lines .line{
+    position: absolute;
+    background: #2c4645 -webkit-gradient(linear, right top, left top, from(#2c4645), to(#8ee1d6)) 0 0 no-repeat;
+    background: #2c4645 -webkit-linear-gradient(right, #2c4645, #8ee1d6) 0 0 no-repeat;
+    background: #2c4645 -o-linear-gradient(right, #2c4645, #8ee1d6) 0 0 no-repeat;
+    background: #2c4645 linear-gradient(right, #2c4645, #8ee1d6) 0 0 no-repeat;
+    background-size: 80px;
+    -webkit-animation: electricity 2s infinite linear;
+            animation: electricity 2s infinite linear;
+}
+.ear .lines .line_dark{
+    background: #1a2b2a -webkit-gradient(linear, right top, left top, from(#1a2b2a), to(#8ee1d6)) 0 0 no-repeat;
+    background: #1a2b2a -webkit-linear-gradient(right, #1a2b2a, #8ee1d6) 0 0 no-repeat;
+    background: #1a2b2a -o-linear-gradient(right, #1a2b2a, #8ee1d6) 0 0 no-repeat;
+    background: #1a2b2a linear-gradient(right, #1a2b2a, #8ee1d6) 0 0 no-repeat;
+    background-size: 80px;
+    -webkit-animation: electricity 2s infinite linear;
+            animation: electricity 2s infinite linear;
+}
+.ear .lines .line_light{
+    background: #92ebe1 -webkit-gradient(linear, right top, left top, from(#92ebe1), to(#67eade)) 0 0 no-repeat;
+    background: #92ebe1 -webkit-linear-gradient(right, #92ebe1, #67eade) 0 0 no-repeat;
+    background: #92ebe1 -o-linear-gradient(right, #92ebe1, #67eade) 0 0 no-repeat;
+    background: #92ebe1 linear-gradient(right, #92ebe1, #67eade) 0 0 no-repeat;
+    background-size: 80px;
+    -webkit-animation: electricity 2s infinite linear;
+            animation: electricity 2s infinite linear;
+}
+@-webkit-keyframes electricity{
+    from{
+        background-position: 100% 100%;
+    }
+    to{
+        background-position: 0 0;
+    }
+}
+@keyframes electricity{
+    from{
+        background-position: 100% 100%;
+    }
+    to{
+        background-position: 0 0;
+    }
+}
+.copywriting{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
+.copywriting img{
+    position: absolute;
+    left: 27.1%;
+    top: 66.5%;
+    height: 4.9%;
+}
 /*zzl å¢žåŠ */
 .modal-dialog input,.modal-dialog select {
     -webkit-box-shadow:none;
@@ -1271,8 +1620,13 @@ li {
         -ms-flex: 2;
             flex: 2;
 }
-.left_right_div_2 input,.left_right_div_2 select{
+.left_right_div_2 input,.left_right_div_2 select, .left_right_div_2 textarea{
     width: 60%;
+}
+.left_right_div_2 textarea{
+    overflow: hidden;
+    max-width: 60%;
+    min-height: 34px;
 }
 .mt_20{
     margin-top:20px;
@@ -1333,6 +1687,7 @@ li {
 .fwtk a{
     color:#36ceb9;
     text-decoration: underline;
+    cursor: pointer;
 }
 .ml_20{
     margin-left:20px;
@@ -1340,6 +1695,7 @@ li {
 .yl_password{
     font-size:23px;
     border:0 !important;
+    padding: 0;
 }
 .modal-dialog {
     position: relative;

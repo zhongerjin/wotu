@@ -28,7 +28,7 @@
 }
 .modal-dialog.btn_cent{
     height: 800px;
-    max-width:600px;
+    /*max-width:600px;*/
     overflow: auto;
 }
 .pad_bot{
@@ -71,7 +71,15 @@
         padding: 0;
     }
     .modal-dialog.btn_cent{
-        width: 620px;
+        width: 600px;
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+    }
+    .modal_hidden#termsOfService .modal-dialog{
+        position: absolute !important;
+        left: 50%;
+        margin-left: -300px;
     }
 }
 

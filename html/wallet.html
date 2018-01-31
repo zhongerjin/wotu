@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/supporting.css">
     <link rel="stylesheet" href="../css/wallet.css">
     <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
 
@@ -145,8 +146,8 @@
                         <p>余额:2524.99USD</p>
                         <div class="btnwarp">
                             <div class="btn" data-toggle="modal" data-target="#myModal">充值</div>
-                            <div class="btn">提现</div>
-                            <div class="btn">提现记录</div>
+                            <div class="btn" data-toggle="modal" data-target="#onlineWithdrawal">提现</div>
+                            <div class="btn nav_li" data-tab="withdraw">提现记录</div>
                         </div>
                         <div class="linehr"></div>
                     </div>
@@ -175,13 +176,13 @@
                     <div class="col-md-4 contentwarp pad_0">
                         <div class="contentmiddle2 col-md-12">
                             <div class="col-md-4 col-xs-12">
-                                <div class="btn">立即转账</div>
+                                <div class="btn" data-toggle="modal" data-target="#onlineTransfer">立即转账</div>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <div class="btn">转账记录</div>
+                                <div class="btn nav_li" data-tab="transfer">转账记录</div>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <div class="btn">一键转账</div>
+                                <div class="btn" data-toggle="modal" data-target="#onlineCollectMoney">一键收款</div>
                             </div>
                         </div>
                     </div>
@@ -248,33 +249,33 @@
                                     <div class="more btn">
                                         <img src="../image/arrow.png" alt=""> 全部
                                     </div>
-                                    <div class="export btn">
-                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="export btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="">
                                             <img src="../image/export.png" alt="">
                                             <img src="../image/export_down.png" alt="">
                                         </div>
-                                        <ul class="dropdown-menu">
-                                            <li>导出当前页数据</li>
-                                            <li>
-                                                <a href="javascript:void(0)">HTML</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">CSV</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">文本</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Excel</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">PDF</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">JSON</a>
-                                            </li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu">
+                                        <li>导出当前页数据</li>
+                                        <li>
+                                            <a href="javascript:void(0)">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">CSV</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">文本</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">PDF</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">JSON</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <!--<div style="height: 10px;background-color: #23c6c8;display: block;min-width: 100%;"></div>-->
@@ -704,33 +705,33 @@
                                     <div class="more btn">
                                         <img src="../image/arrow.png" alt=""> 全部
                                     </div>
-                                    <div class="export btn">
-                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="export btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="">
                                             <img src="../image/export.png" alt="">
                                             <img src="../image/export_down.png" alt="">
                                         </div>
-                                        <ul class="dropdown-menu">
-                                            <li>导出当前页数据</li>
-                                            <li>
-                                                <a href="javascript:void(0)">HTML</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">CSV</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">文本</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Excel</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">PDF</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">JSON</a>
-                                            </li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu">
+                                        <li>导出当前页数据</li>
+                                        <li>
+                                            <a href="javascript:void(0)">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">CSV</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">文本</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">PDF</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">JSON</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="table-responsive">
@@ -857,33 +858,33 @@
                                     <div class="more btn">
                                         <img src="../image/arrow.png" alt=""> 全部
                                     </div>
-                                    <div class="export btn">
-                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="export btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="">
                                             <img src="../image/export.png" alt="">
                                             <img src="../image/export_down.png" alt="">
                                         </div>
-                                        <ul class="dropdown-menu">
-                                            <li>导出当前页数据</li>
-                                            <li>
-                                                <a href="javascript:void(0)">HTML</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">CSV</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">文本</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Excel</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">PDF</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">JSON</a>
-                                            </li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu">
+                                        <li>导出当前页数据</li>
+                                        <li>
+                                            <a href="javascript:void(0)">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">CSV</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">文本</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">PDF</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">JSON</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="search">
@@ -1531,33 +1532,33 @@
                                     <div class="more btn">
                                         <img src="../image/arrow.png" alt=""> 全部
                                     </div>
-                                    <div class="export btn">
-                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="export btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="">
                                             <img src="../image/export.png" alt="">
                                             <img src="../image/export_down.png" alt="">
                                         </div>
-                                        <ul class="dropdown-menu">
-                                            <li>导出当前页数据</li>
-                                            <li>
-                                                <a href="javascript:void(0)">HTML</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">CSV</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">文本</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Excel</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">PDF</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">JSON</a>
-                                            </li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu">
+                                        <li>导出当前页数据</li>
+                                        <li>
+                                            <a href="javascript:void(0)">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">CSV</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">文本</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">PDF</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">JSON</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="table-responsive">
@@ -1721,33 +1722,33 @@
                                     <div class="more btn">
                                         <img src="../image/arrow.png" alt=""> 全部
                                     </div>
-                                    <div class="export btn">
-                                        <div class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="export btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="">
                                             <img src="../image/export.png" alt="">
                                             <img src="../image/export_down.png" alt="">
                                         </div>
-                                        <ul class="dropdown-menu">
-                                            <li>导出当前页数据</li>
-                                            <li>
-                                                <a href="javascript:void(0)">HTML</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">CSV</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">文本</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Excel</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">PDF</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">JSON</a>
-                                            </li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu">
+                                        <li>导出当前页数据</li>
+                                        <li>
+                                            <a href="javascript:void(0)">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">CSV</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">文本</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">PDF</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">JSON</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="table-responsive">
@@ -1962,8 +1963,8 @@
 
     </div>
     <!-- 模态框（Modal）1 -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent" style="overflow: auto;max-width:500px;position:relative;top:calc(40% / 2)">
+    <div class="modal fade modal_hidden recharge_dialog" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent" style="top:50%;margin-top:-310px;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2015,8 +2016,8 @@
 
     <!-- /.modal-content -->
     <!-- 模态框（Modal）2 -->
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent" style="overflow: auto;max-width:500px;position:relative;top:5%;">
+    <div class="modal fade modal_hidden withdrawal_dialog" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent" style="">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2087,6 +2088,56 @@
                         </div>
                     </div>
                     <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+    <!-- 模态框（Modal）在线提现 -->
+    <div class="modal fade modal_hidden" id="onlineWithdrawal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-288px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        在线提现
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">提现类型</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择提现类型">请选择提现类型</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">付款钱包</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转出付款钱包">请选择转出付款钱包</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">收款钱包</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转入收款钱包">请选择转入收款钱包</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">提现金额</div>
+                            <textarea class="form-control"placeholder="请输入提现备注（可以为空）"></textarea>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="text" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineWithdrawal','onlineWithdrawal_deatil')">预&nbsp;览</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
                 </div>
@@ -2094,7 +2145,221 @@
         </div>
     </div>
     <!-- /.modal-content -->
+    <!-- 模态框（Modal）在线提现预览 -->
+    <div class="modal fade modal_hidden" id="onlineWithdrawal_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-250px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        在线提现预览
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">提现类型</div>
+                            <div>这是类型</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">付款钱包</div>
+                            <div>这是钱包</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">收款钱包</div>
+                            <div>这是钱包</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">提现金额</div>
+                            <div>100.00</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineWithdrawal_deatil','onlineWithdrawal')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+    <!-- 模态框（Modal）在线转账 -->
+    <div class="modal fade modal_hidden" id="onlineTransfer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-288px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        在线转账
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">转账类型</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转账类型">请选择转账类型</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">付款钱包</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转出付款钱包">请选择转出付款钱包</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">收款钱包</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转入收款钱包">请选择转入收款钱包</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">转账金额</div>
+                            <textarea class="form-control"placeholder="请输入转账备注（可以为空）"></textarea>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="text" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineTransfer','onlineTransfer_deatil')">预&nbsp;览</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+    <!-- 模态框（Modal）在线转账预览 -->
+    <div class="modal fade modal_hidden" id="onlineTransfer_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-210px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        在线转账预览
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">转账类型</div>
+                            <div>这是类型</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">付款钱包</div>
+                            <div>这是钱包</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">收款钱包</div>
+                            <div>这是钱包</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">转账金额</div>
+                            <div>100.00</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineTransfer_deatil','onlineTransfer')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+    <!-- 模态框（Modal）一键收款 -->
+    <div class="modal fade modal_hidden" id="onlineCollectMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-210px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        一键收款
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">付款钱包</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转出付款钱包">请选择转出付款钱包</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">收款钱包</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择转入收款钱包">请选择转入收款钱包</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div_2 mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="text" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineCollectMoney','onlineCollectMoney_deatil')">预&nbsp;览</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+    <!-- 模态框（Modal）在线转账预览 -->
+    <div class="modal fade modal_hidden" id="onlineCollectMoney_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-210px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        一键收款
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">付款钱包</div>
+                            <div>这是钱包</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">收款钱包</div>
+                            <div>这是钱包</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineCollectMoney_deatil','onlineCollectMoney')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="../js/divscroll.js"></script>
 <script>
     window.onload = function () {
         $(".navlist").hover(function () {
@@ -2102,6 +2367,7 @@
         }, function () {
             $(this).removeClass("actmove")
         });
+        $('.modal_hidden .btn_cent').perfectScrollbar();
         // var e = $(".tabletop1 .title"), len = e.length;
         // for (var i = 0; i < len; i++) {
         //     (function (i) {
@@ -2114,6 +2380,13 @@
         // }
 
     }
+    var open_Prep = function (modal_hide, modal_show) {
+        $("#" + modal_hide).modal('hide');
+        $("#" + modal_show).modal('show');
+        $("#" + modal_hide).find(".btn_cent").removeClass("pad_bot");
+        $("#" + modal_show).find(".btn_cent").addClass("pad_bot");
+    }
+
     $(".time").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
     $(".nav_li").on("click", function (e) {
         tab_toggle(this, undefined, "index_content");
@@ -2130,6 +2403,8 @@
 
         var toggle_class = $(that).attr("data-tab");
         var close_div = $(".nav_li.active").attr("data-tab");
+        var tab_value = $(that).attr("data-tab");
+        var tab_arr = [];
         //切换二级导航的时候
         if (_element === "table-responsive" && type === "data-tab-chil") {
             $("." + close_div).find("[" + type + "]").children().each(function (index, ele) {
@@ -2143,7 +2418,12 @@
             // $("[" + type + "]").children(".nav_li").each(function (index, ele) {
             $(".nav_li").each(function (index, ele) {
                 $(ele).removeClass("active");
+                (tab_value === $(ele).attr("data-tab")) ? tab_arr[index] = ele: null;
             });
+            tab_arr = tab_arr.filter(function(e){return e});
+            $(tab_arr).each(function(index, ele){
+                $(ele).addClass("active");
+            })
             $(that).parents().find("." + _element).each(function (index, ele) {
                 $(ele).hide();
             });

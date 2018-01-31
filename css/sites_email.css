@@ -5,3 +5,17 @@
     background: #32cdb7;
     color: #fff;
 }
+@media screen and (min-width: 768px) {
+    #sites_email_deatil .modal-dialog{
+        max-width: 700px;
+        position: absolute !important;
+        left: 50%;
+        margin-left: -310px;
+    }
+    #delete_confirm .modal-dialog{
+        max-width: 600px;
+        position: absolute !important;
+        left: 50%;
+            margin-left: -300px;
+    }
+}

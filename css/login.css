@@ -272,6 +272,7 @@ body .login_fields__caluse>span a {
             text-decoration-line: underline;
     letter-spacing: 2px;
     cursor: pointer;
+    color: #fff;
 }
 
 body .login_fields__submit .forgot {
@@ -433,6 +434,19 @@ body .login_fields__submit input:focus {
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    #termsOfService .btn_cent{
+        max-width:600px;
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+    }
+    #forgot_password .btn_cent{
+        max-width: 600px;
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+    }
+}
 
 @media screen and (min-width: 1200px) {}

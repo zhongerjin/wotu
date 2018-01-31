@@ -179,3 +179,23 @@
     background: #32cdb7;
     color: #fff;
 }
+@media screen and (min-width: 768px) {
+    #seedAllocation_deatil .btn_cent{
+        width:860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #floatAllocation_deatil .btn_cent{
+        width:860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #sell_preview .btn_cent{
+        max-width:700px;
+        position: absolute;
+        left: 50%;
+        margin-left: -309px;
+    }
+}

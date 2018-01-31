@@ -6,9 +6,13 @@
 	<title>Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/supporting.css">
 	<link href="../css/login.css" rel='stylesheet' type='text/css' />
 
 	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 </head>
 
@@ -61,18 +65,74 @@
 					<div class="caluse_odiv" style="display:none"></div>
 				</span>
 				<span>服务条款
-					<a>(查看)</a>
+					<a data-toggle="modal" data-target="#termsOfService">(查看)</a>
 				</span>
 			</div>
 			<div class="login_fields__submit">
 				<a href="infoself.html">
 					<input type="button" class="loginBtn" value="登录">
 				</a>
-				<input type="button" class="forgetPwdBtn" value="忘记密码">
+				<input type="button" class="forgetPwdBtn" value="忘记密码" data-toggle="modal" data-target="#forgot_password">
 				<div class="clear"></div>
 			</div>
 		</div>
 	</div>
+    <!-- /.modal -->
+    <!-- 模态框（Modal）服务条款 -->
+    <div class="modal fade modal_hidden" id="termsOfService" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent " style="height: 800px;top: 50%;margin-top: -123px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        服务条款
+                    </h4>
+                </div>
+                <div class="modal-body padd_20">
+						服务条款
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+        <!-- /.modal -->
+        <!-- 模态框（Modal）忘记密码 -->
+        <div class="modal fade modal_hidden" id="forgot_password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog btn_cent " style="height: 800px;top: 50%;margin-top: -197.5px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            找回密码
+                        </h4>
+                    </div>
+                    <div class="modal-body xinxi_bc padd_20">
+                        <div class="zhxx">
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">会员账号</div>
+                                <input type="text" class="form-control" placeholder="请输入用户名或会员ID">
+                            </div>
+                            <div class="left_right_div mt_20">
+                                <div class="left_title">注册邮箱</div>
+                                <input type="text" class="form-control" placeholder="请输入注册邮箱">
+                            </div>
+                        </div>
+                        <div class="btn_div">
+                            <button type="button" class="btn btn-primary dialogqiehuan">提&nbsp;交</button>
+                            <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
 </body>
 <script>
 	window.onload = function () {
