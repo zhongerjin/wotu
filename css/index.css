@@ -1561,7 +1561,7 @@ li {
     text-align:left;
     color:#36ceb9;
 }
-.login_pass > input{
+.login_pass > input, .transaction_pass > input{
     margin-top:10px;
 }
 .nav_table{

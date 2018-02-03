@@ -907,7 +907,7 @@
                         </div>
                     </div>
                     <div class="btn_div">
-                        <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep('upgrade_supporting','upgrade_supporting_detail')">预&nbsp;览</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep2('upgrade_supporting','upgrade_supporting_detail')">预&nbsp;览</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
                 </div>
@@ -975,7 +975,7 @@
                         </div>
                     </div>
                     <div class="btn_div">
-                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('upgrade_supporting_detail', 'upgrade_supporting')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep2('upgrade_supporting_detail', 'upgrade_supporting')">修&nbsp;改</button>
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
                     </div>
                 </div>
@@ -1212,6 +1212,10 @@
         $("#" + modal_show).modal('show');
         $("#" + modal_hide).find(".btn_cent").removeClass("pad_bot");
         $("#" + modal_show).find(".btn_cent").addClass("pad_bot");
+    }
+    var open_Prep2 = function (modal_hide, modal_show) {
+        $("#" + modal_hide).modal('hide');
+        $("#" + modal_show).modal('show');
     }
 
     var node_template = function(data){

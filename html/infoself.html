@@ -1395,18 +1395,18 @@
                 </div>
                 <div class="modal-body pass_body">
                     <div class="nav_table" data-navtable>
-                        <div class="pass_ative">登录密码</div>
-                        <div>交易密码</div>
+                        <div class="pass_ative" data-tab="login_pass">登录密码</div>
+                        <div data-tab="transaction_pass">交易密码</div>
                     </div>
-                    <div class="login_pass" style="display:block">
-                        <input type="text" class="form-control" placeholder="请输入旧登录密码">
-                        <input type="text" class="form-control" placeholder="请输入新登录密码">
-                        <input type="text" class="form-control" placeholder="请输入新登录密码">
+                    <div class="pass_cont login_pass" style="display:block">
+                        <input type="password" class="form-control" placeholder="请输入旧登录密码">
+                        <input type="password" class="form-control" placeholder="请输入新登录密码">
+                        <input type="password" class="form-control" placeholder="请输入新登录密码">
                     </div>
-                    <div class="transaction_pass" style="display:none">
-                        <input type="text" class="form-control" placeholder="请输入旧登录密码">
-                        <input type="text" class="form-control" placeholder="请输入新登录密码">
-                        <input type="text" class="form-control" placeholder="请输入新登录密码">
+                    <div class="pass_cont transaction_pass" style="display:none">
+                        <input type="password" class="form-control" placeholder="请输入旧交易密码">
+                        <input type="password" class="form-control" placeholder="请输入新交易密码">
+                        <input type="password" class="form-control" placeholder="请输入新交易密码">
                     </div>
                     <button type="button" class="btn btn-primary dialogqiehuan">确&nbsp;定</button>
                 </div>
@@ -1478,6 +1478,11 @@
     $("[data-navtable] div").on('click', function () {
         $("[data-navtable] div").removeClass('pass_ative');
         $(this).addClass("pass_ative");
+        var toggle_class = $(this).attr("data-tab");
+        $(".pass_cont").each(function(index, ele){
+            $(ele).hide();
+        });
+        $("." + toggle_class).show();
     });
 
 </script>
