@@ -18,11 +18,11 @@
 
 <body>
 	<div style="width:100%;height:100%;">
-		<canvas style="width:100%;height:100%;" id="J_dotLine" class="J_dotLine"></canvas>
+		<canvas style="position:absolute;width:100%;height:100%;" id="J_dotLine" class="J_dotLine"></canvas>
 	</div>
 	<div class="login">
 		<div class="login_title">
-			<img src="../image/loginIcon.png" alt="">
+			<img src="../image/loginIcon_new.png" alt="">
 		</div>
 		<div class="login_fields">
 			<div class="login_fields__language">
@@ -147,14 +147,14 @@
 			$(".login_fields__language input").val($(this).text())
 			$(".login_fields__language .selectCon").toggle()
 		})
-		var dotline = new Dotline({
-			dom: 'J_dotLine', //画布id
-			cw: $(".J_dotLine").width(), //画布宽
-			ch: $(".J_dotLine").height(), //画布高
-			ds: 50, //点的个数
-			r: 0.5, //圆点半径
-			dis: 220 //触发连线的距离
-		}).start();
+		// var dotline = new Dotline({
+		// 	dom: 'J_dotLine', //画布id
+		// 	cw: $(".J_dotLine").width(), //画布宽
+		// 	ch: $(".J_dotLine").height(), //画布高
+		// 	ds: 50, //点的个数
+		// 	r: 0.5, //圆点半径
+		// 	dis: 220 //触发连线的距离
+		// }).start();
 
 	}
 </script>

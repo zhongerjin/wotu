@@ -42,46 +42,84 @@ body {
     color: #36ceb9
 }
 
-.infoself .content .info_content {
-    padding: 25px;
+.information{
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+.information_content{
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.information_content .contents{
+    padding: 20px 0 0 30px;
+}
+.contactinfo .right,
+.accountuser .right{
+    cursor:pointer;
+    color:rgb(54, 206, 185);
+}
+.info_tab li.row{
+    padding: 15px 0;
+    color: #747474;
+    cursor: pointer;
+}
+.infoself .content .info_tab {
+    padding: 0 25px;
     margin-bottom: 0
 }
-
-.infoself .content .info_content>li {}
-
-.infoself .content .info_content>li .title {
-    font-size: 20px;
-    color: #36ceb9;
-}
-
-.infoself .content .info_content .userinfo .title {
+.info_tab .row .fa-angle-right{
     float: right;
+    line-height: 20px;
+    font-size: 25px;
 }
+.info_tab .row .title{
+    background-position: 0 100%;
+    background-size: 20% 90%;
+}
+.infoself .content .info_tab>li {}
 
-.infoself .content .info_content .userinfo .title {
+.infoself .content .info_tab>li .title {
+    font-size: 16px;
+}
+.infoself .content .info_tab .userinfo .title {
     float: left;
     padding-left: 36px;
-    background: url('../image/info_user.png') no-repeat;
+    background: url('../image/info_user_no.png') no-repeat;
 }
 
-.infoself .content .info_content .contactinfo .title {
+.infoself .content .info_tab .contactinfo .title {
     padding-left: 36px;
-    background: url('../image/info_audio.png') no-repeat 1px 3px;
+    background: url('../image/info_audio_no.png') no-repeat 1px 3px;
 }
 
-.infoself .content .info_content .accountuser .title {
+.infoself .content .info_tab .accountuser .title {
     padding-left: 36px;
-    background: url('../image/info_iduser.png') no-repeat 1px 5px;
+    background: url('../image/info_iduser_no.png') no-repeat 1px 5px;
+}
+.info_tab li.row.active{
+    color: #36ceb9;
+}
+.info_tab li.userinfo.active .title{
+    background: url("../image/info_user.png") no-repeat !important;
+}
+.info_tab li.contactinfo.active .title{
+    background: url("../image/info_audio.png") no-repeat 1px 3px !important;
+}
+.info_tab li.accountuser.active .title{
+    background: url("../image/info_iduser.png") no-repeat 1px 5px !important;
 }
 
 .infoself .content .info_content>li>ul>li.childuser>div:last-child div {
     color: #797979;
 }
-
+.info_content .title{
+    font-size: 30px;
+    color: #36ceb9;
+    padding-left: 15px;
+}
 .infoself .content .info_content>li .infolist {
     padding: 34px 0 20px 0;
     margin-bottom: 20px;
-    border-bottom: 1px solid #f3f3f3;
 }
 
 .infoself .content .info_content>li .infolist1 {
@@ -98,14 +136,15 @@ body {
 }
 
 .infoself .content .info_content>li>ul>li {
-    margin-bottom: 25px;
     font-size: 15px;
     float: left;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #f5f5f5;
     /* width: 33%; */
 }
-
+.infoself .content .info_content>li>ul>li:last-child{
+    border-bottom: none;
+}
 .infoself .content #navbar-example>div.container {
     width: auto;
 }
@@ -124,7 +163,7 @@ body {
 }
 
 .childuser>div:last-child {
-    width: 50%;
+    width: 55%;
 }
 
 .childuser>div>div {
@@ -136,9 +175,9 @@ body {
     color: #797979;
 }
 
-.infoself .content .info_content>li>ul>li.other {
+/*.infoself .content .info_content>li>ul>li.other {
     width: 100%
-}
+}*/
 
 .infoself .content .info_content>li>ul>li.other1 {
     width: 67%
@@ -148,7 +187,9 @@ body {
     width: 50%
 }
 
-.infoself .content .info_content>li>ul>li>span:last-child {
+.infoself .content .info_content>li>ul>li>span:last-child,
+.infoself .content .info_content>li>ul>li>div:last-child,
+.marl_cont {
     color: #797979;
     margin-left: 24px;
 }
@@ -330,15 +371,17 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li {
+    /*.infoself .content .info_content>li>ul>li {
         width: 100%
-    }
-    .infoself .content .info_content>li>ul>li>span:last-child {
+    }*/
+    .infoself .content .info_content>li>ul>li>span:last-child,
+    .infoself .content .info_content>li>ul>li>div:last-child,
+    .marl_cont{
         margin-left: 6px;
     }
-    .infoself .content .info_content>li>ul>li.other {
+    /*.infoself .content .info_content>li>ul>li.other {
         width: 100%
-    }
+    }*/
     .infoself .content .info_content>li>ul>li.other1 {
         width: 67%
     }
@@ -349,8 +392,12 @@ body {
         float: left;
     }
     .infoself .content .info_content>li>ul>li.address span:last-child {
-        margin-left: 75px;
-        display: block;
+        /*margin-left: 75px;
+        display: block;*/
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
     }
     .infoslider {
         height: 315px;
@@ -361,21 +408,23 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li>span:last-child {
+    .infoself .content .info_content>li>ul>li>span:last-child,
+    .infoself .content .info_content>li>ul>li>div:last-child,
+    .marl_cont{
         margin-left: 6px;
     }
-    .infoself .content .info_content>li>ul>li {
+    /*.infoself .content .info_content>li>ul>li {
         width: 50%
-    }
+    }*/
     .infoself .content .info_content>li>ul>li.bankuser {
         width: 100%
     }
     .infoself .content .info_content>li>ul>li.address {
         width: 100%
     }
-    .infoself .content .info_content>li>ul>li.address span:first-child {
+    /*.infoself .content .info_content>li>ul>li.address span:first-child {
         float: none;
-    }
+    }*/
     .infoself .content .info_content>li>ul>li.address span:last-child {
         margin-left: 6px;
         display: inline;
@@ -386,12 +435,14 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li>span:last-child {
+    .infoself .content .info_content>li>ul>li>span:last-child,
+    .infoself .content .info_content>li>ul>li>div:last-child,
+    .marl_cont{
         margin-left: 24px;
     }
-    .infoself .content .info_content>li>ul>li {
+    /*.infoself .content .info_content>li>ul>li {
         width: 33.33%;
-    }
+    }*/
     .infoself .content .info_content>li>ul>li.other {
         width: none
     }
@@ -401,22 +452,22 @@ body {
     .infoself .content .info_content>li>ul>li.other2 {
         width: none
     }
-    .infoself .content .info_content>li>ul>li.bankname,
+    /*.infoself .content .info_content>li>ul>li.bankname,
     .infoself .content .info_content>li>ul>li.username {
         width: 50%
-    }
-    .infoself .content .info_content>li>ul>li.bankuser,
+    }*/
+    /*.infoself .content .info_content>li>ul>li.bankuser,
     .infoself .content .info_content>li>ul>li.sexy,
     .infoself .content .info_content>li>ul>li.realname,
     .infoself .content .info_content>li>ul>li.country {
         width: 50%
-    }
-    .infoself .content .info_content>li>ul>li.email {
+    }*/
+    /*.infoself .content .info_content>li>ul>li.email {
         width: 100%;
-    }
-    .infoself .content .info_content>li>ul>li.address {
+    }*/
+    /*.infoself .content .info_content>li>ul>li.address {
         width: 100%
-    }
+    }*/
     .infoself .content .info_content>li>ul>li.address span:last-child {
         margin-left: 24px;
         display: inline;
@@ -430,21 +481,21 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li.bankname,
+    /*.infoself .content .info_content>li>ul>li.bankname,
     .infoself .content .info_content>li>ul>li.username,
     .infoself .content .info_content>li>ul>li.bankuser {
         width: 50%
-    }
-    .infoself .content .info_content>li>ul>li.sexy,
+    }*/
+    /*.infoself .content .info_content>li>ul>li.sexy,
     .infoself .content .info_content>li>ul>li.realname {
         width: 33%
-    }
-    .infoself .content .info_content>li>ul>li.email {
+    }*/
+    /*.infoself .content .info_content>li>ul>li.email {
         width: 33%;
-    }
-    .infoself .content .info_content>li>ul>li.address {
+    }*/
+    /*.infoself .content .info_content>li>ul>li.address {
         width: 66.67%
-    }
+    }*/
     .infoslider {
         height: 505px;
     }
@@ -460,11 +511,11 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li.bankname,
+    /*.infoself .content .info_content>li>ul>li.bankname,
     .infoself .content .info_content>li>ul>li.username,
     .infoself .content .info_content>li>ul>li.bankuser {
         width: 33.33%
-    }
+    }*/
     .infoslider {
         height: 600px;
     }

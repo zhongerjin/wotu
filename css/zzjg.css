@@ -1,0 +1,35 @@
+#choose_dialog{
+    z-index: 1049;
+}
+.choose_btn_left{
+    width: auto;
+    margin-top: 0;
+}
+.choose_btn_right{
+    width: auto;
+    margin-top: 0;
+}
+#performance_detail .table-bordered > tbody > tr > th{
+    text-align: center;
+}
+.user_info span{
+    color: #36ceb9;
+}
+@media screen and (min-width: 768px) {
+    #delete_confirm .modal-dialog{
+        max-width: 500px;
+        position: absolute !important;
+        left: 50%;
+        margin-left: -250px;
+    }
+    .choose_btn_left{
+        padding: 0 50px;
+        width: auto;
+        margin-top: 0;
+    }
+    .choose_btn_right{
+        padding: 0 43px;
+        width: auto;
+        margin-top: 0;
+    }
+}

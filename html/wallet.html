@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="../css/supporting.css">
     <link rel="stylesheet" href="../css/wallet.css">
     <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
 
     <script src="../js/jquery.1.12.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/down_list.js"></script>
     <script src="../js/bootstrap-datetimepicker.min.js"></script>
 </head>
 
@@ -1945,13 +1945,13 @@
 
         <div class="footer">
             <div class="container footer-con">
-                <div class="col-md-4 col-sm-4 col-xs-4 icon1">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon1 icons">
                     <img src="../image/facebook.png" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 icon2">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon2 icons">
                     <img src="../image/ins.png" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 icon3">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon3 icons">
                     <img src="../image/tiwtter.png" alt="">
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 textby">
@@ -2359,7 +2359,8 @@
         </div>
     </div>
 </body>
-<script src="../js/divscroll.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/down_list.js"></script>
 <script>
     window.onload = function () {
         $(".navlist").hover(function () {
@@ -2367,7 +2368,6 @@
         }, function () {
             $(this).removeClass("actmove")
         });
-        $('.modal_hidden .btn_cent').perfectScrollbar();
         // var e = $(".tabletop1 .title"), len = e.length;
         // for (var i = 0; i < len; i++) {
         //     (function (i) {
@@ -2378,7 +2378,68 @@
         //         });
         //     })(i);
         // }
-
+        $(".modal_hidden .btn_cent").mCustomScrollbar({
+            setWidth:false,
+            setHeight:false,
+            setTop:0,
+            setLeft:0,
+            axis:"y",
+            scrollbarPosition:"inside",
+            scrollInertia:950,
+            autoDraggerLength:true,
+            autoHideScrollbar:false,
+            autoExpandScrollbar:false,
+            alwaysShowScrollbar:0,
+            snapAmount:null,
+            snapOffset:0,
+            mouseWheel:{
+                enable:true,
+                scrollAmount:"auto",
+                axis:"y",
+                preventDefault:false,
+                deltaFactor:"auto",
+                normalizeDelta:false,
+                invert:false,
+                disableOver:["select","option","keygen","datalist","textarea"]
+            },
+            scrollButtons:{
+                enable:false,
+                scrollType:"stepless",
+                scrollAmount:"auto"
+            },
+            keyboard:{
+                enable:true,
+                scrollType:"stepless",
+                scrollAmount:"auto"
+            },
+            contentTouchScroll:25,
+            advanced:{
+                autoExpandHorizontalScroll:false,
+                autoScrollOnFocus:"input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']",
+                updateOnContentResize:true,
+                updateOnImageLoad:true,
+                updateOnSelectorChange:false,
+                releaseDraggableSelectors:false
+            },
+            theme:"light",
+            callbacks:{
+                onInit:false,
+                onScrollStart:false,
+                onScroll:false,
+                onTotalScroll:false,
+                onTotalScrollBack:false,
+                whileScrolling:false,
+                onTotalScrollOffset:0,
+                onTotalScrollBackOffset:0,
+                alwaysTriggerOffsets:true,
+                onOverflowY:false,
+                onOverflowX:false,
+                onOverflowYNone:false,
+                onOverflowXNone:false
+            },
+            live:false,
+            liveSelector:null
+        });
     }
     var open_Prep = function (modal_hide, modal_show) {
         $("#" + modal_hide).modal('hide');
@@ -2403,7 +2464,6 @@
 
         var toggle_class = $(that).attr("data-tab");
         var close_div = $(".nav_li.active").attr("data-tab");
-        var tab_value = $(that).attr("data-tab");
         var tab_arr = [];
         //切换二级导航的时候
         if (_element === "table-responsive" && type === "data-tab-chil") {
@@ -2418,7 +2478,7 @@
             // $("[" + type + "]").children(".nav_li").each(function (index, ele) {
             $(".nav_li").each(function (index, ele) {
                 $(ele).removeClass("active");
-                (tab_value === $(ele).attr("data-tab")) ? tab_arr[index] = ele: null;
+                (toggle_class === $(ele).attr("data-tab")) ? tab_arr[index] = ele: null;
             });
             tab_arr = tab_arr.filter(function(e){return e});
             $(tab_arr).each(function(index, ele){

@@ -118,7 +118,8 @@
 .orgchart>.spinner {
   font-size: 100px;
   margin-top: 30px;
-  color: rgba(68, 157, 68, 0.8);
+  /*color: rgba(68, 157, 68, 0.8);*/
+  color: rgba(13, 224, 192, .8);
 }
 
 .orgchart table {
@@ -504,4 +505,17 @@
   -webkit-transform: translateX(-40px);
       -ms-transform: translateX(-40px);
           transform: translateX(-40px);
+}
+.orgchart .drill-icon{
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+  right: 60px;
+  color: #0de0c0;
+}
+.orgchart .drill-icon.fa-angle-double-down{
+  bottom: -28px;
+}
+.orgchart .drill-icon.fa-angle-double-up{
+  top: -26px;
 }

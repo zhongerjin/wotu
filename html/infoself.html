@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/infoself.css">
     <link rel="stylesheet" href="../css/chosen.min.css">
-
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <title>infoself</title>
 </head>
 
@@ -168,7 +168,7 @@
                 </nav>
             </div>
             <div data-info-content>
-                <ul class="information info_content index_content">
+                <!--<ul class="information info_content index_content">
                     <li class="userinfo row">
                         <div class="title">账户信息</div>
                         <ul class="infolist">
@@ -314,7 +314,163 @@
                             <div class="clear"></div>
                         </ul>
                     </li>
-                </ul>
+                </ul>-->
+                <div class="information index_content">
+                    <ul class="info_tab col-md-2" data-tab-chil>
+                        <li class="userinfo row active" data-tab="userinfo">
+                            <div class="title">账户信息</div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </li>
+                        <li class="contactinfo row" data-tab="contactinfo">
+                            <div class="title left">联系信息</div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </li>
+                        <li class="accountuser row" data-tab="accountuser">
+                           <div class="title left">账户信息</div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                    <ul class="information_content info_content col-md-10">
+                        <li class="userinfo contents table-responsive">
+                            <div class="title">账户信息</div>
+                            <ul class="infolist">
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">会员ID：</span>
+                                    <span>11857</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">用户名：</span>
+                                    <span>11857</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">推荐人：</span>
+                                    <span>11857</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">安置人：</span>
+                                    <span>118281.04</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">安置区域：</span>
+                                    <span>左区</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">账户阶级：</span>
+                                    <div class="leave"></div>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">状态：</span>
+                                    <span>正常</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">账户类型：</span>
+                                    <span>主账户</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">注册时间：</span>
+                                    <span>2017-09-09</span>
+                                </li>
+                                <li class="childuser other col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">子账户：</div>
+                                    <div style="display:inline-block">
+                                        <div>118281.04</div>
+                                        <div>118281.04</div>
+                                        <div>118281.04</div>
+                                        <div>118281.04</div>
+                                        <div>118281.04</div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">投资额：</span>
+                                    <span>1700.00</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">赠送分配：</span>
+                                    <span>不赠送</span>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">分配次数：</span>
+                                    <span>3次</span>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+                        </li>
+                        <li class="contactinfo contents table-responsive" style="display:none">
+                            <div>
+                                <div class="title left">联系信息</div>
+                                <div class="right update" style="display:block;" onclick="changeinfo('contactinfo')">
+                                    编辑
+                                    <!--<img src="../image/info_update.png" alt="">-->
+                                </div>
+                                <div class="right sure" style="display:none;" onclick="changeinfofin('contactinfo')">
+                                    确定
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <ul class="infolist">
+                                <li class="realname col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">真实姓名：</span>
+                                    <span>一月晕</span>
+                                </li>
+                                <li class="sexy col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">性别：</span>
+                                    <span>女</span>
+                                </li>
+                                <li class="email col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">邮箱：</span>
+                                    <span>15258258@qq.com</span>
+                                </li>
+                                <li class="country col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">所在国家：</span>
+                                    <span class="country1 marl_cont">中国</span>
+                                    <select id="country" class="dept_select" style="display:none;"></select>
+                                </li>
+                                <li class="address col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">详细地址：</span>
+                                    <span class="marl_cont">上海四十四点后是啊滑动天时间的</span>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+                        </li>
+                        <li class="accountuser contents table-responsive" style="display:none">
+                            <div>
+                                <div class="title left">账户信息</div>
+                                <div class="right update" style="display:block" onclick="changeinfo('accountuser')">
+                                    编辑
+                                    <!--<img src="../image/info_update.png" alt="">-->
+                                </div>
+                                <div class="right sure" style="display:none;" onclick="changeinfofin('accountuser')">
+                                    确定
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <ul class="infolist1">
+                                <li class="username col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">开户人姓名：</span>
+                                    <span>一月晕</span>
+                                </li>
+                                <li class="bankname col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">银行名称：</span>
+                                    <span>中国建设银行</span>
+                                </li>
+                                <li class="bankuser col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">银行账户：</span>
+                                    <span>6236688030000003340</span>
+                                </li>
+                                <li class="other col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">开户行地址：</span>
+                                    <span>深圳市中国建设银行</span>
+                                </li>
+                                <li class="other col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">备注：</span>
+                                    <span>12313213213212313</span>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div class="PurchaseHistory index_content">
                     <div class="tabletop">
                         <div class="tab-group" data-tab-chil>
@@ -1184,13 +1340,13 @@
         <!-- footer -->
         <div class="footer">
             <div class="container footer-con">
-                <div class="col-md-4 col-sm-4 col-xs-4 icon1">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon1 icons">
                     <img src="../image/facebook.png" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 icon2">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon2 icons">
                     <img src="../image/ins.png" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4 icon3">
+                <div class="col-md-4 col-sm-4 col-xs-4 icon3 icons">
                     <img src="../image/tiwtter.png" alt="">
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 textby">
@@ -1317,6 +1473,7 @@
         <!-- /.modal-content -->
     </div>
 </body>
+<script src="../js/down_list.js"></script>
 <script>
     $("[data-navtable] div").on('click', function () {
         $("[data-navtable] div").removeClass('pass_ative');
@@ -1445,15 +1602,29 @@
         var _element = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "table-responsive";
 
         var toggle_class = $(that).attr("data-tab");
-        $("[" + type + "]").children().each(function (index, ele) {
-            $(ele).removeClass("active");
-        });
+        var close_div = $(".nav_li.active").attr("data-tab");
+        var tab_arr = [];
+        
         $(that).addClass("active");
+        //切换二级导航
         if (_element === "table-responsive" && type === "data-tab-chil") {
-            $(that).parents().find(".PurchaseHistory").find("." + _element).each(function (index, ele) {
+            $("."+close_div).find("[" + type + "]").children().each(function (index, ele) {
+                $(ele).removeClass("active");
+            });
+            $("."+close_div).find("." + _element).each(function (index, ele) {
                 $(ele).hide();
             });
+            $(that).addClass("active");
         } else {
+            //切换一级导航
+            $(".nav_li").each(function (index, ele) {
+                $(ele).removeClass("active");
+                (toggle_class === $(ele).attr("data-tab")) ? tab_arr[index] = ele: null;
+            });
+            tab_arr = tab_arr.filter(function(e){return e});
+            $(tab_arr).each(function(index, ele){
+                $(ele).addClass("active");
+            })
             $(that).parents().find("." + _element).each(function (index, ele) {
                 $(ele).hide();
             });

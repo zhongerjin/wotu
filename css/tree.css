@@ -164,9 +164,21 @@ span.bg_color{
 .demo .text .status{
     color: #ffdf47;
     text-align: left;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.demo .text .status:hover{
+    color: #fcff47;
+}
+.demo.level_6 .text .status:hover{
+    color: #fff;
+}
+.demo.register .text .status{
+    margin: 0;
 }
 .demo.level_6 .text .status{
     color: #fff;
+    cursor: default;
 }
 @media screen and (max-width: 768px){
     .tree_search{
