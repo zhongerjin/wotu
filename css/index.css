@@ -1504,9 +1504,11 @@ li {
 }
 .dialogpassword{
     margin-top:10px;
-    font-size: 29px;
-    line-height: 29px;
-    padding-top: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    /*font-size: 29px;*/
+    /*line-height: 29px;*/
+    /*padding-top: 0;*/
     -webkit-box-shadow: none;
             box-shadow: none;
 }
