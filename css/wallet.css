@@ -235,9 +235,11 @@ a {
 }
 .table-responsive{
     border: none;
+    width: 100%;
+    overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
-    -webkit-overflow-scrolling-x: touch !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 .table-bordered{
     overflow: hidden;
