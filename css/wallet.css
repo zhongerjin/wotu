@@ -235,7 +235,8 @@ a {
 }
 .table-responsive{
     border: none;
-    overflow-x: visible;
+    overflow-x: auto;
+    white-space: nowrap;
     -webkit-overflow-scrolling-x: touch !important;
 }
 .table-bordered{
