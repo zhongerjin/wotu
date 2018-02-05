@@ -249,6 +249,10 @@ a {
     -webkit-box-shadow: inset 0 0 0 1px #a4eae0;
             box-shadow: inset 0 0 0 1px #a4eae0;
     border-collapse: separate;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch !important;
 }
 
 .table-responsive thead th {
