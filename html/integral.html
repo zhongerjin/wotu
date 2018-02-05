@@ -311,7 +311,7 @@
                                     </div>
                                     <div class="left_right_div_buy mt_20 buy_button">
                                         <div class="left_title"></div>
-                                        <button class="btn confirm">确认</button>
+                                        <button class="btn confirm" data-toggle="modal" data-target="#buy_preview">预览</button>
                                     </div>
                                 </div>
                             </div>
@@ -1748,6 +1748,48 @@
                                         <td>1</td>
                                         <td>0.27</td>
                                         <td>现金系统</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan" data-dismiss="modal" aria-hidden="true">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+
+    <!-- 模态框（Modal）购买预览 -->
+    <div class="modal fade modal_hidden" id="buy_preview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog btn_cent pad_bot" style="top: 50%;margin-top: -189px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        购买预览
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="List sellList_dialog table-responsive">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>购买价格</th>
+                                        <th>购买数量</th>
+                                        <th>积分价值</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0.11</td>
+                                        <td>1</td>
+                                        <td>0.27</td>
                                     </tr>
                                 </tbody>
                             </table>
