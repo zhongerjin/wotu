@@ -1,5 +1,12 @@
 #choose_dialog{
     z-index: 1049;
+    top: 50%;
+    margin-top: -123px;
+}
+#termsOfService{
+    z-index: 1060;
+    top: 50%;
+    margin-top: -123px;
 }
 .choose_btn_left{
     width: auto;

@@ -1013,29 +1013,29 @@ li {
 
 @media screen and (max-height: 820px){
     .xinxi_bc .btn_div {
-        margin-bottom: 65px !important;
-        margin-bottom: 8vh !important;
+        margin-bottom: 166px !important;
+        margin-bottom: 25vh !important;
     }
 }
 
 @media screen and (max-height: 640px){
     .xinxi_bc .btn_div {
-        margin-bottom: 83px !important;
-        margin-bottom: 13vh !important;
+        margin-bottom: 250px !important;
+        margin-bottom: 35vh !important;
     }
 }
 
 @media screen and (max-height: 570px){
     .xinxi_bc .btn_div {
-        margin-bottom: 270px !important;
-        margin-bottom: 30vh !important;
+        margin-bottom: 260px !important;
+        margin-bottom: 46vh !important;
     }
 }
 
 @media screen and (max-height: 480px){
     .xinxi_bc .btn_div {
-        margin-bottom: 240px !important;
-        margin-bottom: 50vh !important;
+        margin-bottom: 375px !important;
+        margin-bottom: 78vh !important;
     }
 }
 
@@ -1149,6 +1149,7 @@ li {
     width: 100%;
     height: 100%;
     top: 0;
+    right: 8%;
 }
 .ear .lines .line1{
     width: 55%;

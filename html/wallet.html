@@ -69,6 +69,18 @@
                                 <li>
                                     <a href="new.html">新闻公告</a>
                                 </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        账户信息
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="infoself.html">个人中心</a></li>
+                                        <li><a href="system_message.html">系统消息</a></li>
+                                        <li><a href="sites_email.html">站内邮件</a></li>
+                                        <li><a href="javascript:void(0)">安全退出</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -312,7 +324,7 @@
 
                                         </tr>
                                         <tr>
-                                            <th scope="row">1</th>
+                                            <th scope="row">2</th>
                                             <td>60</td>
                                             <td>100</td>
                                             <td>100</td>
@@ -1963,8 +1975,8 @@
 
     </div>
     <!-- 模态框（Modal）1 -->
-    <div class="modal fade modal_hidden recharge_dialog" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent" style="top:50%;margin-top:-310px;">
+    <div class="modal fade modal_hidden recharge_dialog" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-310px;">
+        <div class="modal-dialog btn_cent">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2005,7 +2017,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back">确&nbsp;定</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
@@ -2096,8 +2108,8 @@
     </div>
     <!-- /.modal-content -->
     <!-- 模态框（Modal）在线提现 -->
-    <div class="modal fade modal_hidden" id="onlineWithdrawal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-288px;">
+    <div class="modal fade modal_hidden" id="onlineWithdrawal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-288px;">
+        <div class="modal-dialog btn_cent pad_bot">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2136,7 +2148,7 @@
                             <input type="text" class="form-control" placeholder="请输入交易密码">
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineWithdrawal','onlineWithdrawal_deatil')">预&nbsp;览</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
@@ -2146,8 +2158,8 @@
     </div>
     <!-- /.modal-content -->
     <!-- 模态框（Modal）在线提现预览 -->
-    <div class="modal fade modal_hidden" id="onlineWithdrawal_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-250px;">
+    <div class="modal fade modal_hidden" id="onlineWithdrawal_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-250px;">
+        <div class="modal-dialog btn_cent pad_bot">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2180,7 +2192,7 @@
                             <input type="password" class="form-control yl_password" value="123456">
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineWithdrawal_deatil','onlineWithdrawal')">修&nbsp;改</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
@@ -2190,8 +2202,8 @@
     </div>
     <!-- /.modal-content -->
     <!-- 模态框（Modal）在线转账 -->
-    <div class="modal fade modal_hidden" id="onlineTransfer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-288px;">
+    <div class="modal fade modal_hidden" id="onlineTransfer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-288px;">
+        <div class="modal-dialog btn_cent pad_bot">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2230,7 +2242,7 @@
                             <input type="text" class="form-control" placeholder="请输入交易密码">
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineTransfer','onlineTransfer_deatil')">预&nbsp;览</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
@@ -2240,8 +2252,8 @@
     </div>
     <!-- /.modal-content -->
     <!-- 模态框（Modal）在线转账预览 -->
-    <div class="modal fade modal_hidden" id="onlineTransfer_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-210px;">
+    <div class="modal fade modal_hidden" id="onlineTransfer_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-210px;">
+        <div class="modal-dialog btn_cent pad_bot">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2274,7 +2286,7 @@
                             <input type="password" class="form-control yl_password" value="123456">
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineTransfer_deatil','onlineTransfer')">修&nbsp;改</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
@@ -2284,8 +2296,8 @@
     </div>
     <!-- /.modal-content -->
     <!-- 模态框（Modal）一键收款 -->
-    <div class="modal fade modal_hidden" id="onlineCollectMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-210px;">
+    <div class="modal fade modal_hidden" id="onlineCollectMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-210px;">
+        <div class="modal-dialog btn_cent pad_bot">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2314,7 +2326,7 @@
                             <input type="text" class="form-control" placeholder="请输入交易密码">
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('onlineCollectMoney','onlineCollectMoney_deatil')">预&nbsp;览</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
@@ -2324,8 +2336,8 @@
     </div>
     <!-- /.modal-content -->
     <!-- 模态框（Modal）在线转账预览 -->
-    <div class="modal fade modal_hidden" id="onlineCollectMoney_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top:50%;margin-top:-210px;">
+    <div class="modal fade modal_hidden" id="onlineCollectMoney_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:50%;margin-top:-210px;">
+        <div class="modal-dialog btn_cent pad_bot">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">

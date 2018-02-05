@@ -5,6 +5,14 @@
     background: #32cdb7;
     color: #fff;
 }
+#system_message_deatil{
+    top: 50%;
+    margin-top: -191px;
+}
+#delete_confirm{
+    top: 50%;
+    margin-top: -123px;
+}
 @media screen and (min-width: 768px) {
     #system_message_deatil .modal-dialog{
         max-width: 700px;

@@ -298,10 +298,6 @@ body {
 .table-responsive thead tr {
     text-align: center;
     color: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0edec0), to(#22c8c8));
-    background: -webkit-linear-gradient(top, #0edec0, #22c8c8);
-    background: -o-linear-gradient(top, #0edec0, #22c8c8);
-    background: linear-gradient(to bottom, #0edec0, #22c8c8);
 }
 .table-responsive thead tr th, .table-responsive tbody tr th {
     text-align: center;
@@ -334,19 +330,39 @@ body {
 }
 .table-responsive{
     border: none;
+    -webkit-overflow-scrolling: touch;
 }
 .table-bordered{
-    overflow: hidden;
-    border-radius: 20px;
-    border-spacing: 0px;
+    /*overflow: hidden;*/
+    /*border-radius: 20px;*/
+    /*border-spacing: 0px;*/
     border: none;
-    -webkit-box-shadow: inset 0 0 0 1px #a4eae0;
-            box-shadow: inset 0 0 0 1px #a4eae0;
+    /*-webkit-box-shadow: inset 0 0 0 1px #a4eae0;*/
+            /*box-shadow: inset 0 0 0 1px #a4eae0;*/
     border-collapse: separate;
 }
+.table-responsive thead tr th:first-child{
+    border-radius: 20px 0 0 0;
+}
+.table-responsive thead tr th:last-child{
+    border-radius: 0 20px 0 0;
+}
+.table-responsive tbody tr:last-child td:first-child,
+.table-responsive tbody tr:last-child th:first-child{
+    border-radius: 0 0 0 20px;
+}
+.table-responsive tbody tr:last-child td:last-child,
+.table-responsive tbody tr:last-child th:last-child{
+    border-radius: 0 0 20px 0;
+}
 .table-responsive thead tr th {
-   color:#ffffff;
-   border: 1px solid #a4eae0;
+    color:#ffffff;
+    border: 1px solid #a4eae0;
+    background: #22c8c8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0edec0), to(#22c8c8));
+    background: -webkit-linear-gradient(top, #0edec0, #22c8c8);
+    background: -o-linear-gradient(top, #0edec0, #22c8c8);
+    background: linear-gradient(to bottom, #0edec0, #22c8c8);
 }
 .table-bordered > tbody > tr > td,
 .table-bordered > tbody > tr > th,

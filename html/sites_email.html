@@ -67,6 +67,18 @@
                                 <li>
                                     <a href="new.html">新闻公告</a>
                                 </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        账户信息
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="infoself.html">个人中心</a></li>
+                                        <li><a href="system_message.html">系统消息</a></li>
+                                        <li><a href="sites_email.html">站内邮件</a></li>
+                                        <li><a href="javascript:void(0)">安全退出</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -279,7 +291,7 @@
 
     <!-- 模态框（Modal）站内邮件查看详细 -->
     <div class="modal fade modal_hidden" id="sites_email_deatil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent pad_bot" style="top: 50%;margin-top: -191px;">
+        <div class="modal-dialog btn_cent pad_bot" style="">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -310,7 +322,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan" data-dismiss="modal" aria-hidden="true">关闭</button>
                     </div>
                 </div>
@@ -321,7 +333,7 @@
     <!-- /.modal -->
     <!-- 模态框（Modal）删除确认 -->
     <div class="modal fade modal_hidden" id="delete_confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent " style="height: 800px;top: 50%;margin-top: -123px;">
+        <div class="modal-dialog btn_cent " style="height: 800px;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -333,7 +345,7 @@
                 </div>
                 <div class="modal-body padd_20">
                     你确定要删除这个选项吗?
-                    <div class="btn_div">
+                    <div class="">
                         <button type="button" class="btn btn-primary dialogqiehuan">确&nbsp;认</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
