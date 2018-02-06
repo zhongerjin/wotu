@@ -32,7 +32,8 @@
                 <nav id="navbar-example" class="navbar navbar-default" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
-                            <span class="loginBtn" style="float:right">登录</span>
+                            <!--<span class="loginBtn" style="float:right">登录</span>-->
+                            <a href="login.html" class="loginBtn" style="float:right">登录</a>
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
                                 <span class="sr-only">切换导航</span>
                                 <span class="icon-bar"></span>
@@ -435,7 +436,7 @@
                                 <li class="country col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">所在国家：</span>
                                     <span class="country1 marl_cont">中国</span>
-                                    <select id="country" class="dept_select" style="display:none;"></select>
+                                    <select id="country" class="dept_select"></select>
                                 </li>
                                 <li class="address col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">详细地址：</span>
@@ -1570,7 +1571,7 @@
         var objContry = _areaList[a];
         country += '<option value="' + objContry + '" a="' + (a + 1) + '">' + objContry + '</option>';
     }
-    $("#country").html(country).chosen().change(function () {
+    $("#country").html(country).chosen({width: "95%"}).change(function () {
         var a = $("#country").find("option[value='" + $("#country").val() + "']").attr("a");
         var _province = areaObj[a];
         var province = '';
@@ -1602,6 +1603,7 @@
         $("#province").change();
         $(".dept_select").trigger("chosen:updated");
     });
+    
     $("#country").change();
     $(".chosen-search").remove();
 
