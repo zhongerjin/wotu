@@ -355,4 +355,7 @@
     .copywriting{
         display: none;
     }
+    .ear .lines{
+        right: 8%;
+    }
 }
