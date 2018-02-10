@@ -1308,7 +1308,22 @@
             "</span></div></div>"
         );
     }
-
+$('.modal')
+    .on('show.bs.modal', function (){
+            $('html').css('overflow', 'hidden');
+            $('body').css('overflow', 'hidden');
+            // scrollTo = $('body').scrollTop();
+            // $('body').css("position", "fixed");
+        })
+    .on('hide.bs.modal', function (){
+            // Also if you are using multiple modals (cascade) - additional check
+            if ($('.modal.in').length == 1) {
+                $('html').css('overflow', 'scroll');
+                $('body').css('overflow', 'scroll');
+                // $('body').css("position", "static");
+                // $('body').animate({scrollTop: scrollTo}, 0);
+            }
+        });
     var initOrgchart = function(rootClass){
         var ocWest = $('.place').orgchart({
             'data' : "xitu/" + rootClass,
@@ -1330,6 +1345,8 @@
                         return false;
                     }
                     $("#performance_detail").modal('show');
+                    // $('body').css('overflow','hidden');
+                    // $('html').css('overflow','hidden');
                 });
                 if ($node.is('.drill-down')) {
                 var assoClass = data.className.match(/asso-\w+/)[0];
