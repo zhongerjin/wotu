@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/jquery.1.12.4.min.js"></script>
     <script src="../js/echarts.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -16,6 +24,7 @@
     <link rel="stylesheet" href="../css/infoself.css">
     <link rel="stylesheet" href="../css/chosen.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/table.css">
     <title>infoself</title>
 </head>
 
@@ -140,7 +149,7 @@
                 <li class="nav_li" data-tab=LoginLog>登录日志</li>
                 <div class="clear"></div>
             </ul>
-            <div class="navcol navcol_s">
+            <!--<div class="navcol navcol_s">
                 <nav id="navbar-example" class="navbar navbar-default" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
@@ -150,13 +159,47 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="#" class="navbar-brand nav-title">会员资料</a>
+                            <a href="javascript:void(0)" class="navbar-brand nav-title nav_li active" data-tab=information>会员资料</a>
                         </div>
                         <div class="collapse navbar-collapse bs-js-navbar-scrollspy1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a href="javascript:void(0)" class="nav_li" data-tab=information>会员资料</a>
+                                    <a href="javascript:void(0)" class="nav_li" data-toggle="modal" data-target="#myModal">切换账户</a>
                                 </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="nav_li" data-tab=PurchaseHistory>购买记录</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="nav_li" data-tab=Loan>贷款单</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="nav_li" data-tab=Backfill>回填单</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="nav_li" data-toggle="modal" data-target="#myModal2">更新密码</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="nav_li" data-tab=LoginLog>登录日志</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>-->
+            <div class="navcol navcol_s">
+                <nav id="navbar-example2" class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy1">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="javascript:void(0);" class="navbar-brand nav-title nav_li active" data-tab=information>会员资料</a>
+                        </div>
+                        <div class="navbar-collapse bs-js-navbar-scrollspy1 collapse in" aria-expanded="true">
+                            <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <a href="javascript:void(0)" class="nav_li" data-toggle="modal" data-target="#myModal">切换账户</a>
                                 </li>
@@ -1375,45 +1418,43 @@
                     <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="../index.html">
-                                <div class=" icon1 navlist">首页</div>
+                                <div class=" icon1 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="supporting.html">
-                                <div class=" icon2 navlist">注册配套</div>
+                                <div class=" icon2 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="chain.html">
-                                <div class=" icon3 navlist">连锁配套</div>
+                                <div class=" icon3 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="zzjg.html">
-                                <div class=" icon4 navlist">组织结构</div>
+                                <div class=" icon4 navlist"></div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="wallet.html">
-                                <div class=" icon5 navlist">资产管理</div>
+                                <div class=" icon5 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="integral.html">
-                                <div class=" icon6 navlist">积分管理</div>
+                                <div class=" icon6 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="new.html">
-                                <div class=" icon7 navlist">新闻公告
+                                <div class=" icon7 navlist">
                                 </div>
                             </a>
                         </li>
                         <li class="moblie_nav_li dropup">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class=" icon8 act navlist">账户信息
+                                <div class=" icon8 act navlist">
                                 </div>
                                 <ul class="dropdown-menu">
                                     <li><a href="infoself.html">个人中心</a></li>

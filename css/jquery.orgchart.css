@@ -520,3 +520,28 @@
 .orgchart .drill-icon.fa-angle-double-up{
   top: -26px;
 }
+@media screen and (max-width: 768px){
+  .orgchart .node{
+    width: 80px;
+  }
+  .orgchart .title .demo{
+    display: flex;
+    flex-direction: column;
+  }
+  .orgchart .title .demo img{
+    width: 100%;
+    height: auto;
+  }
+  .orgchart .drill-icon{
+    right: 30px;
+  }
+  .demo .text .status{
+    margin-right: 0 !important;
+  }
+  .orgchart .register{
+    padding: 32px 0 !important;
+  }
+  .orgchart .register .text .status{
+    text-align: center;
+  }
+}

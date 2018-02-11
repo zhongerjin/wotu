@@ -202,20 +202,34 @@ a {
     border-bottom: 2px solid #0de0c0;
     color: #0de0c0 !important;
 }
-
-.content .contenttable .tabletop .tabletop2 .tab-group .btn {
+.tabletop2_mobile{
+    position: relative;
+    display: none;
+}
+.tabletop2_mobile .button-group{
+    right: 10%;
+    margin: 10px 0;
+    width: 152px;
+    float: right;
+}
+.content .contenttable .tabletop .tabletop2 .tab-group .btn,
+.tabletop2_mobile .tab-group-mobile .tab_btn{
     border: 1px solid #32cdb7;
     border-radius: 25px;
     color: #32cdb7;
     margin: 0 15px;
 }
-
-.content .contenttable .tabletop .tabletop2 .tab-group .btn:hover {
+.tabletop2_mobile .tab-group-mobile .tab_btn{
+    margin: 10px 3px;
+}
+.content .contenttable .tabletop .tabletop2 .tab-group .btn:hover,
+.tabletop2_mobile .tab-group-mobile .tab_btn:hover{
     background: #32cdb7;
     color: #fff;
 }
 
-.content .contenttable .tabletop .tabletop2 .tab-group .btn.active {
+.content .contenttable .tabletop .tabletop2 .tab-group .btn.active,
+.tabletop2_mobile .tab-group-mobile .tab_btn.active{
     background: #32cdb7;
     color: #fff;
 }
@@ -239,11 +253,11 @@ a {
 }
 .table-bordered{
     /*overflow: hidden;*/
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     /*border-spacing: 0px;*/
     border: none;
-    -webkit-box-shadow: inset 0 0 0 1px #a4eae0;
-            box-shadow: inset 0 0 0 1px #a4eae0;
+    /*-webkit-box-shadow: inset 0 0 0 1px #a4eae0;*/
+            /*box-shadow: inset 0 0 0 1px #a4eae0;*/
     border-collapse: separate;
 }
 
@@ -412,20 +426,6 @@ a {
 .table-responsive thead tr {
     text-align: center;
     color: #fff;
-}
-.table-responsive thead tr th:first-child{
-    border-radius: 20px 0 0 0;
-}
-.table-responsive thead tr th:last-child{
-    border-radius: 0 20px 0 0;
-}
-.table-responsive tbody tr:last-child td:first-child,
-.table-responsive tbody tr:last-child th:first-child{
-    border-radius: 0 0 0 20px;
-}
-.table-responsive tbody tr:last-child td:last-child,
-.table-responsive tbody tr:last-child th:last-child{
-    border-radius: 0 0 20px 0;
 }
 .table-responsive thead tr th{
     color: #fff;
@@ -856,5 +856,31 @@ a {
 
     .footer .textby {
         padding: 25px 0 0;
+    }
+}
+@media screen and (max-width: 992px){
+    .inline_block div.spanwarp{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 768px){
+    .bonus .tabletop2{
+        display: none;
+    }
+    .tabletop2_mobile{
+        display: block;
+    }
+    .search span{
+        display: none;
+    }
+    .search .search_button{
+        width: 99%;
+    }
+    .search .source{
+        width: 99%;
+    }
+    .search input{
+        width: 49%;
+        margin-bottom: 20px;
     }
 }

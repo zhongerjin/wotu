@@ -3,8 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>积分管理</title>
@@ -15,6 +23,7 @@
     <link rel="stylesheet" href="../css/wallet.css">
     <link rel="stylesheet" href="../css/integral.css">
     <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../css/table.css">
 
 
     <script src="../js/jquery.1.12.4.min.js"></script>
@@ -161,13 +170,10 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a href="#" class="navbar-brand nav-title">积分</a>
+                                <a href="javascript:void(0)" class="navbar-brand nav-title nav_li active" data-tab=buy>购买</a>
                             </div>
                             <div class="navbar-collapse bs-js-navbar-scrollspy1 collapse in" aria-expanded="true">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li>
-                                        <a href="javascript:void(0)" class="nav_li" data-tab=buy>购买</a>
-                                    </li>
                                     <li>
                                         <a href="javascript:void(0)" class="nav_li" data-tab=sell>出售</a>
                                     </li>
@@ -314,8 +320,10 @@
                                     </div>
                                     <div class="left_right_div_buy mt_20">
                                         <div class="left_title">积分价值</div>
-                                        <input type="text" class="form-control">
-                                        <div class="prompt">最低0.00,最高0.00</div>
+                                        <div class="right_cont">
+                                            <input type="text" class="form-control">
+                                            <div class="prompt">最低0.00,最高0.00</div>
+                                        </div>
                                     </div>
                                     <div class="left_right_div_buy mt_20">
                                         <div class="left_title">交易密码</div>
@@ -561,26 +569,32 @@
                                     </div>
                                     <div class="left_right_div_buy mt_20">
                                         <div class="left_title">出售价格</div>
-                                        <select class="form-control">
-                                            <option value="">请选择价格</option>
-                                        </select>
-                                        <div class="prompt">总价值:
-                                            <span>0.00</span>
+                                        <div class="right_cont">
+                                            <select class="form-control">
+                                                <option value="">请选择价格</option>
+                                            </select>
+                                            <div class="prompt">总价值:
+                                                <span>0.00</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="left_right_div_buy mt_20">
                                         <div class="left_title">出售数量</div>
-                                        <select class="form-control">
-                                            <option value="">1</option>
-                                        </select>
-                                        <div class="prompt">现金系统最高可出售0，循环系统最高课出售0</div>
+                                        <div class="right_cont">
+                                            <select class="form-control">
+                                                <option value="">1</option>
+                                            </select>
+                                            <div class="prompt">现金系统最高可出售0，循环系统最高课出售0</div>
+                                        </div>
                                     </div>
                                     <div class="left_right_div_buy mt_20">
                                         <div class="left_title">交易类型</div>
-                                        <select class="form-control">
-                                            <option value="">请选择交易类型</option>
-                                        </select>
-                                        <div class="prompt">最低0.00,最高0.00</div>
+                                        <div class="right_cont">
+                                            <select class="form-control">
+                                                <option value="">请选择交易类型</option>
+                                            </select>
+                                            <div class="prompt">最低0.00,最高0.00</div>
+                                        </div>
                                     </div>
                                     <div class="left_right_div_buy mt_20">
                                         <div class="left_title">交易密码</div>
@@ -1598,45 +1612,43 @@
                     <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="../index.html">
-                                <div class=" icon1 navlist">首页</div>
+                                <div class=" icon1 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="supporting.html">
-                                <div class=" icon2 navlist">注册配套</div>
+                                <div class=" icon2 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="chain.html">
-                                <div class=" icon3 navlist">连锁配套</div>
+                                <div class=" icon3 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="zzjg.html">
-                                <div class=" icon4 navlist">组织结构</div>
+                                <div class=" icon4 navlist"></div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="wallet.html">
-                                <div class=" icon5 navlist">资产管理</div>
+                                <div class=" icon5 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="integral.html">
-                                <div class=" icon6 act navlist">积分管理</div>
+                                <div class=" icon6 act navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="new.html">
-                                <div class=" icon7 navlist">新闻公告
+                                <div class=" icon7 navlist">
                                 </div>
                             </a>
                         </li>
                         <li class="moblie_nav_li dropup">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class=" icon8 navlist">账户信息
+                                <div class=" icon8 navlist">
                                 </div>
                                 <ul class="dropdown-menu">
                                     <li><a href="infoself.html">个人中心</a></li>
@@ -1768,7 +1780,7 @@
     </div>
     <!-- 模态框（Modal）交易密码验证 -->
     <div class="modal fade" id="trade_password_check" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent" style="max-width:300px;max-height:300px;position: absolute;top: 50%;left: 50%;margin-left: -150px;margin-top: -105px;">
+        <div class="modal-dialog btn_cent" style="max-width:300px;max-height:300px;position: absolute;top: 50%;left: 50%;margin-left: -131px;margin-top: -105px;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -2282,6 +2294,7 @@
 <script src="../js/echarts_option.js"></script>
 <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../js/down_list.js"></script>
+<script src="../js/scroll.js"></script>
 <script>
     $(".radio_diy").on('click', function () {
         if ($(this).attr("id") == "yd") {
@@ -2306,68 +2319,6 @@
         //柱状统计图
         var pillar =echarts.init(document.getElementById("pillar"));
         pillar.setOption(pillar_option);
-        $(".modal_hidden .btn_cent").mCustomScrollbar({
-            setWidth:false,
-            setHeight:false,
-            setTop:0,
-            setLeft:0,
-            axis:"y",
-            scrollbarPosition:"inside",
-            scrollInertia:950,
-            autoDraggerLength:true,
-            autoHideScrollbar:false,
-            autoExpandScrollbar:false,
-            alwaysShowScrollbar:0,
-            snapAmount:null,
-            snapOffset:0,
-            mouseWheel:{
-                enable:true,
-                scrollAmount:"auto",
-                axis:"y",
-                preventDefault:false,
-                deltaFactor:"auto",
-                normalizeDelta:false,
-                invert:false,
-                disableOver:["select","option","keygen","datalist","textarea"]
-            },
-            scrollButtons:{
-                enable:false,
-                scrollType:"stepless",
-                scrollAmount:"auto"
-            },
-            keyboard:{
-                enable:true,
-                scrollType:"stepless",
-                scrollAmount:"auto"
-            },
-            contentTouchScroll:25,
-            advanced:{
-                autoExpandHorizontalScroll:false,
-                autoScrollOnFocus:"input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']",
-                updateOnContentResize:true,
-                updateOnImageLoad:true,
-                updateOnSelectorChange:false,
-                releaseDraggableSelectors:false
-            },
-            theme:"light",
-            callbacks:{
-                onInit:false,
-                onScrollStart:false,
-                onScroll:false,
-                onTotalScroll:false,
-                onTotalScrollBack:false,
-                whileScrolling:false,
-                onTotalScrollOffset:0,
-                onTotalScrollBackOffset:0,
-                alwaysTriggerOffsets:true,
-                onOverflowY:false,
-                onOverflowX:false,
-                onOverflowYNone:false,
-                onOverflowXNone:false
-            },
-            live:false,
-            liveSelector:null
-        });
     }
 
     $(".nav_li").on("click", function (e) {

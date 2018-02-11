@@ -198,4 +198,8 @@
         left: 50%;
         margin-left: -309px;
     }
+    .left_right_div_buy .right_cont input,
+    .left_right_div_buy .right_cont select{
+        width: 48%;
+    }
 }

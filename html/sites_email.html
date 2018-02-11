@@ -3,8 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>系统消息</title>
@@ -14,6 +22,7 @@
     <link rel="stylesheet" href="../css/supporting.css">
     <link rel="stylesheet" href="../css/wallet.css">
     <link rel="stylesheet" href="../css/sites_email.css">
+    <link rel="stylesheet" href="../css/table.css">
 
 
     <script src="../js/jquery.1.12.4.min.js"></script>
@@ -177,8 +186,8 @@
                                                     <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
                                                     </a>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#delete_confirm">
-                                                        <div class="logbtn btn">删除</div>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn" data-remove>删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -192,8 +201,8 @@
                                                     <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
                                                     </a>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#delete_confirm">
-                                                        <div class="logbtn btn">删除</div>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn" data-remove>删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -207,8 +216,8 @@
                                                     <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
                                                     </a>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#delete_confirm">
-                                                        <div class="logbtn btn">删除</div>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn" data-remove>删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -222,8 +231,8 @@
                                                     <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
                                                     </a>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#delete_confirm">
-                                                        <div class="logbtn btn">删除</div>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn" data-remove>删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -237,8 +246,8 @@
                                                     <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
                                                     </a>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#delete_confirm">
-                                                        <div class="logbtn btn">删除</div>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn" data-remove>删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -252,8 +261,8 @@
                                                     <a href="javascript:void(0)" data-toggle="modal" data-target="#sites_email_deatil">
                                                         <div class="logbtn btn">查看</div>
                                                     </a>
-                                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#delete_confirm">
-                                                        <div class="logbtn btn">删除</div>
+                                                    <a href="javascript:void(0)">
+                                                        <div class="logbtn btn" data-remove>删除</div>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -295,45 +304,43 @@
                     <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="../index.html">
-                                <div class=" icon1 navlist">首页</div>
+                                <div class=" icon1 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="supporting.html">
-                                <div class=" icon2 navlist">注册配套</div>
+                                <div class=" icon2 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="chain.html">
-                                <div class=" icon3 navlist">连锁配套</div>
+                                <div class=" icon3 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="zzjg.html">
-                                <div class=" icon4 navlist">组织结构</div>
+                                <div class=" icon4 navlist"></div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="wallet.html">
-                                <div class=" icon5 navlist">资产管理</div>
+                                <div class=" icon5 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="integral.html">
-                                <div class=" icon6 navlist">积分管理</div>
+                                <div class=" icon6 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="new.html">
-                                <div class=" icon7 navlist">新闻公告
+                                <div class=" icon7 navlist">
                                 </div>
                             </a>
                         </li>
                         <li class="moblie_nav_li dropup">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class=" icon8 act navlist">账户信息
+                                <div class=" icon8 act navlist">
                                 </div>
                                 <ul class="dropdown-menu">
                                     <li><a href="infoself.html">个人中心</a></li>
@@ -404,7 +411,7 @@
                 <div class="modal-body padd_20">
                     你确定要删除这个选项吗?
                     <div class="">
-                        <button type="button" class="btn btn-primary dialogqiehuan">确&nbsp;认</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan" data-yes>确&nbsp;认</button>
                         <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
                 </div>
@@ -435,6 +442,18 @@
             $(this).removeClass("actmove")
         })
     }
+    var delete_dom = {
+        that:null,
+    }
+    $("[data-remove]").on("click", function(e){
+        $("#delete_confirm").modal('show');
+        delete_dom.that = $(this);
+    });
+
+    $("#delete_confirm [data-yes]").on("click", function(e){
+        $(delete_dom.that).parents('tr').remove();
+        $("#delete_confirm").modal('hide');
+    });
 
     $(".nav_li").on("click", function (e) {
         tab_toggle(this, undefined, "index_content");

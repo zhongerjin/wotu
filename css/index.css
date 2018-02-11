@@ -25,6 +25,7 @@ body,
 html {
     font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     height: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 @font-face {
@@ -218,11 +219,12 @@ li {
     /* margin-right: -10px; */
     color: #737373;
     border: 2px solid transparent;
+    border-bottom: none;
 }
 .footer_placeholder{
     display: none;
     width: 100%;
-    height: 115.8px;
+    height: 50px;
     position: relative;
 }
 .top.mobile_top{
@@ -230,6 +232,7 @@ li {
     bottom: 0;
     width: 100%;
     border-top: 1px solid #e7e7e7;
+    z-index: 9999;
 }
 .top.mobile_top .nav.mobile_nav .mobile_nav_container{
     display: -webkit-box;
@@ -239,8 +242,12 @@ li {
     width:100%;
     margin-bottom:0;
 }
+.top.mobile_top .nav.mobile_nav .mobile_nav_container .dropdown-menu{
+    left: -208%;
+}
 .top.mobile_top .nav.mobile_nav .mobile_nav_container .dropup li{
     padding: 10px 0;
+    text-align: center;
 }
 .top.mobile_top .nav.mobile_nav .mobile_nav_container li.moblie_nav_li{
     width: 25%;
@@ -251,7 +258,7 @@ li {
     white-space: nowrap;
 }
 .top .nav .act {
-    border-bottom: 2px solid #0de0c0 !important;
+    border-bottom: 2px solid #0de0c0;
     color: #0de0c0!important;
 }
 
@@ -302,9 +309,10 @@ li {
     background-position: center left
 }
 .top .nav .icon8 {
-    background-image: url("../image/login2.png");
+    background-image: url("../image/icon8.png");
     background-repeat: no-repeat;
-    background-position: center left
+    background-position: center left;
+    background-size: 25px;
 }
 .top .nav .icon1.act {
     background-image: url("../image/icon1-1.png");
@@ -604,9 +612,10 @@ li {
     }
     .top.mobile_top .nav.mobile_nav .mobile_nav_container a div{
         font-size: 13px;
-        background-size: 17px;
-        padding-left: 18px;
-        margin: 0 8px 10px 8px;
+        /*background-size: 17px;*/
+        /*padding-left: 18px;*/
+        padding-left: 0;
+        margin: 10px 8px 10px 8px;
     }
     .nav .container {
         padding-left: 0;
@@ -1071,6 +1080,17 @@ li {
     .top.mobile_top{
         display: block;
     }
+    .left_right_div_buy .right_cont input,
+    .left_right_div_buy .right_cont select{
+        width: 100%;
+    }
+    .left_right_div_buy input, .left_right_div_buy select{
+        width: 68%;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+    }
 }
 
 @media screen and (max-width: 991px){
@@ -1094,8 +1114,8 @@ li {
 
 @media screen and (max-height: 640px){
     .xinxi_bc .btn_div {
-        margin-bottom: 250px !important;
-        margin-bottom: 35vh !important;
+        margin-bottom: 300px !important;
+        margin-bottom: 40vh !important;
     }
 }
 
@@ -1703,6 +1723,18 @@ li {
         -ms-flex-align: center;
             align-items: center;
 }
+.left_right_div .right_cont,
+.left_right_div_buy .right_cont{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 18px;
+}
+.left_right_div .right_cont input,
+.left_right_div .right_cont select{
+    width: 100%;
+}
 .left_right_div_2{
     display:-webkit-box;
     display:-webkit-flex;
@@ -1878,6 +1910,10 @@ li {
     height: 100%;
     top: 1%;
     left: 0%; -webkit-animation: 2s point infinite alternate linear; animation: 2s point infinite alternate linear
+}
+.navbar-default .navbar-nav .nav_li.active,
+.navbar-header .nav_li.active{
+    color: #36ceb9;
 }
 /*end*/
 @-webkit-keyframes myanimation {

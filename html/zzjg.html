@@ -3,13 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>组织结构</title>
 
-    <link rel="stylesheet" href="../css/mui.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/jquery.orgchart.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
@@ -166,7 +173,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a href="javascript:void(0);" class="navbar-brand nav-title nav_li" data-tab=tissue>直推组织图</a>
+                                <a href="javascript:void(0);" class="navbar-brand nav-title nav_li active" data-tab=tissue>直推组织图</a>
                             </div>
                             <div class="navbar-collapse bs-js-navbar-scrollspy1 collapse in" aria-expanded="true">
                                 <ul class="nav navbar-nav navbar-right">
@@ -290,45 +297,43 @@
                     <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="../index.html">
-                                <div class=" icon1 navlist">首页</div>
+                                <div class=" icon1 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="supporting.html">
-                                <div class=" icon2 navlist">注册配套</div>
+                                <div class=" icon2 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="chain.html">
-                                <div class=" icon3 navlist">连锁配套</div>
+                                <div class=" icon3 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="zzjg.html">
-                                <div class=" icon4 act navlist">组织结构</div>
+                                <div class=" icon4 act navlist"></div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="wallet.html">
-                                <div class=" icon5 navlist">资产管理</div>
+                                <div class=" icon5 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="integral.html">
-                                <div class=" icon6 navlist">积分管理</div>
+                                <div class=" icon6 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="new.html">
-                                <div class=" icon7 navlist">新闻公告
+                                <div class=" icon7 navlist">
                                 </div>
                             </a>
                         </li>
                         <li class="moblie_nav_li dropup">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class=" icon8 navlist">账户信息
+                                <div class=" icon8 navlist">
                                 </div>
                                 <ul class="dropdown-menu">
                                     <li><a href="infoself.html">个人中心</a></li>
@@ -344,7 +349,7 @@
     </div>
     <!-- 模态框（Modal）1 -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog btn_cent" style="max-width:300px;max-height:300px;position: absolute;top: 50%;left: 50%;margin-left: -150px;margin-top: -105px;">
+        <div class="modal-dialog btn_cent" style="max-width:300px;max-height:300px;position: fixed;top: 50%;left: 50%;margin-left: -131px;margin-top: -105px;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
@@ -366,142 +371,142 @@
     <!-- 模态框（Modal）注册新配套 -->
     <div class="modal fade modal_hidden" id="register_supporting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent pad_bot" style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                注册新配套
-                            </h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        注册新配套
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">推荐人ID</div>
+                            <input type="text" class="form-control" placeholder="请输入推荐人ID">
                         </div>
-                        <div class="modal-body xinxi_bc padd_20">
-                            <div class="zhxx">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">推荐人ID</div>
-                                    <input type="text" class="form-control" placeholder="请输入推荐人ID">
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">用户名</div>
+                            <div class="right_cont">
+                                <input type="text" class="form-control" placeholder="请输入用户名">
+                                <div class="prompt">用户名必须以字母开头</div>
+                            </div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">安置方法</div>
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy radio_active"></div>
+                                    <div class="content">自动安置</div>
                                 </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">用户名</div>
-                                    <input type="text" class="form-control" placeholder="请输入用户名">
-                                    <div class="prompt">用户名必须以字母开头</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">安置方法</div>
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy radio_active"></div>
-                                            <div class="content">自动安置</div>
-                                        </div>
-                                        <div class="radio_div twier_radio">
-                                            <div class="radio_diy"></div>
-                                            <div class="content">手动安置</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">会员配套</div>
-                                    <select name="" class="form-control" id="">
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">登录密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入登录密码">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认登录密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入登录密码">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
+                                <div class="radio_div twier_radio">
+                                    <div class="radio_diy"></div>
+                                    <div class="content">手动安置</div>
                                 </div>
                             </div>
-                            <div class="grzl">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20 country">
-                                    <div class="left_title">所在国家</div>
-                                    <select id="country" class="form-control dept_select"></select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">会员配套</div>
+                            <select name="" class="form-control" id="">
+                            </select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">登录密码</div>
+                            <input type="password" class="form-control" placeholder="请输入登录密码">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认登录密码</div>
+                            <input type="password" class="form-control" placeholder="请输入登录密码">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="grzl">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20 country">
+                            <div class="left_title">所在国家</div>
+                            <select id="country" class="form-control dept_select"></select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">真实姓名</div>
+                            <input type="text" class="form-control" placeholder="请输入真实姓名">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">性别</div>
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy radio_active"></div>
+                                    <div class="content">保密</div>
                                 </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">真实姓名</div>
-                                    <input type="text" class="form-control" placeholder="请输入真实姓名">
+                                <div class="radio_div twier_radio">
+                                    <div class="radio_diy"></div>
+                                    <div class="content">男性</div>
                                 </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">性别</div>
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy radio_active"></div>
-                                            <div class="content">保密</div>
-                                        </div>
-                                        <div class="radio_div twier_radio">
-                                            <div class="radio_diy"></div>
-                                            <div class="content">男性</div>
-                                        </div>
-                                        <div class="radio_div twier_radio">
-                                            <div class="radio_diy"></div>
-                                            <div class="content">女性</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">电子邮箱</div>
-                                    <input type="text" class="form-control" placeholder="请输入电子邮箱">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">详细地址</div>
-                                    <input type="text" class="form-control" placeholder="请输入详细地址">
-                                </div>
-                            </div>
-                            <div class="zffs">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">扣费类型</div>
-                                    <select name="" class="form-control" id="">
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付钱包</div>
-                                    <select name="" class="form-control" id="">
-                                    </select>
-                                    <div class="prompt warning">连锁钱包余额：38.43</div>
-                                </div>
-                            </div>
-                            <div class="jymm">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
+                                <div class="radio_div twier_radio">
+                                    <div class="radio_diy"></div>
+                                    <div class="content">女性</div>
                                 </div>
                             </div>
-                            <div class="fwtk">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy" id="yd"></div>
-                                            <div class="content">我已阅读并同意&nbsp;
-                                                <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep('register_supporting', 'register_supporting_detail')">预&nbsp;览</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">电子邮箱</div>
+                            <input type="text" class="form-control" placeholder="请输入电子邮箱">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">详细地址</div>
+                            <input type="text" class="form-control" placeholder="请输入详细地址">
+                        </div>
+                    </div>
+                    <div class="zffs">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">扣费类型</div>
+                            <select name="" class="form-control" id="">
+                            </select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付钱包</div>
+                            <div class="right_cont">
+                                <select name="" class="form-control" id="">
+                                </select>
+                                <div class="prompt warning">连锁钱包余额：38.43</div>
                             </div>
                         </div>
                     </div>
+                    <div class="jymm">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="fwtk">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy" id="yd"></div>
+                                    <div class="content">我已阅读并同意&nbsp;
+                                        <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep('register_supporting', 'register_supporting_detail')">预&nbsp;览</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                    </div>
                 </div>
-	        </div>
+            </div>
         </div>
         <!-- /.modal-content -->
     </div>
@@ -509,111 +514,107 @@
     <!-- 模态框（Modal）注册新配套预览 -->
     <div class="modal fade modal_hidden" id="register_supporting_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent" style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                注册新配套预览
-                            </h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        注册新配套预览
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">推荐人ID</div>
+                            <div>776788</div>
                         </div>
-                        <div class="modal-body xinxi_bc padd_20">
-                            <div class="zhxx">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">推荐人ID</div>
-                                    <div>776788</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">用户名</div>
-                                    <div>YYY777</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">安置方法</div>
-                                    <div>自动安置</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">会员配套</div>
-                                    <div>V1-100.00 USD</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">登录密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认登录密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                            </div>
-                            <div class="grzl">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">所在国家</div>
-                                    <div>南非</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">真实姓名</div>
-                                    <div>杨沂孙</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">性别</div>
-                                    <div>保密</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">电子邮箱</div>
-                                    <div>117265245@qq.com</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">详细地址</div>
-                                    <div>renminlu 27262656</div>
-                                </div>
-                            </div>
-                            <div class="zffs">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">扣费类型</div>
-                                    <div>正常</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付钱包</div>
-                                    <div>连锁钱包</div>
-                                </div>
-                            </div>
-                            <div class="jymm">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                            </div>
-                            <div class="fwtk">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="az_div yd">
-                                        <div class="radio_div">
-                                            <div class="content">我已阅读并同意&nbsp;
-                                                <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
-                                            </div>
-                                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">用户名</div>
+                            <div>YYY777</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">安置方法</div>
+                            <div>自动安置</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">会员配套</div>
+                            <div>V1-100.00 USD</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">登录密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认登录密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="grzl">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">所在国家</div>
+                            <div>南非</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">真实姓名</div>
+                            <div>杨沂孙</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">性别</div>
+                            <div>保密</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">电子邮箱</div>
+                            <div>117265245@qq.com</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">详细地址</div>
+                            <div>renminlu 27262656</div>
+                        </div>
+                    </div>
+                    <div class="zffs">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">扣费类型</div>
+                            <div>正常</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付钱包</div>
+                            <div>连锁钱包</div>
+                        </div>
+                    </div>
+                    <div class="jymm">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="fwtk">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="az_div yd">
+                                <div class="radio_div">
+                                    <div class="content">我已阅读并同意&nbsp;
+                                        <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('register_supporting_detail', 'register_supporting')">修&nbsp;改</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
-                            </div>
                         </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('register_supporting_detail', 'register_supporting')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
                     </div>
                 </div>
             </div>
@@ -624,139 +625,139 @@
     <!-- 模态框（Modal）注册连锁配套 -->
     <div class="modal fade modal_hidden" id="register_chain" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent pad_bot" style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                注册新配套
-                            </h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        注册新配套
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">推荐人ID</div>
+                            <input type="text" class="form-control" placeholder="请输入推荐人ID">
                         </div>
-                        <div class="modal-body xinxi_bc padd_20">
-                            <div class="zhxx">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">推荐人ID</div>
-                                    <input type="text" class="form-control" placeholder="请输入推荐人ID">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">用户名</div>
-                                    <input type="text" class="form-control" placeholder="请输入用户名">
-                                    <div class="prompt">用户名必须以字母开头</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">安置方法</div>
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy radio_active"></div>
-                                            <div class="content">自动安置</div>
-                                        </div>
-                                        <div class="radio_div twier_radio">
-                                            <div class="radio_diy"></div>
-                                            <div class="content">手动安置</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">会员配套</div>
-                                    <select name="" class="form-control" id="">
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">登录密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入登录密码">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认登录密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入登录密码">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
-                                </div>
-                            </div>
-                            <div class="grzl">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20 country">
-                                    <div class="left_title">所在国家</div>
-                                    <select id="country" class="form-control dept_select"></select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">真实姓名</div>
-                                    <input type="text" class="form-control" placeholder="请输入真实姓名">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">性别</div>
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy radio_active"></div>
-                                            <div class="content">保密</div>
-                                        </div>
-                                        <div class="radio_div twier_radio">
-                                            <div class="radio_diy"></div>
-                                            <div class="content">男性</div>
-                                        </div>
-                                        <div class="radio_div twier_radio">
-                                            <div class="radio_diy"></div>
-                                            <div class="content">女性</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">电子邮箱</div>
-                                    <input type="text" class="form-control" placeholder="请输入电子邮箱">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">详细地址</div>
-                                    <input type="text" class="form-control" placeholder="请输入详细地址">
-                                </div>
-                            </div>
-                            <div class="zffs">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">扣费类型</div>
-                                    <select name="" class="form-control" id="">
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付钱包</div>
-                                    <select name="" class="form-control" id="">
-                                    </select>
-                                    <div class="prompt warning">连锁钱包余额：38.43</div>
-                                </div>
-                            </div>
-                            <div class="jymm">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
-                                </div>
-                            </div>
-                            <div class="fwtk">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy" id="yd"></div>
-                                            <div class="content">我已阅读并同意&nbsp;
-                                                <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep('register_chain', 'register_chain_detail')">预&nbsp;览</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">用户名</div>
+                            <div class="right_cont">
+                                <input type="text" class="form-control" placeholder="请输入用户名">
+                                <div class="prompt">用户名必须以字母开头</div>
                             </div>
                         </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">安置方法</div>
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy radio_active"></div>
+                                    <div class="content">自动安置</div>
+                                </div>
+                                <div class="radio_div twier_radio">
+                                    <div class="radio_diy"></div>
+                                    <div class="content">手动安置</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">会员配套</div>
+                            <select name="" class="form-control" id="">
+                            </select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">登录密码</div>
+                            <input type="password" class="form-control" placeholder="请输入登录密码">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认登录密码</div>
+                            <input type="password" class="form-control" placeholder="请输入登录密码">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="grzl">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20 country">
+                            <div class="left_title">所在国家</div>
+                            <select id="country" class="form-control dept_select"></select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">真实姓名</div>
+                            <input type="text" class="form-control" placeholder="请输入真实姓名">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">性别</div>
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy radio_active"></div>
+                                    <div class="content">保密</div>
+                                </div>
+                                <div class="radio_div twier_radio">
+                                    <div class="radio_diy"></div>
+                                    <div class="content">男性</div>
+                                </div>
+                                <div class="radio_div twier_radio">
+                                    <div class="radio_diy"></div>
+                                    <div class="content">女性</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">电子邮箱</div>
+                            <input type="text" class="form-control" placeholder="请输入电子邮箱">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">详细地址</div>
+                            <input type="text" class="form-control" placeholder="请输入详细地址">
+                        </div>
+                    </div>
+                    <div class="zffs">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">扣费类型</div>
+                            <select name="" class="form-control" id="">
+                            </select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付钱包</div>
+                            <div class="right_cont">
+                                <select name="" class="form-control" id="">
+                                </select>
+                                <div class="prompt warning">连锁钱包余额：38.43</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jymm">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="fwtk">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy" id="yd"></div>
+                                    <div class="content">我已阅读并同意&nbsp;
+                                        <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep('register_chain', 'register_chain_detail')">预&nbsp;览</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
                 </div>
             </div>
@@ -767,111 +768,107 @@
     <!-- 模态框（Modal）注册连锁配套预览 -->
     <div class="modal fade modal_hidden" id="register_chain_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                注册新配套预览
-                            </h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        注册新配套预览
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">推荐人ID</div>
+                            <div>776788</div>
                         </div>
-                        <div class="modal-body xinxi_bc padd_20">
-                            <div class="zhxx">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;账户信息&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">推荐人ID</div>
-                                    <div>776788</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">用户名</div>
-                                    <div>YYY777</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">安置方法</div>
-                                    <div>自动安置</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">会员配套</div>
-                                    <div>V1-100.00 USD</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">登录密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认登录密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">确认交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                            </div>
-                            <div class="grzl">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">所在国家</div>
-                                    <div>南非</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">真实姓名</div>
-                                    <div>杨沂孙</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">性别</div>
-                                    <div>保密</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">电子邮箱</div>
-                                    <div>117265245@qq.com</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">详细地址</div>
-                                    <div>renminlu 27262656</div>
-                                </div>
-                            </div>
-                            <div class="zffs">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">扣费类型</div>
-                                    <div>正常</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付钱包</div>
-                                    <div>连锁钱包</div>
-                                </div>
-                            </div>
-                            <div class="jymm">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                            </div>
-                            <div class="fwtk">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="az_div yd">
-                                        <div class="radio_div">
-                                            <div class="content">我已阅读并同意&nbsp;
-                                                <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
-                                            </div>
-                                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">用户名</div>
+                            <div>YYY777</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">安置方法</div>
+                            <div>自动安置</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">会员配套</div>
+                            <div>V1-100.00 USD</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">登录密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认登录密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">确认交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="grzl">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;个人资料&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">所在国家</div>
+                            <div>南非</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">真实姓名</div>
+                            <div>杨沂孙</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">性别</div>
+                            <div>保密</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">电子邮箱</div>
+                            <div>117265245@qq.com</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">详细地址</div>
+                            <div>renminlu 27262656</div>
+                        </div>
+                    </div>
+                    <div class="zffs">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">扣费类型</div>
+                            <div>正常</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付钱包</div>
+                            <div>连锁钱包</div>
+                        </div>
+                    </div>
+                    <div class="jymm">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="fwtk">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="az_div yd">
+                                <div class="radio_div">
+                                    <div class="content">我已阅读并同意&nbsp;
+                                        <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('register_chain_detail', 'register_chain')">修&nbsp;改</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
-                            </div>
                         </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep('register_chain_detail', 'register_chain')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
                     </div>
                 </div>
             </div>
@@ -905,23 +902,19 @@
     <!-- 模态框（Modal）选择注册配套 -->
     <div class="modal fade modal_hidden" id="choose_dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent " style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                注册类型
-                            </h4>
-                        </div>
-                        <div class="modal-body padd_20">
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan choose_btn_left" data-toggle="modal" data-target="#register_supporting">注册新配套</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan choose_btn_right" data-toggle="modal" data-target="#register_chain">注册连锁配套</button>
-                            </div>
-                        </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        注册类型
+                    </h4>
+                </div>
+                <div class="modal-body padd_20">
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan choose_btn_left" data-toggle="modal" data-target="#register_supporting">注册新配套</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan choose_btn_right" data-toggle="modal" data-target="#register_chain">注册连锁配套</button>
                     </div>
                 </div>
             </div>
@@ -932,78 +925,76 @@
     <!-- 模态框（Modal）升级配套 -->
     <div class="modal fade modal_hidden" id="upgrade_supporting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent pad_bot" style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                升级配套
-                            </h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        升级配套
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;基本信息&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">子账号</div>
+                            <select name="" class="form-control" id="">
+                                <option value="请选择要激活的会员">请选择要激活的会员</option>
+                            </select>
                         </div>
-                        <div class="modal-body xinxi_bc padd_20">
-                            <div class="zhxx">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;基本信息&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">子账号</div>
-                                    <select name="" class="form-control" id="">
-                                        <option value="请选择要激活的会员">请选择要激活的会员</option>
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">升级配套</div>
-                                    <select name="" class="form-control" id="">
-                                        <option value="V1-100.00 USD">V1-100.00 USD</option>
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">升级金额</div>
-                                    <input type="password" class="form-control" placeholder="请输入登录密码">
-                                </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">升级配套</div>
+                            <select name="" class="form-control" id="">
+                                <option value="V1-100.00 USD">V1-100.00 USD</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">升级金额</div>
+                            <input type="password" class="form-control" placeholder="请输入登录密码">
+                        </div>
+                    </div>
+                    <div class="zffs">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付类型</div>
+                            <select name="" class="form-control" id="">
+                                <option value="正常">正常</option>
+                            </select>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付钱包</div>
+                            <div class="right_cont">
+                                <select name="" class="form-control" id="">
+                                    <option value="请选择支付钱包">请选择支付钱包</option>
+                                </select>
+                                <div class="prompt warning">连锁钱包余额：38.43</div>
                             </div>
-                            <div class="zffs">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付类型</div>
-                                    <select name="" class="form-control" id="">
-                                        <option value="正常">正常</option>
-                                    </select>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付钱包</div>
-                                    <select name="" class="form-control" id="">
-                                        <option value="请选择支付钱包">请选择支付钱包</option>
-                                    </select>
-                                    <div class="prompt warning">连锁钱包余额：38.43</div>
-                                </div>
-                            </div>
-                            <div class="jymm">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control" placeholder="请输入交易密码">
-                                </div>
-                            </div>
-                            <div class="fwtk">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="az_div">
-                                        <div class="radio_div">
-                                            <div class="radio_diy" id="yd"></div>
-                                            <div class="content">我已阅读并同意&nbsp;
-                                                <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
-                                            </div>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="jymm">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control" placeholder="请输入交易密码">
+                        </div>
+                    </div>
+                    <div class="fwtk">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="az_div">
+                                <div class="radio_div">
+                                    <div class="radio_diy" id="yd"></div>
+                                    <div class="content">我已阅读并同意&nbsp;
+                                        <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep2('upgrade_supporting','upgrade_supporting_detail')">预&nbsp;览</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
-                            </div>
                         </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan" onclick="open_Prep2('upgrade_supporting','upgrade_supporting_detail')">预&nbsp;览</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan2 default_back ml_20" data-dismiss="modal" aria-hidden="true">关&nbsp;闭</button>
                     </div>
                 </div>
             </div>
@@ -1014,68 +1005,64 @@
     <!-- 模态框（Modal）升级配套预览 -->
     <div class="modal fade modal_hidden" id="upgrade_supporting_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog btn_cent" style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                升级配套预览
-                            </h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        升级配套预览
+                    </h4>
+                </div>
+                <div class="modal-body xinxi_bc padd_20">
+                    <div class="zhxx">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;基本信息&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">子账号</div>
+                            <div>118257.02</div>
                         </div>
-                        <div class="modal-body xinxi_bc padd_20">
-                            <div class="zhxx">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;基本信息&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">子账号</div>
-                                    <div>118257.02</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">升级配套</div>
-                                    <div>V1-100.00 USD</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">升级金额</div>
-                                    <div>100.00 USD</div>
-                                </div>
-                            </div>
-                            <div class="zffs">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付类型</div>
-                                    <div>正常</div>
-                                </div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">支付钱包</div>
-                                    <div>连锁钱包</div>
-                                </div>
-                            </div>
-                            <div class="jymm">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="left_title">交易密码</div>
-                                    <input type="password" class="form-control yl_password" value="123456">
-                                </div>
-                            </div>
-                            <div class="fwtk">
-                                <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
-                                <div class="left_right_div mt_20">
-                                    <div class="az_div yd">
-                                        <div class="radio_div">
-                                            <div class="content">我已阅读并同意&nbsp;
-                                                <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
-                                            </div>
-                                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">升级配套</div>
+                            <div>V1-100.00 USD</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">升级金额</div>
+                            <div>100.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="zffs">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;支付方式&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付类型</div>
+                            <div>正常</div>
+                        </div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">支付钱包</div>
+                            <div>连锁钱包</div>
+                        </div>
+                    </div>
+                    <div class="jymm">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;交易密码验证&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="left_title">交易密码</div>
+                            <input type="password" class="form-control yl_password" value="123456">
+                        </div>
+                    </div>
+                    <div class="fwtk">
+                        <div class="title_nav">————&nbsp;&nbsp;&nbsp;服务条款&nbsp;&nbsp;&nbsp;————</div>
+                        <div class="left_right_div mt_20">
+                            <div class="az_div yd">
+                                <div class="radio_div">
+                                    <div class="content">我已阅读并同意&nbsp;
+                                        <a data-toggle="modal" data-target="#termsOfService">服务条款</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn_div">
-                                <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep2('upgrade_supporting_detail', 'upgrade_supporting')">修&nbsp;改</button>
-                                <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
-                            </div>
                         </div>
+                    </div>
+                    <div class="btn_div">
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back" onclick="open_Prep2('upgrade_supporting_detail', 'upgrade_supporting')">修&nbsp;改</button>
+                        <button type="button" class="btn btn-primary dialogqiehuan3 success_back ml_20" data-dismiss="modal" aria-hidden="true">保&nbsp;存</button>
                     </div>
                 </div>
             </div>
@@ -1086,77 +1073,73 @@
     <!-- 模态框（Modal）业绩详情 -->
     <div class="modal fade modal_hidden" id="performance_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 50%;margin-top: -310px;">
         <div class="modal-dialog btn_cent" style="height: 800px;">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
-                                &times;
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">
-                                业绩详情
-                            </h4>
-                        </div>
-                        <div class="modal-body">
-                            <table class="table table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2" class="user_info">
-                                            <span>
-                                                用户名:
-                                                <span class="username">yyy881</span>
-                                            </span>
-                                            </br>
-                                            <span>
-                                                子账号:
-                                                <span class="sub_account">118257.04</span>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>左</td>
-                                        <td>右</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">剩余业绩</th>
-                                    </tr>
-                                    <tr>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">总业绩</th>
-                                    </tr>
-                                    <tr>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">今日业绩</th>
-                                    </tr>
-                                    <tr>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">安置点位</th>
-                                    </tr>
-                                    <tr>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">总安置点位</th>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <span class="count">870</span>个
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close_diy" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        业绩详情
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th colspan="2" class="user_info">
+                                    <span>
+                                        用户名:
+                                        <span class="username">yyy881</span>
+                                    </span>
+                                    </br>
+                                    <span>
+                                        子账号:
+                                        <span class="sub_account">118257.04</span>
+                                    </span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>左</td>
+                                <td>右</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">剩余业绩</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">总业绩</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">今日业绩</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">安置点位</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">总安置点位</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="count">870</span>个
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -1170,7 +1153,7 @@
 <script src="../js/down_list.js"></script>
 <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../js/jquery.mockjax.min.js"></script>
-<script src="../js/mui.min.js"></script>
+<script src="../js/scroll.js"></script>
 <!--模拟安置图数据-->
 <script src="../js/mock_data.js"></script>
 <script>
@@ -1200,83 +1183,13 @@
 </script>
 <script>
     window.onload = function () {
-        // open_confirm();
+        open_confirm();
+        // is_support_browser();
         $(".navlist").hover(function () {
             $(this).addClass("actmove")
         }, function () {
             $(this).removeClass("actmove")
         });
-        mui('.mui-scroll-wrapper').scroll({
-            scrollY: true, //是否竖向滚动
-            scrollX: false, //是否横向滚动
-            startX: 0, //初始化时滚动至x
-            startY: 0, //初始化时滚动至y
-            indicators: true, //是否显示滚动条
-            deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
-            bounce: true //是否启用回弹
-        });
-        // $(".modal_hidden .btn_cent").mCustomScrollbar({
-        //     setWidth:false,
-        //     setHeight:false,
-        //     setTop:0,
-        //     setLeft:0,
-        //     axis:"y",
-        //     scrollbarPosition:"inside",
-        //     scrollInertia:950,
-        //     autoDraggerLength:true,
-        //     autoHideScrollbar:false,
-        //     autoExpandScrollbar:false,
-        //     alwaysShowScrollbar:0,
-        //     snapAmount:null,
-        //     snapOffset:0,
-        //     mouseWheel:{
-        //         enable:true,
-        //         scrollAmount:"auto",
-        //         axis:"y",
-        //         preventDefault:false,
-        //         deltaFactor:"auto",
-        //         normalizeDelta:false,
-        //         invert:false,
-        //         disableOver:["select","option","keygen","datalist","textarea"]
-        //     },
-        //     scrollButtons:{
-        //         enable:false,
-        //         scrollType:"stepless",
-        //         scrollAmount:"auto"
-        //     },
-        //     keyboard:{
-        //         enable:true,
-        //         scrollType:"stepless",
-        //         scrollAmount:"auto"
-        //     },
-        //     contentTouchScroll:25,
-        //     advanced:{
-        //         autoExpandHorizontalScroll:false,
-        //         autoScrollOnFocus:"input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']",
-        //         updateOnContentResize:true,
-        //         updateOnImageLoad:true,
-        //         updateOnSelectorChange:false,
-        //         releaseDraggableSelectors:false
-        //     },
-        //     theme:"light",
-        //     callbacks:{
-        //         onInit:false,
-        //         onScrollStart:false,
-        //         onScroll:false,
-        //         onTotalScroll:false,
-        //         onTotalScrollBack:false,
-        //         whileScrolling:false,
-        //         onTotalScrollOffset:0,
-        //         onTotalScrollBackOffset:0,
-        //         alwaysTriggerOffsets:true,
-        //         onOverflowY:false,
-        //         onOverflowX:false,
-        //         onOverflowYNone:false,
-        //         onOverflowXNone:false
-        //     },
-        //     live:false,
-        //     liveSelector:null
-        // });
     }
     var areaObj = [];
     function initLocation(e) {
@@ -1351,22 +1264,6 @@
             "</span></div></div>"
         );
     }
-// $('.modal')
-//     .on('show.bs.modal', function (){
-//             $('html').css('overflow', 'hidden');
-//             $('body').css('overflow', 'hidden');
-//             // scrollTo = $('body').scrollTop();
-//             // $('body').css("position", "fixed");
-//         })
-//     .on('hide.bs.modal', function (){
-//             // Also if you are using multiple modals (cascade) - additional check
-//             if ($('.modal.in').length == 1) {
-//                 $('html').css('overflow', 'scroll');
-//                 $('body').css('overflow', 'scroll');
-//                 // $('body').css("position", "static");
-//                 // $('body').animate({scrollTop: scrollTo}, 0);
-//             }
-//         });
     var initOrgchart = function(rootClass){
         var ocWest = $('.place').orgchart({
             'data' : "xitu/" + rootClass,

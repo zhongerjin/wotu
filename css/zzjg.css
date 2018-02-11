@@ -1,7 +1,12 @@
 #choose_dialog{
     z-index: 1049;
+}
+#choose_dialog{
+    /*position: fixed;*/
     top: 50%;
-    margin-top: -123px;
+    -webkit-transform: translateY(-123px);
+        -ms-transform: translateY(-123px);
+            transform: translateY(-123px);
 }
 #termsOfService{
     z-index: 1060;
@@ -22,13 +27,16 @@
 .user_info span{
     color: #36ceb9;
 }
+#performance_detail .table-bordered {
+    overflow: hidden;
+    border-radius: 20px;
+    border-spacing: 0px;
+    border: none;
+    -webkit-box-shadow: inset 0 0 0 1px #a4eae0;
+    box-shadow: inset 0 0 0 1px #a4eae0;
+    border-collapse: separate;
+}
 @media screen and (min-width: 768px) {
-    #delete_confirm .modal-dialog{
-        max-width: 500px;
-        position: absolute !important;
-        left: 50%;
-        margin-left: -250px;
-    }
     .choose_btn_left{
         padding: 0 50px;
         width: auto;

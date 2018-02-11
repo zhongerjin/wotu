@@ -3,8 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-<!--     <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi "> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+	<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="0" http-equiv="expires">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的钱包</title>
@@ -16,6 +24,7 @@
     <link rel="stylesheet" href="../css/wallet.css">
     <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../css/table.css">
 
     <script src="../js/jquery.1.12.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -153,7 +162,7 @@
         <div class="content">
             <div class="contenttop">
                 <div class="container">
-                    <div class="col-md-4 contentwarp">
+                    <div class="col-md-4 contentwarp pad_0">
                         <h3>资产管理</h3>
                         <p>余额:2524.99USD</p>
                         <div class="btnwarp">
@@ -163,25 +172,28 @@
                         </div>
                         <div class="linehr"></div>
                     </div>
-                    <div class="col-md-4 contentwarp">
+                    <div class="col-md-4 contentwarp pad_0">
                         <div class="contentmiddle">
-                            <div class="col-md-6 col-sm-12 spanwarp">
-                                <span>现金钱包：</span>
-                                <span>396.39</span>
+                            <div class="inline_block">
+                                <div class="col-md-6 col-sm-6 spanwarp">
+                                    <span>现金钱包：</span>
+                                    <span>396.39</span>
+                                </div>
+                                <div class="col-md-6 col-sm-6 spanwarp">
+                                    <span>注册钱包：</span>
+                                    <span>1230.36</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 spanwarp">
-                                <span>注册钱包：</span>
-                                <span>1230.36</span>
+                            <div class="inline_block">
+                                <div class="col-md-6 col-sm-6 spanwarp">
+                                    <span>消费钱包：</span>
+                                    <span>1215.03</span>
+                                </div>
+                                <div class="col-md-6 col-sm-6 spanwarp">
+                                    <span>连锁钱包：</span>
+                                    <span>76.98</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 spanwarp">
-                                <span>消费钱包：</span>
-                                <span>1215.03</span>
-                            </div>
-                            <div class="col-md-6 col-sm-12 spanwarp">
-                                <span>连锁钱包：</span>
-                                <span>76.98</span>
-                            </div>
-
                         </div>
                         <div class="linehr"></div>
                     </div>
@@ -211,13 +223,10 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a href="#" class="navbar-brand nav-title">钱包</a>
+                                <a href="javascript:void(0)" class="navbar-brand nav-title nav_li active" data-tab=Wallet>钱包</a>
                             </div>
                             <div class="navbar-collapse bs-js-navbar-scrollspy1 collapse in" aria-expanded="true">
                                 <ul class="nav navbar-nav navbar-right" data-tab-group>
-                                    <li>
-                                        <a href="javascript:void(0)" class="nav_li" data-tab=Wallet>钱包</a>
-                                    </li>
                                     <li>
                                         <a href="javascript:void(0)" class="nav_li" data-tab=recharge>充值</a>
                                     </li>
@@ -249,10 +258,10 @@
                         <div class="Wallet index_content">
                             <div class="tabletop2">
                                 <div class="tab-group" data-tab-chil>
-                                    <div class="btn active" data-tab=CashWallet>现金钱包</div>
-                                    <div class="btn" data-tab=RegisterLog>注册记录</div>
-                                    <div class="btn" data-tab=ConsumptionWallet>消费钱包</div>
-                                    <div class="btn" data-tab=ChainWallet>连锁钱包</div>
+                                    <div class="btn tab_btn active" data-tab=CashWallet>现金钱包</div>
+                                    <div class="btn tab_btn" data-tab=RegisterLog>注册记录</div>
+                                    <div class="btn tab_btn" data-tab=ConsumptionWallet>消费钱包</div>
+                                    <div class="btn tab_btn" data-tab=ChainWallet>连锁钱包</div>
                                 </div>
                                 <div class="button-group">
                                     <div class="refresh btn">
@@ -856,12 +865,12 @@
                         <div class="bonus index_content">
                             <div class="tabletop2">
                                 <div class="tab-group" data-tab-chil>
-                                    <div class="btn active" data-tab=Statistics>奖金统计</div>
-                                    <div class="btn" data-tab=Recommend>推荐奖</div>
-                                    <div class="btn" data-tab=Performance>业绩奖</div>
-                                    <div class="btn" data-tab=BackFeeding>反哺奖</div>
-                                    <div class="btn" data-tab=Management>管理奖</div>
-                                    <div class="btn" data-tab=Dividends>分红奖</div>
+                                    <div class="btn tab_btn active" data-tab=Statistics>奖金统计</div>
+                                    <div class="btn tab_btn" data-tab=Recommend>推荐奖</div>
+                                    <div class="btn tab_btn" data-tab=Performance>业绩奖</div>
+                                    <div class="btn tab_btn" data-tab=BackFeeding>反哺奖</div>
+                                    <div class="btn tab_btn" data-tab=Management>管理奖</div>
+                                    <div class="btn tab_btn" data-tab=Dividends>分红奖</div>
                                 </div>
                                 <div class="button-group">
                                     <div class="refresh btn">
@@ -899,8 +908,53 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="tabletop2_mobile">
+                                <div class="tab-group-mobile" data-tab-chil>
+                                    <div class="btn tab_btn active" data-tab=Statistics>奖金统计</div>
+                                    <div class="btn tab_btn" data-tab=Recommend>推荐奖</div>
+                                    <div class="btn tab_btn" data-tab=Performance>业绩奖</div>
+                                    <div class="btn tab_btn" data-tab=BackFeeding>反哺奖</div>
+                                    <div class="btn tab_btn" data-tab=Management>管理奖</div>
+                                    <div class="btn tab_btn" data-tab=Dividends>分红奖</div>
+                                    <div class="button-group">
+                                        <div class="refresh btn">
+                                            <img src="../image/refresh.png" alt="">
+                                        </div>
+                                        <div class="more btn">
+                                            <img src="../image/arrow.png" alt=""> 全部
+                                        </div>
+                                        <div class="export btn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div class="">
+                                                <img src="../image/export.png" alt="">
+                                                <img src="../image/export_down.png" alt="">
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li>导出当前页数据</li>
+                                            <li>
+                                                <a href="javascript:void(0)">HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">CSV</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">文本</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Excel</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">PDF</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">JSON</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="search">
-                                <input type="text" placeholder="请输入奖金来源" class="form-control">
+                                <input type="text" placeholder="请输入奖金来源" class="form-control source">
                                 <div class="choose_time">
                                     <input type="text" class="form-control time" placeholder="请选择开始日期">
                                     <span><hr></span>
@@ -1979,45 +2033,43 @@
                     <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="../index.html">
-                                <div class=" icon1 navlist">首页</div>
+                                <div class=" icon1 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="supporting.html">
-                                <div class=" icon2 navlist">注册配套</div>
+                                <div class=" icon2 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="chain.html">
-                                <div class=" icon3 navlist">连锁配套</div>
+                                <div class=" icon3 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="zzjg.html">
-                                <div class=" icon4 navlist">组织结构</div>
+                                <div class=" icon4 navlist"></div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="mobile_nav_container">
                         <li class="moblie_nav_li">
                             <a href="wallet.html">
-                                <div class=" icon5 act navlist">资产管理</div>
+                                <div class=" icon5 act navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="integral.html">
-                                <div class=" icon6 navlist">积分管理</div>
+                                <div class=" icon6 navlist"></div>
                             </a>
                         </li>
                         <li class="moblie_nav_li">
                             <a href="new.html">
-                                <div class=" icon7 navlist">新闻公告
+                                <div class=" icon7 navlist">
                                 </div>
                             </a>
                         </li>
                         <li class="moblie_nav_li dropup">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class=" icon8 navlist">账户信息
+                                <div class=" icon8 navlist">
                                 </div>
                                 <ul class="dropdown-menu">
                                     <li><a href="infoself.html">个人中心</a></li>
@@ -2431,6 +2483,7 @@
 </body>
 <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../js/down_list.js"></script>
+<script src="../js/scroll.js"></script>
 <script>
     window.onload = function () {
         $(".navlist").hover(function () {
@@ -2448,68 +2501,6 @@
         //         });
         //     })(i);
         // }
-        $(".modal_hidden .btn_cent").mCustomScrollbar({
-            setWidth:false,
-            setHeight:false,
-            setTop:0,
-            setLeft:0,
-            axis:"y",
-            scrollbarPosition:"inside",
-            scrollInertia:950,
-            autoDraggerLength:true,
-            autoHideScrollbar:false,
-            autoExpandScrollbar:false,
-            alwaysShowScrollbar:0,
-            snapAmount:null,
-            snapOffset:0,
-            mouseWheel:{
-                enable:true,
-                scrollAmount:"auto",
-                axis:"y",
-                preventDefault:false,
-                deltaFactor:"auto",
-                normalizeDelta:false,
-                invert:false,
-                disableOver:["select","option","keygen","datalist","textarea"]
-            },
-            scrollButtons:{
-                enable:false,
-                scrollType:"stepless",
-                scrollAmount:"auto"
-            },
-            keyboard:{
-                enable:true,
-                scrollType:"stepless",
-                scrollAmount:"auto"
-            },
-            contentTouchScroll:25,
-            advanced:{
-                autoExpandHorizontalScroll:false,
-                autoScrollOnFocus:"input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']",
-                updateOnContentResize:true,
-                updateOnImageLoad:true,
-                updateOnSelectorChange:false,
-                releaseDraggableSelectors:false
-            },
-            theme:"light",
-            callbacks:{
-                onInit:false,
-                onScrollStart:false,
-                onScroll:false,
-                onTotalScroll:false,
-                onTotalScrollBack:false,
-                whileScrolling:false,
-                onTotalScrollOffset:0,
-                onTotalScrollBackOffset:0,
-                alwaysTriggerOffsets:true,
-                onOverflowY:false,
-                onOverflowX:false,
-                onOverflowYNone:false,
-                onOverflowXNone:false
-            },
-            live:false,
-            liveSelector:null
-        });
     }
     var open_Prep = function (modal_hide, modal_show) {
         $("#" + modal_hide).modal('hide');
@@ -2523,7 +2514,7 @@
         tab_toggle(this, undefined, "index_content");
     })
 
-    $("[data-tab-chil]").children().on("click", function (e) {
+    $("[data-tab-chil]").children(".tab_btn").on("click", function (e) {
         tab_toggle(this, "data-tab-chil");
     });
 

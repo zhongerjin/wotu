@@ -182,6 +182,7 @@ span.bg_color{
 }
 @media screen and (max-width: 768px){
     .tree_search{
-        display: none;
+        position: static;
+        margin-bottom: 30px;
     }
 }
