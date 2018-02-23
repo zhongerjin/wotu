@@ -13,6 +13,9 @@
     top: 50%;
     margin-top: -123px;
 }
+.text_le{
+    text-align: left;
+}
 @media screen and (min-width: 768px) {
     #sites_email_deatil .modal-dialog{
         max-width: 700px;
@@ -25,5 +28,9 @@
         position: absolute !important;
         left: 50%;
             margin-left: -300px;
+    }
+    #write_email .modal-dialog{
+        top: 50%;
+        margin-top: -313px;
     }
 }

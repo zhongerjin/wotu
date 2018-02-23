@@ -198,6 +198,13 @@
         left: 50%;
         margin-left: -309px;
     }
+    #seedIntegral_deatil .btn_cent,
+    #seedCount_deatil .btn_cent{
+        width:860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
     .left_right_div_buy .right_cont input,
     .left_right_div_buy .right_cont select{
         width: 48%;

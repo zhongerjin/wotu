@@ -70,8 +70,8 @@ $('.modal')
 .on('hide.bs.modal', function (){
         // Also if you are using multiple modals (cascade) - additional check
         if ($('.modal.in').length == 1) {
-            $('html').css('overflow', 'scroll');
-            $('body').css('overflow', 'scroll');
+            $('html').css('overflow', 'auto');
+            $('body').css('overflow', 'auto');
             // $('body').css("position", "static");
             // $('body').animate({scrollTop: scrollTo}, 0);
         }

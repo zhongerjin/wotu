@@ -93,6 +93,7 @@ a {
     background-image: url("../image/wallet-infobg2.png");
     background-size: cover;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .content .contentwarp {
@@ -188,6 +189,10 @@ a {
 }
 
 .content .contenttable .tabletop .tabletop1 .title {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     cursor: pointer;
     padding-bottom: 10px;
     text-align: center;
@@ -365,7 +370,9 @@ a {
     border: 1px solid #11dcc1;
     position: relative;
 }
-.button-group .refresh{
+.button-group .refresh,
+.button-group .view,
+.button-group .plus{
     background-color: #11dcc1;
     border: none;
     display: -webkit-box;
@@ -378,6 +385,12 @@ a {
             align-items: center;
     position: relative;
     right: 1px;
+}
+.button-group .plus{
+    padding: 5px;
+}
+.button-group .plus i{
+    color: #fff;
 }
 .button-group .more{
     display: -webkit-box;
@@ -454,6 +467,10 @@ a {
 .bonus .Management,
 .bonus .Dividends{
     display: none;
+}
+.bonus .settle,
+.modal .settle{
+    color: #2486b9;
 }
 .bonus .status .settle{
     color: #2486b9;
@@ -553,7 +570,12 @@ a {
     }
 
     .content .contenttable .tabletop .tabletop1 {
-        display: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .content .contenttable .tabletop .tabletop2 .tab-group .btn {
@@ -589,6 +611,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .content .contenttable .tabletop .tabletop1{
+        display: block;
+        overflow: auto;
+    }
     .banner .title {
         width: 720px;
         padding-left: 0;
@@ -714,6 +740,53 @@ a {
         position:absolute !important;
         left:50%;
         margin-left:-250px;
+    }
+    #recommend_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #performance_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #backFeeding_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #management_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #dividends_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #dividends_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
+    }
+    #cashWallet_deatil .btn_cent,
+    #registerLog_deatil .btn_cent,
+    #consumptionWallet_deatil .btn_cent,
+    #chainWallet_deatil .btn_cent,
+    #recharge_deatil .btn_cent,
+    #transfer_deatil .btn_cent{
+        width: 860px;
+        position: absolute;
+        left: 50%;
+        margin-left: -430px;
     }
 }
 

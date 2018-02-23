@@ -579,6 +579,15 @@ li {
 .dropdown_list ul li{
     text-align: center;
 }
+.navcol_n{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
 @media screen and (min-width: 320px) {
     .navcol_s {
         display: block;
@@ -898,6 +907,10 @@ li {
     }
     .navcol_b {
         display: block;
+    }
+    .navcol_n{
+        display: block;
+        overflow: auto;
     }
     .top .nav,
     .bannerCilent,
