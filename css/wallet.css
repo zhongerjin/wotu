@@ -196,6 +196,7 @@ a {
     cursor: pointer;
     padding-bottom: 10px;
     text-align: center;
+    white-space: pre;
 }
 
 .content .contenttable .tabletop .tabletop1 .title:hover {
@@ -482,8 +483,8 @@ a {
 .withdraw .status .fail{
     color: #ffb464;
 }
-.search{
-    margin-bottom: 20px;
+.mobile_no_button{
+    display: none;
 }
 .search input{
     width: 185px;
@@ -551,7 +552,7 @@ a {
     }
 
     .content .contentwarp {
-        height: auto;
+        height: 190px;
         text-align: center;
     }
 
@@ -641,7 +642,7 @@ a {
     }
 
     .content .contentwarp {
-        height: auto;
+        height: 190px;
         text-align: center;
     }
 
@@ -935,11 +936,17 @@ a {
     .inline_block div.spanwarp{
         display: inline-block;
     }
-}
-@media screen and (max-width: 768px){
-    .bonus .tabletop2{
+    .search{
+        margin-bottom: 20px;
+    }
+    .mobile_search .button-group{
         display: none;
     }
+    .mobile_no_button{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
     .tabletop2_mobile{
         display: block;
     }
