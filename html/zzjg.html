@@ -1272,6 +1272,9 @@
             //   'nodeContent': 'name',
             'createNode': function($node, data) {
                 $node.children('.title').html(node_template(data));
+                if($node.children('.title').children('.demo').hasClass("level_6")){
+                    $node.children('.title').addClass("disabled");
+                }
                 $node.children('.title').on("click", function(e){
                     if($(this).children().hasClass("register")){
                         $("#choose_dialog").modal('show');
@@ -1285,8 +1288,6 @@
                         return false;
                     }
                     $("#performance_detail").modal('show');
-                    // $('body').css('overflow','hidden');
-                    // $('html').css('overflow','hidden');
                 });
                 if ($node.is('.drill-down')) {
                 var assoClass = data.className.match(/asso-\w+/)[0];

@@ -159,26 +159,31 @@ span.bg_color{
     display: inline-block;
 }
 .demo .text .price{
-    color: #ffdf47;
+    color: #fff;
 }
 .demo .text .status{
-    color: #ffdf47;
+    color: #fff;
     text-align: left;
     margin-right: 30px;
     cursor: pointer;
+    text-decoration: underline;
 }
 .demo .text .status:hover{
     color: #fcff47;
 }
+.demo.level_6 .text .price{
+    color: #8b8b8b;
+}
 .demo.level_6 .text .status:hover{
-    color: #fff;
+    color: #8b8b8b;
 }
 .demo.register .text .status{
     margin: 0;
 }
 .demo.level_6 .text .status{
-    color: #fff;
+    color: #8b8b8b;
     cursor: default;
+    text-decoration: none;
 }
 @media screen and (max-width: 768px){
     .tree_search{

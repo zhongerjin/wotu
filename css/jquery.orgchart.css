@@ -119,7 +119,7 @@
   font-size: 100px;
   margin-top: 30px;
   /*color: rgba(68, 157, 68, 0.8);*/
-  color: rgba(13, 224, 192, .8);
+  color: rgba(68, 210, 151, .8);
 }
 
 .orgchart table {
@@ -144,23 +144,23 @@
 }
 
 .orgchart .lines .topLine {
-  border-top: 2px solid #39e6cb;
+  border-top: 2px solid #44d297;
 }
 
 .orgchart .lines .rightLine {
-  border-right: 1px solid #39e6cb;
+  border-right: 1px solid #44d297;
   float: none;
   border-radius: 0;
 }
 
 .orgchart .lines .leftLine {
-  border-left: 1px solid #39e6cb;
+  border-left: 1px solid #44d297;
   float: none;
   border-radius: 0;
 }
 
 .orgchart .lines .downLine {
-  background-color: #39e6cb;
+  background-color: #44d297;
   margin: 0 auto;
   height: 20px;
   width: 2px;
@@ -231,11 +231,15 @@
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   white-space: nowrap;
-  background-color: #0de0c0;
+  background-color: #44d297;
   color: #fff;
   border-radius: 4px;
   padding: 8px 10px;
   cursor: pointer;
+}
+
+.orgchart .node .title.disabled{
+  background-color: #c9c9c9;
 }
 
 .orgchart.b2t .node .title {
@@ -512,7 +516,7 @@
   position: absolute;
   cursor: pointer;
   right: 60px;
-  color: #0de0c0;
+  color: #44d297;
 }
 .orgchart .drill-icon.fa-angle-double-down{
   bottom: -28px;
@@ -525,8 +529,15 @@
     width: 80px;
   }
   .orgchart .title .demo{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .orgchart .title .demo img{
     width: 100%;

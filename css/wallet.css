@@ -149,7 +149,8 @@ a {
     padding: 10px 0;
 }
 
-.content .contentwarp .btn {
+.content .contentwarp .btn,
+.table_warp .warp_btn{
     background-color: #0de0c0;
     border-radius: 25px;
     font-size: 14px;
