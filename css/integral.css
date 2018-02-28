@@ -83,7 +83,8 @@
     height: 24px;
     background-image: url(../image/v.png);
     display: inline-block;
-    background-size: contain;
+    -webkit-background-size: contain;
+            background-size: contain;
     background-repeat: no-repeat;
 }
 .table-responsive .tablespantext {
@@ -140,7 +141,8 @@
     border: 1px solid #e8e8e8;
 }
 .button_group .btn{
-    border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
     background-color: #f4f4f4;
     color: #525252;
     margin: 0-2px;

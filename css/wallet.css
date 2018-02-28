@@ -10,7 +10,8 @@ a {
 
 .main .slider {
     background-image: url("../image/wallet-infobg.png");
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     background-repeat: no-repeat;
     height: 596px;
 }
@@ -91,7 +92,8 @@ a {
 
 .content .contenttop {
     background-image: url("../image/wallet-infobg2.png");
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -152,7 +154,8 @@ a {
 .content .contentwarp .btn,
 .table_warp .warp_btn{
     background-color: #0de0c0;
-    border-radius: 25px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
     font-size: 14px;
     color: #fff;
     margin: 0 10px 0 0;
@@ -222,7 +225,8 @@ a {
 .content .contenttable .tabletop .tabletop2 .tab-group .btn,
 .tabletop2_mobile .tab-group-mobile .tab_btn{
     border: 1px solid #32cdb7;
-    border-radius: 25px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
     color: #32cdb7;
     margin: 0 15px;
 }
@@ -293,7 +297,8 @@ a {
 .table-responsive .logbtn {
     background-color: #15d7c3;
     color: #fff;
-    border-radius: 20px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
     padding: 6px 15px;
 }
 
@@ -349,7 +354,8 @@ a {
     border: 1px solid #0de0c0;
     color: #0de0c0;
     display: inline-block;
-    border-radius: 25px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
     padding: 4px 15px;
 }
 .tab-group .btn.active{
@@ -360,7 +366,8 @@ a {
 }
 .button-group .btn{
     padding: 0;
-    border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
 }
 .button-group{
     height: 32px;
@@ -368,7 +375,8 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 4px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
     border: 1px solid #11dcc1;
     position: relative;
 }

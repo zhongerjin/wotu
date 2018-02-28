@@ -11,7 +11,7 @@ $.mockjax({
             {
                 "name":"升级",
                 "price":118257.01,
-                "level": "level_1",
+                "level": "level_3",
                 "has_levelUp": true,
                 "children": [
                     {

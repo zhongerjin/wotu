@@ -26,14 +26,14 @@
     right:auto
 }
 .tree li::before {
-    border-left: 2px solid #0de0c0;
+    border-left: 2px solid #44d297;
     bottom:50px;
     height:100%;
     top: -3px;
     width: 3px;
 }
 .tree li::after {
-    border-top: 2px solid #0de0c0;
+    border-top: 2px solid #44d297;
     height:20px;
     top:25px;
     width:25px;
@@ -41,13 +41,13 @@
 .tree li > span {
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
-    border: 1px solid #0de0c0;
+    border: 1px solid #44d297;
     border-radius:5px;
     display:inline-block;
     padding: 6px 14px !important;
     text-decoration:none;
     display:  inline-block;
-    color: #0de0c0;
+    color: #44d297;
     margin: 0 3px 0 0;
 }
 .tree li.parent_li>span {
@@ -69,16 +69,17 @@
     width: 15px;
     height: 15px;
     background: white;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     display:  inline-block;
     position:  relative;
     top: 3px;
-    color:#0de0c0;
+    color: inherit;
     text-align:center;
 }
 span.bg_color{
     padding-left:5px;
-    background-color: #0de0c0;
+    background-color: #44d297;
     color:white;
 }
 .icon_yuan > .jian_icon{
@@ -103,7 +104,8 @@ span.bg_color{
     height: 13px;
     background-image: url(../image/v_.png);
     display: inline-block;
-    background-size: contain;
+    -webkit-background-size: contain;
+            background-size: contain;
     background-repeat: no-repeat;
 }
 .tree_search{
@@ -150,29 +152,32 @@ span.bg_color{
   padding: 0;
 }
 .orgchart .register{
-    padding: 10px 0;
+    padding: 2px 0;
 }
 .demo img{
     float: left;
+}
+.demo.register img{
+    float: none;
+    margin-right: 10px;
 }
 .demo .text{
     display: inline-block;
 }
 .demo .text .price{
-    color: #fff;
+    color: #44d297;
 }
 .demo .text .status{
-    color: #fff;
+    color: #44d297;
     text-align: left;
     margin-right: 30px;
     cursor: pointer;
-    text-decoration: underline;
 }
 .demo .text .status:hover{
-    color: #fcff47;
+    color: #44d297;
 }
 .demo.level_6 .text .price{
-    color: #8b8b8b;
+    color: #44d297;
 }
 .demo.level_6 .text .status:hover{
     color: #8b8b8b;
@@ -183,7 +188,6 @@ span.bg_color{
 .demo.level_6 .text .status{
     color: #8b8b8b;
     cursor: default;
-    text-decoration: none;
 }
 @media screen and (max-width: 768px){
     .tree_search{

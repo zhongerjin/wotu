@@ -110,7 +110,8 @@ li {
 }
 
 .main .slider .regbtn {
-    border-radius: 50px;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
     text-align: center;
     width: 190px;
     height: 50px;
@@ -178,7 +179,8 @@ li {
     color: #0de0c0;
     padding: 3px 13px;
     border: 1px solid #0de0c0;
-    border-radius: 28px;
+    -webkit-border-radius: 28px;
+            border-radius: 28px;
     margin-top: 11px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
@@ -211,7 +213,7 @@ li {
 .top.mobile_top .nav.mobile_nav ul li>a>div{
     cursor: pointer;
     width: auto;
-    padding: 15px 0 10px 40px;
+    padding: 15px 0 15px 40px;
     font-size: 14px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -219,7 +221,9 @@ li {
     /* margin-right: -10px; */
     color: #737373;
     border: 2px solid transparent;
-    border-bottom: none;
+    /*border-bottom: none;*/
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
 }
 .footer_placeholder{
     display: none;
@@ -268,96 +272,105 @@ li {
 }
 
 .top .nav .icon1 {
-    background-image: url("../image/icon1.png");
+    background-image: url("../image/icon1.svg");
+    -webkit-background-size: 42% 42%;
+    background-size: 42%;
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon2 {
-    background-image: url("../image/icon2.png");
+    background-image: url("../image/icon2.svg");
+    -webkit-background-size: 32% 32%;
+    background-size: 32%;
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon3 {
-    background-image: url("../image/icon3.png");
+    background-image: url("../image/icon3.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon4 {
-    background-image: url("../image/icon4.png");
+    background-image: url("../image/icon4.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon5 {
-    background-image: url("../image/icon5.png");
+    background-image: url("../image/icon5.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon6 {
-    background-image: url("../image/icon6.png");
+    background-image: url("../image/icon6.svg");
+    -webkit-background-size: 27px 27px;
+    background-size: 27px;
+    padding-left: 28px;
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon7 {
-    background-image: url("../image/icon7.png");
+    background-image: url("../image/icon7.svg");
+    -webkit-background-size: 25px 25px;
+    background-size: 25px;
     background-repeat: no-repeat;
     background-position: center left
 }
 .top .nav .icon8 {
-    background-image: url("../image/icon8.png");
+    background-image: url("../image/icon8.svg");
     background-repeat: no-repeat;
     background-position: center left;
-    background-size: 25px;
+    margin-top: 8px !important;
 }
 .top .nav .icon1.act {
-    background-image: url("../image/icon1-1.png");
+    background-image: url("../image/icon1-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon2.act {
-    background-image: url("../image/icon2-1.png");
+    background-image: url("../image/icon2-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon3.act {
-    background-image: url("../image/icon3-1.png");
+    background-image: url("../image/icon3-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon4.act {
-    background-image: url("../image/icon4-1.png");
+    background-image: url("../image/icon4-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon5.act {
-    background-image: url("../image/icon5-1.png");
+    background-image: url("../image/icon5-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon6.act {
-    background-image: url("../image/icon6-1.png");
+    background-image: url("../image/icon6-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon7.act {
-    background-image: url("../image/icon7-1.png");
+    background-image: url("../image/icon7-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
 
 .top .nav .icon8.act {
-    background-image: url("../image/icon8-1.png");
+    background-image: url("../image/icon8-1.svg");
     background-repeat: no-repeat;
     background-position: center left
 }
@@ -481,7 +494,8 @@ li {
     background: linear-gradient( top, #62dac9, #32cdb7);
     background: -webkit-linear-gradient( top, #62dac9, #32cdb7);
     background: -moz-linear-gradient( top, #62dac9, #32cdb7);
-    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
     color: #ffffff;
     padding: 65px 0;
     position: relative;
@@ -518,7 +532,8 @@ li {
 .plateadv-con .data-center {
     border: 3px solid #88e3d6;
     background-color: rgba(255, 255, 255, .2);
-    border-radius: 10px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
     -webkit-transition: all .3s linear;
          -o-transition: all .3s linear;
             transition: all .3s linear;
@@ -664,7 +679,8 @@ li {
     padding: 65px 0 85px 0;
     text-align: center;
     background: url('../image/background.png') no-repeat;
-    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
 }
 
 .content .operaconc .title {
@@ -686,7 +702,8 @@ li {
 .footer {
     height: 200px;
     background: url('../image/footerbg.png') no-repeat;
-    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
     color: #84d1ce;
     font-size: 18px;
     text-align: center;
@@ -755,7 +772,8 @@ li {
     }
     .top .nav>div>a>div {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
     }
@@ -774,7 +792,8 @@ li {
     }
     .top .nav>div:first-child {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
         padding-bottom: 10px;
@@ -882,7 +901,8 @@ li {
     }
     .top .nav>div>a>div {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
     }
@@ -894,7 +914,8 @@ li {
     }
     .top .nav>div:first-child {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
         padding-bottom: 10px;
@@ -965,7 +986,8 @@ li {
     }
     .top .nav>div>a>div {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
     }
@@ -977,7 +999,8 @@ li {
     }
     .top .nav>div:first-child {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
         padding-bottom: 10px;
@@ -1062,7 +1085,8 @@ li {
     }
     .top .nav>div>a>div {
         font-size: 13px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 0 0;
     }
@@ -1077,7 +1101,8 @@ li {
     }
     .top .nav>div:first-child {
         font-size: 14px;
-        background-size: 22px;
+        -webkit-background-size: 22px 22px;
+                background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 0 0;
         padding-bottom: 10px;
@@ -1270,25 +1295,25 @@ li {
 }
 
 .top .nav .icon1:hover {
-    background-image: url('../image/icon1-1.png');
+    background-image: url('../image/icon1-1.svg');
 }
 .top .nav .icon2:hover {
-    background-image: url('../image/icon2-1.png');
+    background-image: url('../image/icon2-1.svg');
 }
 .top .nav .icon3:hover {
-    background-image: url('../image/icon3-1.png');
+    background-image: url('../image/icon3-1.svg');
 }
 .top .nav .icon4:hover {
-    background-image: url('../image/icon4-1.png');
+    background-image: url('../image/icon4-1.svg');
 }
 .top .nav .icon5:hover {
-    background-image: url('../image/icon5-1.png');
+    background-image: url('../image/icon5-1.svg');
 }
 .top .nav .icon6:hover {
-    background-image: url('../image/icon6-1.png');
+    background-image: url('../image/icon6-1.svg');
 }
 .top .nav .icon7:hover {
-    background-image: url('../image/icon7-1.png');
+    background-image: url('../image/icon7-1.svg');
 }
 .ear_icon1 {
     -webkit-animation: myanimation 4s linear;
@@ -1673,7 +1698,8 @@ li {
     background: #2c4645 -webkit-linear-gradient(right, #2c4645, #8ee1d6) 0 0 no-repeat;
     background: #2c4645 -o-linear-gradient(right, #2c4645, #8ee1d6) 0 0 no-repeat;
     background: #2c4645 linear-gradient(right, #2c4645, #8ee1d6) 0 0 no-repeat;
-    background-size: 80px;
+    -webkit-background-size: 80px 80px;
+            background-size: 80px;
     -webkit-animation: electricity 2s infinite linear;
             animation: electricity 2s infinite linear;
 }
@@ -1682,7 +1708,8 @@ li {
     background: #1a2b2a -webkit-linear-gradient(right, #1a2b2a, #8ee1d6) 0 0 no-repeat;
     background: #1a2b2a -o-linear-gradient(right, #1a2b2a, #8ee1d6) 0 0 no-repeat;
     background: #1a2b2a linear-gradient(right, #1a2b2a, #8ee1d6) 0 0 no-repeat;
-    background-size: 80px;
+    -webkit-background-size: 80px 80px;
+            background-size: 80px;
     -webkit-animation: electricity 2s infinite linear;
             animation: electricity 2s infinite linear;
 }
@@ -1691,7 +1718,8 @@ li {
     background: #92ebe1 -webkit-linear-gradient(right, #92ebe1, #67eade) 0 0 no-repeat;
     background: #92ebe1 -o-linear-gradient(right, #92ebe1, #67eade) 0 0 no-repeat;
     background: #92ebe1 linear-gradient(right, #92ebe1, #67eade) 0 0 no-repeat;
-    background-size: 80px;
+    -webkit-background-size: 80px 80px;
+            background-size: 80px;
     -webkit-animation: electricity 2s infinite linear;
             animation: electricity 2s infinite linear;
 }
@@ -1824,13 +1852,15 @@ li {
 .close_diy{
     width: 23px;
     height: 23px;
-    border-radius: 50px;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
     text-align: center;
     line-height: 23px;
 }
 .close_diy:hover{
     background-color:#36ceb9;
-    border-radius: 50px;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
     text-align: center;
     line-height: 23px;
     opacity: 1;
@@ -1920,7 +1950,8 @@ li {
 }
 .radio_diy{
     border:2px #36ceb9 solid;
-    border-radius:60px;
+    -webkit-border-radius:60px;
+            border-radius:60px;
     width:17px;
     height:17px;
     cursor:pointer;
@@ -2011,7 +2042,8 @@ li {
     width:45px;
     height: 44px;
     border:1px #36ceb9 dashed;
-    border-radius:3px;
+    -webkit-border-radius:3px;
+            border-radius:3px;
     margin-left:30px;
     cursor:pointer;
 }

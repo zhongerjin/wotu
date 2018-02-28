@@ -1,6 +1,7 @@
 .supporting .slider {
     background-image: url("../image/sup-bg.png");
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
     background-repeat: no-repeat;
     height: 596px;
 }
@@ -10,7 +11,8 @@
     height: 24px;
     background-image: url(../image/v.png);
     display: inline-block;
-    background-size: contain;
+    -webkit-background-size: contain;
+            background-size: contain;
     background-repeat: no-repeat;
     /*//ffae00*/
 }

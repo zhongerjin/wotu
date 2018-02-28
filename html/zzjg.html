@@ -1247,7 +1247,7 @@
     var node_template = function(data){
         if (!data.has_levelUp) {
             return (
-            '<div class="demo clear register"><div class="text"><div class="status">' +
+            '<div class="demo clear register"><img src="../image/level_register.png"><div class="text"><div class="status">' +
             data.name +
             "</div></div></div>"
             );
@@ -1272,9 +1272,6 @@
             //   'nodeContent': 'name',
             'createNode': function($node, data) {
                 $node.children('.title').html(node_template(data));
-                if($node.children('.title').children('.demo').hasClass("level_6")){
-                    $node.children('.title').addClass("disabled");
-                }
                 $node.children('.title').on("click", function(e){
                     if($(this).children().hasClass("register")){
                         $("#choose_dialog").modal('show');

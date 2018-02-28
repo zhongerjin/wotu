@@ -78,7 +78,8 @@ body {
 }
 .info_tab .row .title{
     background-position: 0 100%;
-    background-size: 20% 90%;
+    -webkit-background-size: 20% 90%;
+            background-size: 20% 90%;
 }
 .infoself .content .info_tab>li {}
 
@@ -155,7 +156,8 @@ body {
 
 .leave {
     background: url('../image/info_leave.png') no-repeat;
-    background-size: 21px;
+    -webkit-background-size: 21px 21px;
+            background-size: 21px;
     display: inline-block;
     width: 23px;
     height: 15px;
@@ -175,7 +177,8 @@ body {
     padding: 0 30px 19px 0;
     margin-right: 50px;
     background: url('../image/info_leave.png') no-repeat top right;
-    background-size: 21px;
+    -webkit-background-size: 21px 21px;
+            background-size: 21px;
     color: #797979;
 }
 
@@ -225,7 +228,8 @@ body {
     border: 1px solid #0de0c0;
     color: #0de0c0;
     display: inline-block;
-    border-radius: 25px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
     padding: 4px 15px;
 }
 .tab-group .btn.active{
@@ -236,7 +240,8 @@ body {
 }
 .button-group .btn{
     padding: 0;
-    border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
 }
 .button-group{
     height: 32px;
@@ -244,7 +249,8 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 4px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
     border: 1px solid #11dcc1;
     position: relative;
 }
@@ -316,7 +322,8 @@ body {
     height: 24px;
     background-image: url(../image/v.png);
     display: inline-block;
-    background-size: contain;
+    -webkit-background-size: contain;
+            background-size: contain;
     background-repeat: no-repeat;
 }
 .table-responsive .tablespantext {
@@ -329,7 +336,8 @@ body {
 .table-responsive .morebtn {
     background-color: #15d7c3;
     color: #fff;
-    border-radius: 20px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
     padding: 6px 15px;
 }
 .table-responsive{
@@ -346,18 +354,22 @@ body {
     border-collapse: separate;
 }
 .table-responsive thead tr th:first-child{
-    border-radius: 20px 0 0 0;
+    -webkit-border-radius: 20px 0 0 0;
+            border-radius: 20px 0 0 0;
 }
 .table-responsive thead tr th:last-child{
-    border-radius: 0 20px 0 0;
+    -webkit-border-radius: 0 20px 0 0;
+            border-radius: 0 20px 0 0;
 }
 .table-responsive tbody tr:last-child td:first-child,
 .table-responsive tbody tr:last-child th:first-child{
-    border-radius: 0 0 0 20px;
+    -webkit-border-radius: 0 0 0 20px;
+            border-radius: 0 0 0 20px;
 }
 .table-responsive tbody tr:last-child td:last-child,
 .table-responsive tbody tr:last-child th:last-child{
-    border-radius: 0 0 20px 0;
+    -webkit-border-radius: 0 0 20px 0;
+            border-radius: 0 0 20px 0;
 }
 .table-responsive thead tr th {
     color:#ffffff;
