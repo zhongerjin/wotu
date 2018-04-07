@@ -120,11 +120,30 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-1  col-sm-1 col-lg-1">
-                        <a href="login.html">
-                            <span class="loginBtn">登录</span>
-                        </a>
+
+                    <div class="col-lg-3 col-md-1" style="cursor:pointer">
+                        <div class="dropdown_list">
+                            <div class="userinfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="txwarp col-md-2">
+                                    <img src="../image/wallte-tx.png" alt="">
+                                </div>
+                                <div class="username col-lg-4 col-md-4">
+                                    18600370863
+                                </div>
+                                <div class="more col-lg-2">
+                                    <span class=""></span>
+                                </div>
+                            </div>
+                              <ul class="dropdown-menu">
+                                <li><a href="infoself.html">个人中心</a></li>
+                                <li><a href="system_message.html">系统消息</a></li>
+                                <li><a href="sites_email.html">站内邮件</a></li>
+                                <li><a href="javascript:void(0)">安全退出</a></li>
+                            </ul>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
             <!-- banner -->
@@ -434,11 +453,26 @@
                                 <li class="childuser other col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">子账户：</div>
                                     <div style="display:inline-block">
-                                        <div>118281.04</div>
-                                        <div>118281.04</div>
-                                        <div>118281.04</div>
-                                        <div>118281.04</div>
-                                        <div>118281.04</div>
+                                        <div class="child_account">
+                                            <span>118281.04</span>
+                                            <img src="../image/info_leave.png" alt="">
+                                        </div>
+                                        <div class="child_account">
+                                            <span>118281.04</span>
+                                            <img src="../image/info_leave.png" alt="">
+                                        </div>
+                                        <div class="child_account">
+                                            <span>118281.04</span>
+                                            <img src="../image/info_leave.png" alt="">
+                                        </div>
+                                        <div class="child_account">
+                                            <span>118281.04</span>
+                                            <img src="../image/info_leave.png" alt="">
+                                        </div>
+                                        <div class="child_account">
+                                            <span>118281.04</span>
+                                            <img src="../image/info_leave.png" alt="">
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -468,30 +502,37 @@
                                 </div>
                                 <div class="clear"></div>
                             </div>
-                            <ul class="infolist">
-                                <li class="realname col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">真实姓名：</span>
-                                    <span>一月晕</span>
-                                </li>
-                                <li class="sexy col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">性别：</span>
-                                    <span>女</span>
-                                </li>
-                                <li class="email col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">邮箱：</span>
-                                    <span>15258258@qq.com</span>
-                                </li>
-                                <li class="country col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">所在国家：</span>
-                                    <span class="country1 marl_cont">中国</span>
-                                    <select id="country" class="dept_select"></select>
-                                </li>
-                                <li class="address col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">详细地址：</span>
-                                    <span class="marl_cont">上海四十四点后是啊滑动天时间的</span>
-                                </li>
-                                <div class="clear"></div>
-                            </ul>
+                            <form action="" name="contactInfo">
+                                <ul class="infolist">
+                                    <li class="realname col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">真实姓名：</span>
+                                        <span data-name-inner>一月晕</span>
+                                        <input type="hidden" name="realname">
+                                    </li>
+                                    <li class="sexy col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">性别：</span>
+                                        <span data-name-inner>女</span>
+                                        <input type="hidden" name="sexy">
+                                    </li>
+                                    <li class="email col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">邮箱：</span>
+                                        <span data-name-inner>15258258@qq.com</span>
+                                        <input type="hidden" name="email">
+                                    </li>
+                                    <li class="country col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">所在国家：</span>
+                                        <span data-name-inner class="country1 marl_cont">中国</span>
+                                        <select id="country" class="dept_select"></select>
+                                        <input type="hidden" name="country">
+                                    </li>
+                                    <li class="address col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">详细地址：</span>
+                                        <span data-name-inner class="marl_cont">上海四十四点后是啊滑动天时间的</span>
+                                        <input type="hidden" name="address">
+                                    </li>
+                                    <div class="clear"></div>
+                                </ul>
+                            </form>
                         </li>
                         <li class="accountuser contents table-responsive" style="display:none">
                             <div>
@@ -506,29 +547,36 @@
                                 <div class="clear"></div>
                             </div>
                             <div class="clear"></div>
-                            <ul class="infolist1">
-                                <li class="username col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">开户人姓名：</span>
-                                    <span>一月晕</span>
-                                </li>
-                                <li class="bankname col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">银行名称：</span>
-                                    <span>中国建设银行</span>
-                                </li>
-                                <li class="bankuser col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">银行账户：</span>
-                                    <span>6236688030000003340</span>
-                                </li>
-                                <li class="other col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">开户行地址：</span>
-                                    <span>深圳市中国建设银行</span>
-                                </li>
-                                <li class="other col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">备注：</span>
-                                    <span>12313213213212313</span>
-                                </li>
-                                <div class="clear"></div>
-                            </ul>
+                            <form action="" name="accountInfo">
+                                <ul class="infolist1">
+                                    <li class="username col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">开户人姓名：</span>
+                                        <span data-name-inner>一月晕</span>
+                                        <input type="hidden" name="username">
+                                    </li>
+                                    <li class="bankname col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">银行名称：</span>
+                                        <span data-name-inner>中国建设银行</span>
+                                        <input type="hidden" name="bankname">
+                                    </li>
+                                    <li class="bankuser col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">银行账户：</span>
+                                        <span data-name-inner>6236688030000003340</span>
+                                        <input type="hidden" name="bankuser">
+                                    </li>
+                                    <li class="other col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">开户行地址：</span>
+                                        <span data-name-inner>深圳市中国建设银行</span>
+                                        <input type="hidden" name="other">
+                                    </li>
+                                    <li class="other col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <span class="col-lg-2 col-md-2 col-sm-5 col-xs-5">备注：</span>
+                                        <span data-name-inner>12313213213212313</span>
+                                        <input type="hidden" name="other">
+                                    </li>
+                                    <div class="clear"></div>
+                                </ul>
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -1659,7 +1707,7 @@
     function changeinfo(className) {
         $("." + className).find(".update").toggle();
         $("." + className).find(".sure").toggle();
-        $('.' + className).children('ul').each(function () {
+        $('.' + className).children().children('ul').each(function () {
             $(this).children('li').each(function () {
                 if ($(this).hasClass("country")) {
                     $(this).children().eq(1).toggle();
@@ -1673,6 +1721,7 @@
                     })
                     $(this).children().eq(1).attr("contenteditable", "true");
                 }
+                $(this).children("input").val($(this).children("[data-name-inner]").html());
             })
         })
     }
@@ -1680,7 +1729,7 @@
     function changeinfofin(className) {
         $("." + className).find(".update").toggle();
         $("." + className).find(".sure").toggle();
-        $('.' + className).children('ul').each(function () {
+        $('.' + className).children().children('ul').each(function () {
             $(this).children('li').each(function () {
                 if ($(this).hasClass("country")) {
                     $(this).children().eq(1).toggle();
@@ -1695,8 +1744,10 @@
                     })
                     $(this).children().eq(1).attr("contenteditable", "false");
                 }
+                $(this).children("input").val($(this).children("[data-name-inner]").html());
             })
-        })
+        });
+        $("." + className).children('form').submit();
     }
 </script>
 <script type="text/javascript">

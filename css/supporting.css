@@ -41,14 +41,6 @@
     padding-left: 0;
 }
 @media screen and (min-width: 320px) {
-    .nav {
-        position: static;
-    }
-    .nav>div:last-child {
-        position: static;
-        right: 0;
-        top: 0;
-    }
     .navcol_s #navbar-example .container {
         width: auto;
         padding-right: 15px;
@@ -90,13 +82,5 @@
     /*.top .nav {*/
     .navcol_s #navbar-example .container {
         width: 990px;
-    }
-    .nav {
-        position: relative;
-    }
-    .nav>div:last-child {
-        position: absolute;
-        right: -83px;
-        top: -3px;
     }
 }

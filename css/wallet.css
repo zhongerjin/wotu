@@ -20,61 +20,6 @@ a {
     margin: 0 25px 0 0;
 }
 
-.top .nav > div > div {
-    margin: 0 25px 0 0;
-}
-
-.top .navcol_b .nav .userinfo {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.top .navcol_b .nav .userinfo .txwarp {
-    padding: 0;
-    width: 40px;
-    height: 40px;
-}
-
-.top .navcol_b .nav .userinfo .txwarp img {
-    width: 100%;
-}
-
-.top .navcol_b .nav .userinfo .username {
-    line-height: 50px;
-    padding: 0;
-    padding-left: 10px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.top .navcol_b .nav .userinfo .more {
-    padding-left: 20px;
-}
-
-.top .navcol_b .nav .userinfo .more span {
-    background-image: url(../image/wallet-xl.png);
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 26px;
-    display: block;
-    background-position: 0px;
-    margin-top: 12px;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
-}
-
-.top .navcol_s .txwarp {
-    margin: 3px 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    float: right;
-}
-
 .top .banner {
     margin: 0;
 }
@@ -529,25 +474,6 @@ a {
     /*.top .nav, .bannerCilent, .plateadv-con, .footer-con, .banner .title, .operaconc .container, .navcol_s #navbar-example .container {*/
     /*width: 285px;*/
     /*}*/
-    .nav {
-        position: static;
-    }
-
-    .nav > div:last-child {
-        position: static;
-        right: 0;
-        top: 0;
-    }
-
-    .top .navcol_b .nav .userinfo .txwarp {
-        margin: 0;
-    }
-
-    .navcol_s #navbar-example .container {
-        width: auto;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
 
     .banner .title {
         width: auto;
@@ -645,10 +571,6 @@ a {
         margin: 0 14px 0 0;
     }
 
-    .top .navcol_b .nav .userinfo .username,
-    .top .navcol_b .nav .userinfo .more {
-        display: none;
-    }
 
     .content .contentwarp {
         height: 190px;
@@ -868,16 +790,6 @@ a {
         position: relative;
     }
 
-    .nav > div:last-child {
-        position: absolute;
-        right: -83px;
-        top: -3px;
-    }
-
-    .top .navcol_b .nav .userinfo .txwarp {
-        margin: 5px 0;
-    }
-
     .banner .title {
         width: 990px;
         padding-left: 0;
@@ -892,20 +804,6 @@ a {
     .main .slider {
         height: 596px;
         padding: 0;
-    }
-
-    /*.top .nav > div:first-child, .top .nav > div > div {*/
-    /*margin: 0 25px 0 0;*/
-    /*}*/
-    /* .top .nav>div>a>div {
-        margin: 0 20px 0 0;
-    }
-    .top .nav>a>div:first-child {
-        margin: 0 20px 0 0;
-    } */
-    .top .navcol_b .nav .userinfo .username,
-    .top .navcol_b .nav .userinfo .more {
-        display: block;
     }
 
     .content .contentwarp .linehr {

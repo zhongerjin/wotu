@@ -114,7 +114,8 @@ body {
     background: url("../image/info_iduser.png") no-repeat 1px 5px !important;
 }
 
-.infoself .content .info_content>li>ul>li.childuser>div:last-child div {
+.infoself .content .info_content>li ul.infolist>li.childuser>div:last-child div,
+.infoself .content .info_content>li ul.infolist1>li.childuser>div:last-child div {
     color: #797979;
 }
 .info_content .title{
@@ -140,14 +141,16 @@ body {
     border-bottom: none;
 }
 
-.infoself .content .info_content>li>ul>li {
+.infoself .content .info_content>li ul.infolist>li,
+.infoself .content .info_content>li ul.infolist1>li{
     font-size: 15px;
     float: left;
     padding: 20px 0;
     border-bottom: 1px solid #f5f5f5;
     /* width: 33%; */
 }
-.infoself .content .info_content>li>ul>li:last-child{
+.infoself .content .info_content>li ul.infolist>li:last-child,
+.infoself .content .info_content>li ul.infolist1>li:last-child{
     border-bottom: none;
 }
 .infoself .content #navbar-example>div.container {
@@ -175,27 +178,34 @@ body {
 .childuser>div>div {
     display: inline-block;
     padding: 0 30px 19px 0;
-    margin-right: 50px;
-    background: url('../image/info_leave.png') no-repeat top right;
+    margin-right: 30px;
+    /* background: url('../image/info_leave.png') no-repeat top right; */
     -webkit-background-size: 21px 21px;
             background-size: 21px;
     color: #797979;
+}
+.child_account img{
+    height: 18px;
 }
 
 /*.infoself .content .info_content>li>ul>li.other {
     width: 100%
 }*/
 
-.infoself .content .info_content>li>ul>li.other1 {
+.infoself .content .info_content>li ul.infolist>li.other1,
+.infoself .content .info_content>li ul.infolist1>li.other1 {
     width: 67%
 }
 
-.infoself .content .info_content>li>ul>li.other2 {
+.infoself .content .info_content>li ul.infolist>li.other2,
+.infoself .content .info_content>li ul.infolist1>li.other2 {
     width: 50%
 }
 
-.infoself .content .info_content>li>ul>li>span:last-child,
-.infoself .content .info_content>li>ul>li>div:last-child,
+.infoself .content .info_content>li ul.infolist>li>span:last-child,
+.infoself .content .info_content>li ul.infolist>li>div:last-child,
+.infoself .content .info_content>li ul.infolist1>li>span:last-child,
+.infoself .content .info_content>li ul.infolist1>li>div:last-child,
 .marl_cont {
     color: #797979;
     margin-left: 24px;
@@ -406,24 +416,30 @@ body {
     /*.infoself .content .info_content>li>ul>li {
         width: 100%
     }*/
-    .infoself .content .info_content>li>ul>li>span:last-child,
-    .infoself .content .info_content>li>ul>li>div:last-child,
+    .infoself .content .info_content>li ul.infolist>li>span:last-child,
+    .infoself .content .info_content>li ul.infolist>li>div:last-child,
+    .infoself .content .info_content>li ul.infolist1>li>span:last-child,
+    .infoself .content .info_content>li ul.infolist1>li>div:last-child,
     .marl_cont{
         margin-left: 6px;
     }
     /*.infoself .content .info_content>li>ul>li.other {
         width: 100%
     }*/
-    .infoself .content .info_content>li>ul>li.other1 {
+    .infoself .content .info_content>li ul.infolist>li.other1,
+    .infoself .content .info_content>li ul.infolist1>li.other1 {
         width: 67%
     }
-    .infoself .content .info_content>li>ul>li.other2 {
+    .infoself .content .info_content>li ul.infolist>li.other2,
+    .infoself .content .info_content>li ul.infolist1>li.other2 {
         width: 50%
     }
-    .infoself .content .info_content>li>ul>li.address span:first-child {
+    .infoself .content .info_content>li ul.infolist>li.address span:first-child,
+    .infoself .content .info_content>li ul.infolist1>li.address span:first-child {
         float: left;
     }
-    .infoself .content .info_content>li>ul>li.address span:last-child {
+    .infoself .content .info_content>li ul.infolist>li.address span:last-child,
+    .infoself .content .info_content>li ul.infolist1>li.address span:last-child {
         /*margin-left: 75px;
         display: block;*/
         display: -webkit-box;
@@ -440,24 +456,27 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li>span:last-child,
-    .infoself .content .info_content>li>ul>li>div:last-child,
+    .infoself .content .info_content>li ul>li>span:last-child,
+    .infoself .content .info_content>li ul>li>div:last-child,
     .marl_cont{
         margin-left: 6px;
     }
     /*.infoself .content .info_content>li>ul>li {
         width: 50%
     }*/
-    .infoself .content .info_content>li>ul>li.bankuser {
+    .infoself .content .info_content>li ul.infolist>li.bankuser,
+    .infoself .content .info_content>li ul.infolist1>li.bankuser {
         width: 100%
     }
-    .infoself .content .info_content>li>ul>li.address {
+    .infoself .content .info_content>li ul.infolist>li.address,
+    .infoself .content .info_content>li ul.infolist1>li.address {
         width: 100%
     }
     /*.infoself .content .info_content>li>ul>li.address span:first-child {
         float: none;
     }*/
-    .infoself .content .info_content>li>ul>li.address span:last-child {
+    .infoself .content .info_content>li ul.infolist>li.address span:last-child,
+    .infoself .content .info_content>li ul.infolist1>li.address span:last-child {
         margin-left: 6px;
         display: inline;
     }
@@ -467,21 +486,26 @@ body {
     .info_content .container {
         width: auto;
     }
-    .infoself .content .info_content>li>ul>li>span:last-child,
-    .infoself .content .info_content>li>ul>li>div:last-child,
+    .infoself .content .info_content>li ul.infolist>li>span:last-child,
+    .infoself .content .info_content>li ul.infolist>li>div:last-child,
+    .infoself .content .info_content>li ul.infolist1>li>span:last-child,
+    .infoself .content .info_content>li ul.infolist1>li>div:last-child,
     .marl_cont{
         margin-left: 24px;
     }
     /*.infoself .content .info_content>li>ul>li {
         width: 33.33%;
     }*/
-    .infoself .content .info_content>li>ul>li.other {
+    .infoself .content .info_content>li ul.infolist>li.other,
+    .infoself .content .info_content>li ul.infolist1>li.other {
         width: none
     }
-    .infoself .content .info_content>li>ul>li.other1 {
+    .infoself .content .info_content>li ul.infolist>li.other1,
+    .infoself .content .info_content>li ul.infolist1>li.other1 {
         width: none
     }
-    .infoself .content .info_content>li>ul>li.other2 {
+    .infoself .content .info_content>li ul.infolist>li.other2,
+    .infoself .content .info_content>li ul.infolist1>li.other2 {
         width: none
     }
     /*.infoself .content .info_content>li>ul>li.bankname,
@@ -500,7 +524,8 @@ body {
     /*.infoself .content .info_content>li>ul>li.address {
         width: 100%
     }*/
-    .infoself .content .info_content>li>ul>li.address span:last-child {
+    .infoself .content .info_content>li ul.infolist>li.address span:last-child,
+    .infoself .content .info_content>li ul.infolist1>li.address span:last-child {
         margin-left: 24px;
         display: inline;
     }
