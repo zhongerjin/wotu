@@ -138,10 +138,11 @@ a {
 }
 
 .content .contenttable .tabletop .tabletop1 .title {
-    -webkit-box-flex: 1;
+    /* -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1;
+            flex: 1; */
+    display: inline-block;
     cursor: pointer;
     padding-bottom: 10px;
     text-align: center;
@@ -506,11 +507,11 @@ a {
     }
 
     .content .contenttable .tabletop .tabletop1 {
-        display: -webkit-box;
+        /* display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
-        overflow: scroll;
+        display: flex; */
+        overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
     }
 

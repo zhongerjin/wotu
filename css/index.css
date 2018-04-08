@@ -959,7 +959,7 @@ li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; */
-    overflow: scroll;
+    overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
