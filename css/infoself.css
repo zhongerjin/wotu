@@ -34,11 +34,13 @@ body {
     cursor: pointer;
     float: left;
     padding-bottom: 14px;
-    margin-right: 35px;
+    /* margin-right: 35px; */
     -webkit-box-flex: 1;
+    padding: 0 15px;
     -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    text-align: center;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .infoself .content .info_nav li.active {
