@@ -61,7 +61,6 @@
        text-overflow: ellipsis;
     word-break: break-all;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
     overflow: hidden;
 }
 
@@ -367,7 +366,6 @@
     }
     .content .conText .ct_content {
         margin: 5px 0 12px;
-        -webkit-line-clamp: 2;
         font-size: 12px;
     }
     .content .conText .ct_more {
@@ -415,7 +413,6 @@
     }
     .content .conText .ct_content {
         margin: 13px 0;
-        -webkit-line-clamp: 1;
         font-size: 14px;
     }
     .content .conText .ct_more {
@@ -444,7 +441,6 @@
         font-size: 18px;
     }
     .content .conText .ct_content {
-        -webkit-line-clamp: 3;
         margin: 13px 0;
     }
     .content .conText .ct_more {
