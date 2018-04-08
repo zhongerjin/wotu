@@ -106,7 +106,8 @@ li {
     width: 950px;
     height: 450px;
     margin: 45px auto;
-    z-index: 99
+    z-index: 99;
+    position: relative;
 }
 
 .main .slider .regbtn {
@@ -225,6 +226,9 @@ li {
     -webkit-background-size: 100% 100%;
             background-size: 100%;
 }
+.top.mobile_top .nav.mobile_nav ul li>a>div:before{
+    top: 0;
+}
 .footer_placeholder{
     display: none;
     width: 100%;
@@ -261,118 +265,230 @@ li {
             flex: 1;
     white-space: nowrap;
 }
+.top .nav .navlist{
+    border-bottom: 2px solid transparent;
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
 .top .nav .act {
     border-bottom: 2px solid #0de0c0;
     color: #0de0c0!important;
 }
-
 .top .nav .actmove {
     border-bottom: 2px solid #0de0c0;
     color: #0de0c0!important;
 }
 
-.top .nav .icon1 {
+.top .nav .icon1:before {
     background-image: url("../image/icon1.svg");
-    -webkit-background-size: 42% 42%;
-    background-size: 42%;
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon2 {
+.top .nav .icon2:before {
     background-image: url("../image/icon2.svg");
-    -webkit-background-size: 32% 32%;
-    background-size: 32%;
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon3 {
+.top .nav .icon3:before {
     background-image: url("../image/icon3.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon4 {
+.top .nav .icon4:before {
     background-image: url("../image/icon4.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon5 {
+.top .nav .icon5:before {
     background-image: url("../image/icon5.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon6 {
+.top .nav .icon6:before {
     background-image: url("../image/icon6.svg");
     -webkit-background-size: 27px 27px;
     background-size: 27px;
-    padding-left: 28px;
+    /* padding-left: 28px; */
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
 }
 
-.top .nav .icon7 {
+.top .nav .icon7:before {
     background-image: url("../image/icon7.svg");
     -webkit-background-size: 25px 25px;
     background-size: 25px;
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
 }
-.top .nav .icon8 {
+.top .nav .icon8:before {
     background-image: url("../image/icon8.svg");
     background-repeat: no-repeat;
-    background-position: center left;
-    margin-top: 8px !important;
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
-.top .nav .icon1.act {
+.top .nav .icon1.act:before {
     background-image: url("../image/icon1-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon2.act {
+.top .nav .icon2.act:before {
     background-image: url("../image/icon2-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon3.act {
+.top .nav .icon3.act:before {
     background-image: url("../image/icon3-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon4.act {
+.top .nav .icon4.act:before {
     background-image: url("../image/icon4-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon5.act {
+.top .nav .icon5.act:before {
     background-image: url("../image/icon5-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon6.act {
+.top .nav .icon6.act:before {
     background-image: url("../image/icon6-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon7.act {
+.top .nav .icon7.act:before {
     background-image: url("../image/icon7-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
-.top .nav .icon8.act {
+.top .nav .icon8.act:before {
     background-image: url("../image/icon8-1.svg");
     background-repeat: no-repeat;
-    background-position: center left
+    content: " ";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    -webkit-background-size: 83% 83%;
+    background-size: 83%;
 }
 
 .top .banner .title {
@@ -414,6 +530,7 @@ li {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .top .navcol_b .nav .userinfo .txwarp {
@@ -422,6 +539,16 @@ li {
     height: 40px;
 }
 
+.top .navcol_b .nav .userinfo .txwarp .reddio {
+    background: red;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: absolute;
+    right: -2px;
+    top: 2px;
+}
 .top .navcol_b .nav .userinfo .txwarp img {
     width: 100%;
 }
@@ -435,6 +562,8 @@ li {
        text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
 
 .top .navcol_b .nav .userinfo .more {
     padding-left: 20px;
@@ -523,9 +652,15 @@ li {
 }
 
 .top .banner .bannerCilent {
-    text-align: center
+    text-align: center;
+    margin-top: 50px;
 }
-
+.top .banner .bannerCilent .border{
+    width: 36px;
+    height: 4px;
+    margin: 2px auto 50px;
+    background: #36ceb9;
+}
 .top .banner .bannerCilent .text {
     margin: 80px 0 20px 0;
 }
@@ -710,13 +845,23 @@ li {
     color: inherit;
     margin-bottom: 20px;
     text-align: left;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .balance .balance-count,
 .balance .balance-currency{
-    font-size: 20px;
+    font-size: 19px;
 }
 .data-card-contents{
     margin-bottom: 20px;
+}
+.balance .balance-count {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .data-card-contents .card-content{
     margin-top: 20px;
@@ -726,7 +871,19 @@ li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+.data-card-contents .card-content .contnet-count{
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .data-card-contents,
 .data-card-head .balance{
     padding: 0 0 0 30px;
@@ -864,20 +1021,20 @@ li {
         padding-left: 0;
         margin: 10px 8px 10px 8px;
     }
-    .nav .container {
+    /* .nav .container {
         padding-left: 0;
         padding-right: 0;
         width: auto;
         margin-right: 9px;
-    }
-    .top .nav>div:first-child {
+    } */
+    /* .top .nav>div:first-child {
         font-size: 14px;
         -webkit-background-size: 22px 22px;
                 background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
         padding-bottom: 10px;
-    }
+    } */
     .main .slider .charts {
         width: 320px;
         height: 220px;
@@ -897,7 +1054,13 @@ li {
         font-size: 16px;
     }
     .top .banner .bannerCilent .text {
-        margin-top: 55px;
+        margin-top: 20px;
+        padding: 0 20px;
+        margin-bottom: 0px;
+    }
+    .top .banner .bannerCilent .text1 {
+        margin-bottom: 20px;
+        padding: 0 20px
     }
     .content .platadva {
         padding: 45px 0;
@@ -946,6 +1109,14 @@ li {
         padding-bottom: 31px;
         border-bottom: 1px solid #12373a;
     }
+    .content .operaconc .text{
+        padding: 0 10px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        text-align: justify;
+        -moz-text-align-last: center;
+             text-align-last: center;
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -972,12 +1143,15 @@ li {
     .operaconc .container,
     .navcol_s #navbar-example .container,
     .news .container {
-        width: 460px;
+        width: 480px;
         padding-left: 0;
         padding-right: 0
     }
     .top .banner .bannerCilent span {
         font-size: 22px;
+    }
+    .top .banner .bannerCilent .titles{
+        font-size: 30px;
     }
     .top .nav>div>a>div {
         font-size: 14px;
@@ -986,20 +1160,20 @@ li {
         padding-left: 27px;
         margin: 0 14px 10px 0;
     }
-    .nav .container {
+    /* .nav .container {
         padding-left: 0;
         padding-right: 0;
         width: auto;
         margin-right: 9px;
-    }
-    .top .nav>div:first-child {
+    } */
+    /* .top .nav>div:first-child {
         font-size: 14px;
         -webkit-background-size: 22px 22px;
                 background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
         padding-bottom: 10px;
-    }
+    } */
     .main .slider .charts {
         width: 460px;
         height: 270px;
@@ -1060,7 +1234,7 @@ li {
     .operaconc .container,
     .navcol_s #navbar-example .container,
     .news .container {
-        width: 620px;
+        width: 640px;
         padding-left: 0;
         padding-right: 0
     }
@@ -1071,20 +1245,23 @@ li {
         padding-left: 27px;
         margin: 0 14px 10px 0;
     }
-    .nav .container {
+    .top .banner .bannerCilent .titles{
+        font-size: 30px;
+    }
+    /* .nav .container {
         padding-left: 0;
         padding-right: 0;
         width: auto;
         margin-right: 9px;
-    }
-    .top .nav>div:first-child {
+    } */
+    /* .top .nav>div:first-child {
         font-size: 14px;
         -webkit-background-size: 22px 22px;
                 background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 10px 0;
         padding-bottom: 10px;
-    }
+    } */
     .main .slider .charts {
         width: 600px;
         height: 300px;
@@ -1148,7 +1325,7 @@ li {
     .banner .title,
     .operaconc .container,
     .news .container {
-        width: 720px;
+        width: 768px;
         padding-left: 0;
         padding-right: 0
     }
@@ -1177,20 +1354,20 @@ li {
     .top .nav>a>div:first-child {
         font-size: 13px;
     }
-    .nav .container {
+    /* .nav .container {
         padding-left: 0;
         padding-right: 0;
         width: auto;
         margin-right: 9px;
-    }
-    .top .nav>div:first-child {
+    } */
+    /* .top .nav>div:first-child {
         font-size: 14px;
         -webkit-background-size: 22px 22px;
                 background-size: 22px;
         padding-left: 27px;
         margin: 0 14px 0 0;
         padding-bottom: 10px;
-    }
+    } */
     .main .slider .charts {
         width: 720px;
         height: 350px;
@@ -1210,6 +1387,9 @@ li {
     }
     .top .banner .bannerCilent .text {
         margin-top: 55px;
+    }
+    .top .banner .bannerCilent .titles{
+        font-size: 30px;
     }
     .content .platadva {
         padding: 45px 0;
@@ -1248,12 +1428,15 @@ li {
     .banner .title,
     .operaconc .container,
     .news .container {
-        width: 990px;
+        width: 970px;
         padding-left: 0;
         padding-right: 0
     }
     .top .banner .bannerCilent span {
         font-size: 22px;
+    }
+    .top .banner .bannerCilent .titles{
+        font-size: 36px;
     }
     .main .slider .charts {
         width: 950px;
@@ -1292,7 +1475,7 @@ li {
     }
     .top .nav>div>a>div {
         font-size: 14px;
-        margin: 0 40px 0 0;
+        margin: 0 20px 0 0;
     }
     .top .nav>a>div:first-child {
         font-size: 14px;
@@ -1304,7 +1487,7 @@ li {
 
     .nav > div:last-child {
         position: absolute;
-        right: -83px;
+        right: -100px;
         top: -3px;
     }
 
@@ -1399,25 +1582,25 @@ li {
     }
 }
 
-.top .nav .icon1:hover {
+.top .nav .icon1:hover:before {
     background-image: url('../image/icon1-1.svg');
 }
-.top .nav .icon2:hover {
+.top .nav .icon2:hover:before {
     background-image: url('../image/icon2-1.svg');
 }
-.top .nav .icon3:hover {
+.top .nav .icon3:hover:before {
     background-image: url('../image/icon3-1.svg');
 }
-.top .nav .icon4:hover {
+.top .nav .icon4:hover:before {
     background-image: url('../image/icon4-1.svg');
 }
-.top .nav .icon5:hover {
+.top .nav .icon5:hover:before {
     background-image: url('../image/icon5-1.svg');
 }
-.top .nav .icon6:hover {
+.top .nav .icon6:hover:before {
     background-image: url('../image/icon6-1.svg');
 }
-.top .nav .icon7:hover {
+.top .nav .icon7:hover:before {
     background-image: url('../image/icon7-1.svg');
 }
 .ear_icon1 {

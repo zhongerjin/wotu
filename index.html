@@ -17,6 +17,7 @@
     <script src="js/jquery.1.12.4.min.js"></script>
     <script src="js/echarts.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
 
 </head>
 
@@ -33,129 +34,6 @@
                 <span>倡元沃土公司，打造全新商业生态链</span>
             </div>
             <div class="charts" id="charts"></div>
-            <script>
-                // 基于准备好的dom，初始化echarts实例
-                var myChart = echarts.init(document.getElementById('charts'));
-
-                // 指定图表的配置项和数据
-                var option = {
-                    type: 'line',
-                    smooth: true,
-                    tooltip: {
-                        trigger: 'axis',
-                        formatter: '{c0}',
-                        axisPointer: {
-                            type: 'none'
-                        }
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#ffffff'
-                        }
-                    },
-                    xAxis: {
-                        type: 'category',
-                        boundaryGap: false,
-                        axisLabel: {
-                            textStyle: {
-                                color: "#ffffff"
-                            }
-                        },
-                        axisLine: {
-                            lineStyle: {
-                                color: '#ffffff',
-                            }
-                        },
-                        data: ["05-01", "05-02", "05-03", "05-04", "05-05", "05-06"]
-                    },
-                    yAxis: {
-                        type: 'value',
-                        axisTick: { // 轴标记
-                            show: false,
-                            lineStyle: {
-                                color: '#ffffff'
-                            }
-                        },
-                        splitLine: {
-                            show: true,
-                            lineStyle: {
-                                color: 'rgba(255,255,255, 0.5)'
-                            }
-                        },
-                        axisLine: { // 轴线
-                            show: true,
-                            lineStyle: {
-                                color: '#ffffff',
-                                width: "0"
-                            }
-                        },
-                        axisLabel: {
-                            formatter: "{value}",
-                            margin: 5,
-                            textStyle: {
-                                color: "#ffffff"
-                            }
-                        },
-                        boundaryGap: [0, '70%'],
-                        data: [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3]
-                    },
-                    series: [{
-                            type: 'line',
-                            max: "0.3",
-                            showSymbol: false,
-                            symbol: 'circle',
-                            smooth: true,
-                            areaStyle: {
-                                normal: {
-                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                        offset: 0,
-                                        color: 'rgb(16,221,217)'
-                                    }, {
-                                        offset: 1,
-                                        color: 'rgb(29,188,170)'
-                                    }], false)
-                                }
-                            },
-                            itemStyle: {
-                                normal: {
-                                    lineStyle: {
-                                        width: 0
-                                    }
-                                }
-                            },
-                            data: [0, 0.08, 0.13, 0.08, 0.06, 0]
-                        },
-                        {
-                            type: 'line',
-                            showSymbol: false,
-                            symbol: 'circle',
-                            smooth: true,
-                            areaStyle: {
-                                normal: {
-                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                        offset: 0,
-                                        color: 'rgb(8,237,219)'
-                                    }, {
-                                        offset: 1,
-                                        color: 'rgb(29,188,170)'
-                                    }], false)
-                                }
-                            },
-                            itemStyle: {
-                                normal: {
-                                    lineStyle: {
-                                        width: 0
-                                    }
-                                }
-                            },
-                            data: [0, 0.05, 0.11, 0.16, 0.06, 0]
-                        }
-                    ]
-                };
-
-                // 使用刚指定的配置项和数据显示图表。
-                myChart.setOption(option);
-            </script>
             <a href="html/login.html">
                 <div class="regbtn">立即加入</div>
             </a>
@@ -207,10 +85,10 @@
             </div>
             <div class="navcol navcol_b">
                 <div class="nav container">
-                    <a href="index.html">
-                        <div class="col-lg-1 col-md-1  col-sm-1 icon1 act navlist">首页</div>
-                    </a>
-                    <div class="container col-sm-10 col-md-10 col-lg-10">
+                    <div class="container col-sm-10 col-md-10 col-lg-11">
+                        <a href="index.html">
+                            <div class="col-lg-1 col-md-1  col-sm-1 icon1 act navlist">首页</div>
+                        </a>
                         <a href="html/supporting.html">
                             <div class="col-lg-2 col-md-2 col-sm-2 icon2 navlist">注册配套</div>
                         </a>
@@ -237,6 +115,7 @@
                             <div class="userinfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="txwarp col-md-2">
                                     <img src="image/wallte-tx.png" alt="">
+                                    <div class="reddio"> </div>
                                 </div>
                                 <div class="username col-lg-4 col-md-4">
                                     18600370863
@@ -246,15 +125,13 @@
                                 </div>
                             </div>
                               <ul class="dropdown-menu">
-                                <li><a href="html/infoself.html">个人中心</a></li>
-                                <li><a href="html/system_message.html">系统消息</a></li>
-                                <li><a href="html/sites_email.html">站内邮件</a></li>
+                                <li><a href="infoself.html">个人中心</a></li>
+                                <li><a href="system_message.html">系统消息</a></li>
+                                <li><a href="sites_email.html">站内邮件</a></li>
                                 <li><a href="javascript:void(0)">安全退出</a></li>
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <!-- banner -->
@@ -268,9 +145,8 @@
                 </div>
 
                 <div class="bannerCilent container">
-                    <div class="text">深圳市倡元沃土科技发展有限公司是一家集合互联网+金​融+实体产业，打造全新内循环生态链的公司。
-                    </div>
-                    <div class="text1">旗下投资的板块有生态旅游，生态农业，文化传媒以及传统文化.金融投资等领域。</div>
+                    <div class="titles">我们的产业</div>
+                    <div class="border"></div>
                     <div class="bannerAnim">
                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 hover1">
                             <img src="image/banner1.png" alt="">
@@ -437,9 +313,8 @@
                     <div class="title">我们的运作理念</div>
                     <div class="border"></div>
                     <div class="text">
-                        我们采用DPoS股份授权证明机制达到快速共识，网络确认速度达3秒以内。建立了账号体系与身份识别，纳入应用配合交易构成“数字城市”生态圈，形成闭环高
+                        我们采用DPoS股份授权证明机制达到快速共识，网络确认速度达3秒以内。建立了账号体系与身份识别，纳入应用配合交易构成“数字城市”生态圈，形成闭环高速流通体系，虚拟的事，就让虚拟来解决！放大虚拟世界经济流速，间接助力真实世界经济发展，对GDP的持续攀升作出贡献。
                     </div>
-                    <div class="text"> 速流通体系，虚拟的事，就让虚拟来解决！放大虚拟世界经济流速，间接助力真实世界经济发展，对GDP的持续攀升作出贡献。</div>
                 </div>
                 <div id="ear" class="ear">
                     <!--<img src="image/ear.png" alt="">-->
@@ -722,5 +597,208 @@
             }
     })
 </script> -->
+
+
+<!-- <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('charts'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            type: 'line',
+            smooth: true,
+            tooltip: {
+                trigger: 'axis',
+                formatter: '{c0}',
+                axisPointer: {
+                    type: 'none'
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: '#ffffff'
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                axisLabel: {
+                    textStyle: {
+                        color: "#ffffff"
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#ffffff',
+                    }
+                },
+                data: ["05-01", "05-02", "05-03", "05-04", "05-05", "05-06"]
+            },
+            yAxis: {
+                type: 'value',
+                axisTick: { // 轴标记
+                    show: false,
+                    lineStyle: {
+                        color: '#ffffff'
+                    }
+                },
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: 'rgba(255,255,255, 0.5)'
+                    }
+                },
+                axisLine: { // 轴线
+                    show: true,
+                    lineStyle: {
+                        color: '#ffffff',
+                        width: "0"
+                    }
+                },
+                axisLabel: {
+                    formatter: "{value}",
+                    margin: 5,
+                    textStyle: {
+                        color: "#ffffff"
+                    }
+                },
+                boundaryGap: [0, '70%'],
+                data: [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3]
+            },
+            series: [{
+                    type: 'line',
+                    max: "0.3",
+                    showSymbol: false,
+                    symbol: 'circle',
+                    smooth: true,
+                    areaStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgb(16,221,217)'
+                            }, {
+                                offset: 1,
+                                color: 'rgb(29,188,170)'
+                            }], false)
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            lineStyle: {
+                                width: 0
+                            }
+                        }
+                    },
+                    data: [0, 0.08, 0.13, 0.08, 0.06, 0]
+                },
+                {
+                    type: 'line',
+                    showSymbol: false,
+                    symbol: 'circle',
+                    smooth: true,
+                    areaStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgb(8,237,219)'
+                            }, {
+                                offset: 1,
+                                color: 'rgb(29,188,170)'
+                            }], false)
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            lineStyle: {
+                                width: 0
+                            }
+                        }
+                    },
+                    data: [0, 0.05, 0.11, 0.16, 0.06, 0]
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script> -->
+
+<script>
+        $('#charts').highcharts({
+        chart: {
+            type: 'spline',
+            backgroundColor: 'transparent',
+            style:{
+                fontFamily:'arial'
+            }
+        },
+        title: {
+            text: null
+        },
+        legend: {
+            enabled: false
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                day: '%m-%e'
+            },
+            labels: {
+                style: {
+                    color: '#fff',
+                    fontSize: '14px',
+                    fontWeight: 'bold'
+                }
+            },
+            tickColor: '#79e4ee',
+            minPadding:0.15,
+            maxPadding:0.15
+        },
+        yAxis: {
+            title: {
+                text: null
+            },
+            gridLineColor: '#79e4ee',
+            labels: {
+                style: {
+                    color: '#fff',
+                    fontSize: '18px',
+                    fontWeight: 'bold'
+                }
+            },
+            showFirstLabel: false,
+            showLastLabel:false
+        },
+        plotOptions: {
+            series: {
+                color: '#9be8ff',
+                lineWidth: 4,
+                cursor:'pointer',
+                marker: {
+                    lineWidth: 5
+                }
+            }
+        },
+        tooltip:{
+            borderRadius:15,
+            backgroundColor:'#fff',
+            headerFormat:'',
+            pointFormat: '{point.y}',
+            shadow:false,
+            borderColor:'transparent',
+            style:{
+                fontWeight:'bold',
+                color:'#00acc9',
+                fontSize:'18px',
+                padding:'10px 50px'
+            }
+        },
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6],
+            pointStart: Date.UTC(2010, 0, 1),
+            pointInterval: 24 * 3600 * 1000 
+        }]
+    });
+</script>
 
 </html>

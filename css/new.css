@@ -374,6 +374,25 @@
         text-align: center;
         margin-top: 1px;
     }
+    .w-news2_con_bottom {
+        height: auto;
+    }
+    .w-news2_con_bottom span {
+        width: 80px;
+        height: 32px;
+        line-height: 32px;
+        margin-top: 10px
+    }
+    .w-news2_con_bottom span a{
+        height: 32px;
+        line-height: 32px;
+    }
+    .w-news2_con_bottom span:nth-of-type(2){
+        margin-right: 5px;
+    }
+    .w-news_content.w-kuai.w-gao {
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (min-width: 480px) {
