@@ -472,6 +472,16 @@ a {
     position: relative;
     top: -3px;
 }
+
+/*新增的shares-tab*/
+.tabletop1 .shares-tab::-webkit-scrollbar {
+    display: none;
+}
+.tabletop1 .shares-tab{
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
 @media screen and (min-width: 320px) {
     /*.top .nav, .bannerCilent, .plateadv-con, .footer-con, .banner .title, .operaconc .container, .navcol_s #navbar-example .container {*/
     /*width: 285px;*/
