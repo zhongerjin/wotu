@@ -16,7 +16,7 @@ a {
 a:hover {
     text-decoration: none;
 }
-::-webkit-scrollbar {
+.tabletop1::-webkit-scrollbar {
     display: none;
 }
 body::-webkit-scrollbar {
