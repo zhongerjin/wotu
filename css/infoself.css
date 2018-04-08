@@ -32,13 +32,14 @@ body {
 
 .infoself .content .info_nav li {
     cursor: pointer;
-    float: left;
+    /* float: left; */
     padding-bottom: 14px;
     margin-right: 35px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    display: inline-block;
 }
 
 .infoself .content .info_nav li.active {
