@@ -955,10 +955,10 @@ li {
     text-align: center;
 }
 .navcol_n{
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: flex; */
     overflow: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
