@@ -37,6 +37,30 @@
     box-shadow: inset 0 0 0 1px #a4eae0;
     border-collapse: separate;
 }
+.level-Instructions{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;   
+    -webkit-box-align: center;   
+    -webkit-align-items: center;   
+        -ms-flex-align: center;   
+            align-items: center;
+    padding: 20px 30px;
+}
+.level-Instructions span{
+    padding: 0 30px;
+}
+.level-Instructions .level-group .level{
+    display: inline-block;
+    margin: 0 15px;
+}
+.level-Instructions .level-group .level div{
+    padding: 5px 0 0 0;
+    color: #74cf9c;
+    font-size: 16px;
+    font-weight: bold;
+}
 @media screen and (min-width: 768px) {
     .choose_btn_left{
         padding: 0 50px;

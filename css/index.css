@@ -1325,9 +1325,12 @@ li {
     .banner .title,
     .operaconc .container,
     .news .container {
-        width: 768px;
+        width: 830px;
         padding-left: 0;
         padding-right: 0
+    }
+    .top .nav .navlist{
+        width: 84px;
     }
     .footer-con .icon1 {
         margin-bottom: 37px;
@@ -1431,6 +1434,9 @@ li {
         width: 970px;
         padding-left: 0;
         padding-right: 0
+    }
+    .top .nav .navlist{
+        width: 100px;
     }
     .top .banner .bannerCilent span {
         font-size: 22px;
