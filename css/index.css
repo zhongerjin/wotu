@@ -16,7 +16,9 @@ a {
 a:hover {
     text-decoration: none;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 body::-webkit-scrollbar {
     /*width: 0*/
 }
